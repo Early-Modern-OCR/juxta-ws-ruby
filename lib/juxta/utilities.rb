@@ -28,8 +28,8 @@ end
 
 def standard_fileset( )
   fileset = []
-  fileset.push("good-testdata/MD_AmerCh1b.xml")
-  fileset.push("good-testdata/MD_Brit_v1CH1a.xml")
+  fileset.push("test/good-testdata/MD_AmerCh1b.xml")
+  fileset.push("test/good-testdata/MD_Brit_v1CH1a.xml")
   return fileset
 
 end
