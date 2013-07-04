@@ -1,0 +1,500 @@
+# Logfile created on Thu Jul 19 11:26:27 -0400 2012  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Table 'ddst_development.participants' doesn't exist: insert into participants set id=1, login_id="tester" on duplicate key update login_id="tester"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Table 'ddst_development.participants' doesn't exist: insert into participants set id=1, login_id="tester" on duplicate key update login_id="tester"[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Ddst::MainController#index (for 127.0.0.1 at 2012-07-19 11:28:57) [GET]
+  Parameters: {"action"=>"index", "controller"=>"ddst/main"}
+Redirected to http://localhost:3000/modules/3
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Bento::ModulesController#show (for 127.0.0.1 at 2012-07-19 11:28:57) [GET]
+  Parameters: {"action"=>"show", "id"=>"3", "controller"=>"bento/modules"}
+  [4;35;1mStudyModule Columns (0.0ms)[0m   [0mMysql::Error: Table 'ddst_development.modules' doesn't exist: SHOW FIELDS FROM `modules`[0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Table 'ddst_development.modules' doesn't exist: SHOW FIELDS FROM `modules`):
+  app/controllers/bento/modules_controller.rb:25:in `show'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /Users/daveg/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.17.beta14/lib/ruby-debug-ide.rb:127:in `debug_load'
+  /Users/daveg/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.17.beta14/lib/ruby-debug-ide.rb:127:in `debug_program'
+  /Users/daveg/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.17.beta14/bin/rdebug-ide:118
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (82.1ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mMysql::Error: Table 'ddst_development.participants' doesn't exist: insert into participants set id=1, login_id="tester" on duplicate key update login_id="tester"[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (97.4ms)[0m   [0;1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `schema_migrations`[0m
+  [4;36;1mSQL (227.0ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateValidators (20100414193425)
+  [4;35;1mSQL (82.1ms)[0m   [0mCREATE TABLE `validators` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `validator_type` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (99.8ms)[0m   [0;1mCREATE TABLE `validator_data` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `validator_id` int(11), `prop_key` varchar(255), `prop_value` varchar(255)) ENGINE=InnoDB[0m
+  [4;35;1mSQL (112.2ms)[0m   [0mCREATE TABLE `validator_keys` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `validator_type` varchar(255), `valid_key` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (99.5ms)[0m   [0;1mCREATE TABLE `validator_types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `validator_type` varchar(255)) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100414193425')[0m
+Migrating to CreateForms (20100414193752)
+  [4;36;1mSQL (108.1ms)[0m   [0;1mCREATE TABLE `forms` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `form_type` varchar(255), `form_name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (111.5ms)[0m   [0mCREATE TABLE `form_data` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `form_id` int(11), `prop_key` varchar(255), `prop_value` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (100.0ms)[0m   [0;1mCREATE TABLE `form_keys` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `form_type` varchar(255), `valid_key` varchar(255)) ENGINE=InnoDB[0m
+  [4;35;1mSQL (100.0ms)[0m   [0mCREATE TABLE `form_types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `form_type` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100414193752')[0m
+Migrating to CreateParticipants (20100414193819)
+  [4;35;1mSQL (98.9ms)[0m   [0mCREATE TABLE `participants` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `participant_type` varchar(255), `login_id` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (111.2ms)[0m   [0;1mCREATE TABLE `participant_data` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `participant_id` int(11), `prop_key` varchar(255), `prop_value` varchar(255)) ENGINE=InnoDB[0m
+  [4;35;1mSQL (89.0ms)[0m   [0mCREATE TABLE `participant_keys` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `participant_type` varchar(255), `valid_key` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (99.2ms)[0m   [0;1mCREATE TABLE `participant_types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `participant_type` varchar(255)) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100414193819')[0m
+Migrating to CreateEvents (20100414193841)
+  [4;36;1mSQL (89.6ms)[0m   [0;1mCREATE TABLE `events` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `event_type` varchar(255), `marker_type` varchar(255), `participant_id` int(11), `action_id` int(11), `category` varchar(255), `level` int(11), `description` varchar(255), `notes` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (100.6ms)[0m   [0mCREATE TABLE `event_data` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `event_id` int(11), `prop_key` varchar(255), `prop_value` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (99.8ms)[0m   [0;1mCREATE TABLE `event_keys` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `event_type` varchar(255), `valid_key` varchar(255)) ENGINE=InnoDB[0m
+  [4;35;1mSQL (133.8ms)[0m   [0mCREATE TABLE `event_types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `event_type` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100414193841')[0m
+Migrating to CreateActions (20100414193856)
+  [4;35;1mSQL (137.0ms)[0m   [0mCREATE TABLE `actions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `action_type` varchar(255) NOT NULL, `participant_id` int(11) NOT NULL, `generate_event_type` varchar(255), `was_executed` tinyint(1) DEFAULT 0, `trigger_id` int(11) NOT NULL, `execute_at` datetime, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (83.6ms)[0m   [0;1mCREATE TABLE `action_data` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `action_id` int(11), `prop_key` varchar(255), `prop_value` varchar(255)) ENGINE=InnoDB[0m
+  [4;35;1mSQL (100.2ms)[0m   [0mCREATE TABLE `action_keys` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `action_type` varchar(255), `valid_key` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (89.3ms)[0m   [0;1mCREATE TABLE `action_types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `action_type` varchar(255)) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100414193856')[0m
+Migrating to CreateTriggers (20100414202418)
+  [4;36;1mSQL (98.3ms)[0m   [0;1mCREATE TABLE `triggers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `trigger_name` varchar(255), `trigger_type` varchar(255) NOT NULL, `action_type` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (99.8ms)[0m   [0mCREATE TABLE `trigger_data` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `trigger_id` int(11), `prop_key` varchar(255), `prop_value` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (89.3ms)[0m   [0;1mCREATE TABLE `trigger_keys` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `trigger_type` varchar(255), `valid_key` varchar(255)) ENGINE=InnoDB[0m
+  [4;35;1mSQL (88.6ms)[0m   [0mCREATE TABLE `trigger_types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `trigger_type` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100414202418')[0m
+Migrating to CreateTriggerConditions (20100414202433)
+  [4;35;1mSQL (87.3ms)[0m   [0mCREATE TABLE `trigger_conditions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `trigger_condition_type` varchar(255), `trigger_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (88.5ms)[0m   [0;1mCREATE TABLE `trigger_condition_data` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `trigger_condition_id` int(11), `prop_key` varchar(255), `prop_value` varchar(255)) ENGINE=InnoDB[0m
+  [4;35;1mSQL (78.5ms)[0m   [0mCREATE TABLE `trigger_condition_keys` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `trigger_condition_type` varchar(255), `valid_key` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (90.8ms)[0m   [0;1mCREATE TABLE `trigger_condition_types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `trigger_condition_type` varchar(255)) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100414202433')[0m
+Migrating to CreateQuestions (20100419201749)
+  [4;36;1mSQL (99.0ms)[0m   [0;1mCREATE TABLE `questions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `question_type` varchar(255), `question` varchar(255), `form_id` int(11), `field_code` varchar(255), `validator_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (99.6ms)[0m   [0mCREATE TABLE `question_data` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `question_id` int(11), `prop_key` varchar(255), `prop_value` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (90.3ms)[0m   [0;1mCREATE TABLE `question_keys` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `question_type` varchar(255), `valid_key` varchar(255)) ENGINE=InnoDB[0m
+  [4;35;1mSQL (131.9ms)[0m   [0mCREATE TABLE `question_types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `question_type` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100419201749')[0m
+Migrating to AddRepeatingToTrigger (20100429194210)
+  [4;35;1mSQL (90.8ms)[0m   [0mALTER TABLE `triggers` ADD `repeating` tinyint(1)[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100429194210')[0m
+Migrating to CreateParticipantPrivateData (20100503184721)
+  [4;35;1mSQL (107.2ms)[0m   [0mCREATE TABLE `participant_private_data` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `participant_id` int(11), `prop_key` varchar(255), `prop_value` varchar(255)) ENGINE=InnoDB[0m
+  [4;36;1mSQL (101.6ms)[0m   [0;1mALTER TABLE `participants` ADD `timezone` varchar(40)[0m
+  [4;35;1mSQL (100.3ms)[0m   [0mALTER TABLE `participants` ADD `time_delta_days` int(11)[0m
+  [4;36;1mSQL (111.0ms)[0m   [0;1mALTER TABLE `participant_keys` ADD `is_private` tinyint(1) DEFAULT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100503184721')[0m
+Migrating to CreateUsers (20100505155419)
+  [4;36;1mSQL (86.4ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(255) NOT NULL, `password_hash` varchar(255), `disabled` tinyint(1) DEFAULT 0, `permissions` varchar(255), `num_failed_logins` int(11) DEFAULT 0, `last_login_at` datetime, `remember_token_expires_at` datetime, `remember_token` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100505155419')[0m
+Migrating to AddParticipantTypeToTrigger (20100510154812)
+  [4;36;1mSQL (113.1ms)[0m   [0;1mALTER TABLE `triggers` ADD `participant_type` varchar(255)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100510154812')[0m
+Migrating to CreateWasabiDaemonNotices (20100511191622)
+  [4;36;1mSQL (120.0ms)[0m   [0;1mCREATE TABLE `wasabi_daemon_notices` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `is_to_daemon` tinyint(1), `was_handled` tinyint(1), `message` varchar(255), `value` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100511191622')[0m
+Migrating to CreateSections (20100519133843)
+  [4;36;1mSQL (98.5ms)[0m   [0;1mCREATE TABLE `sections` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `page_id` int(11), `section_num` int(11), `markdown_data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100519133843')[0m
+Migrating to CreatePages (20100519140513)
+  [4;36;1mSQL (120.3ms)[0m   [0;1mCREATE TABLE `pages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `module_id` int(11), `page_num` int(11), `page_layout` varchar(255), `page_css` varchar(255), `next_page_eval` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100519140513')[0m
+Migrating to CreateModules (20100519150509)
+  [4;36;1mSQL (86.8ms)[0m   [0;1mCREATE TABLE `modules` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `namespace` varchar(255), `available_var` varchar(255), `completed_var` varchar(255), `progress_var` varchar(255), `custom_participant_type` varchar(255), `event_type` varchar(255), `event_key` varchar(255), `event_value` varchar(255), `module_layout` varchar(255), `module_css` varchar(255), `display_name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100519150509')[0m
+Migrating to AddCustomCodeToPageAndModule (20100608162226)
+  [4;36;1mSQL (90.4ms)[0m   [0;1mALTER TABLE `pages` ADD `custom_code` varchar(255)[0m
+  [4;35;1mSQL (324.5ms)[0m   [0mALTER TABLE `modules` ADD `custom_code` varchar(255)[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100608162226')[0m
+Migrating to AddTypeToParticipantData (20100608174159)
+  [4;35;1mSQL (62.7ms)[0m   [0mALTER TABLE `participant_keys` ADD `data_type` varchar(255)[0m
+  [4;36;1mSQL (99.9ms)[0m   [0;1mALTER TABLE `participant_data` ADD `prop_value_binary` blob[0m
+  [4;35;1mSQL (79.3ms)[0m   [0mALTER TABLE `participant_data` ADD `prop_value_boolean` tinyint(1)[0m
+  [4;36;1mSQL (89.1ms)[0m   [0;1mALTER TABLE `participant_data` ADD `prop_value_datetime` datetime[0m
+  [4;35;1mSQL (88.2ms)[0m   [0mALTER TABLE `participant_data` ADD `prop_value_decimal` decimal(8,2)[0m
+  [4;36;1mSQL (101.0ms)[0m   [0;1mALTER TABLE `participant_data` ADD `prop_value_float` float[0m
+  [4;35;1mSQL (100.5ms)[0m   [0mALTER TABLE `participant_data` ADD `prop_value_integer` int(11)[0m
+  [4;36;1mSQL (102.4ms)[0m   [0;1mALTER TABLE `participant_data` ADD `prop_value_text` text[0m
+  [4;35;1mSQL (111.8ms)[0m   [0mALTER TABLE `participant_private_data` ADD `prop_value_binary` blob[0m
+  [4;36;1mSQL (100.4ms)[0m   [0;1mALTER TABLE `participant_private_data` ADD `prop_value_boolean` tinyint(1)[0m
+  [4;35;1mSQL (100.3ms)[0m   [0mALTER TABLE `participant_private_data` ADD `prop_value_datetime` datetime[0m
+  [4;36;1mSQL (111.1ms)[0m   [0;1mALTER TABLE `participant_private_data` ADD `prop_value_decimal` decimal(8,2)[0m
+  [4;35;1mSQL (101.5ms)[0m   [0mALTER TABLE `participant_private_data` ADD `prop_value_float` float[0m
+  [4;36;1mSQL (89.4ms)[0m   [0;1mALTER TABLE `participant_private_data` ADD `prop_value_integer` int(11)[0m
+  [4;35;1mSQL (100.0ms)[0m   [0mALTER TABLE `participant_private_data` ADD `prop_value_text` text[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100608174159')[0m
+Migrating to ChangeCustomCodeDatatype (20100611134203)
+  [4;35;1mSQL (9.3ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mSQL (89.7ms)[0m   [0;1mALTER TABLE `pages` CHANGE `custom_code` `custom_code` text DEFAULT NULL[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `modules`[0m
+  [4;36;1mSQL (88.9ms)[0m   [0;1mALTER TABLE `modules` CHANGE `custom_code` `custom_code` text DEFAULT NULL[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100611134203')[0m
+Migrating to AddFormToModule (20100614135936)
+  [4;36;1mSQL (86.4ms)[0m   [0;1mALTER TABLE `modules` ADD `form` varchar(255)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100614135936')[0m
+Migrating to AddFormToParticipantData (20100616144422)
+  [4;36;1mSQL (110.3ms)[0m   [0;1mALTER TABLE `participant_data` ADD `form` varchar(255)[0m
+  [4;35;1mSQL (100.5ms)[0m   [0mALTER TABLE `participant_private_data` ADD `form` varchar(255)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100616144422')[0m
+Migrating to AddDivClassToSection (20100616184652)
+  [4;35;1mSQL (100.4ms)[0m   [0mALTER TABLE `sections` ADD `div_class` varchar(255)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100616184652')[0m
+Migrating to AddNameToPage (20100616190432)
+  [4;35;1mSQL (99.1ms)[0m   [0mALTER TABLE `pages` ADD `name` varchar(255)[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100616190432')[0m
+Migrating to AddRequireLoginToModules (20100628213031)
+  [4;35;1mSQL (350.9ms)[0m   [0mALTER TABLE `modules` ADD `require_login` tinyint(1) DEFAULT 1[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100628213031')[0m
+Migrating to CreateEmailTemplates (20100708200705)
+  [4;35;1mSQL (125.0ms)[0m   [0mCREATE TABLE `email_templates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `page_id` int(11), `name` varchar(255), `namespace` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100708200705')[0m
+Migrating to AddHeadersToEmailTemplate (20100721185527)
+  [4;35;1mSQL (237.8ms)[0m   [0mALTER TABLE `email_templates` ADD `to` varchar(255)[0m
+  [4;36;1mSQL (334.3ms)[0m   [0;1mALTER TABLE `email_templates` ADD `subject` varchar(255)[0m
+  [4;35;1mSQL (295.5ms)[0m   [0mALTER TABLE `email_templates` ADD `from` varchar(255)[0m
+  [4;36;1mSQL (184.0ms)[0m   [0;1mALTER TABLE `email_templates` ADD `reply_to` varchar(255)[0m
+  [4;35;1mSQL (204.0ms)[0m   [0mALTER TABLE `email_templates` ADD `cc` varchar(255)[0m
+  [4;36;1mSQL (155.2ms)[0m   [0;1mALTER TABLE `email_templates` ADD `bcc` varchar(255)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100721185527')[0m
+Migrating to ChangeQuestionData (20100727143100)
+  [4;36;1mSQL (47.4ms)[0m   [0;1mSHOW FIELDS FROM `question_data`[0m
+  [4;35;1mSQL (280.5ms)[0m   [0mALTER TABLE `question_data` CHANGE `prop_value` `prop_value` text DEFAULT NULL[0m
+  [4;36;1mSQL (7.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100727143100')[0m
+Migrating to AddNameToSection (20100805140857)
+  [4;35;1mSQL (174.0ms)[0m   [0mALTER TABLE `sections` ADD `name` varchar(255)[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100805140857')[0m
+Migrating to AddStatusToParticipant (20100806145136)
+  [4;35;1mSQL (255.5ms)[0m   [0mALTER TABLE `participants` ADD `status` varchar(255)[0m
+  [4;36;1mSQL (174.6ms)[0m   [0;1mALTER TABLE `participants` ADD `deleted` bool DEFAULT 0 NOT NULL[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100806145136')[0m
+Migrating to AddIsPrivateToEventKeys (20100817175223)
+  [4;36;1mSQL (105.4ms)[0m   [0;1mALTER TABLE `event_keys` ADD `is_private` tinyint(1) DEFAULT 0[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100817175223')[0m
+Migrating to AddIndexes (20100819145035)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `actions`[0m
+  [4;35;1mSQL (140.1ms)[0m   [0mCREATE INDEX `index_actions_on_execute_at_and_was_executed` ON `actions` (`execute_at`, `was_executed`)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `actions`[0m
+  [4;35;1mSQL (110.6ms)[0m   [0mCREATE INDEX `index_actions_on_action_type` ON `actions` (`action_type`)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `actions`[0m
+  [4;35;1mSQL (100.7ms)[0m   [0mCREATE INDEX `index_actions_on_participant_id_and_was_executed` ON `actions` (`participant_id`, `was_executed`)[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `actions`[0m
+  [4;35;1mSQL (100.0ms)[0m   [0mCREATE INDEX `index_actions_on_generate_event_type` ON `actions` (`generate_event_type`)[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `action_keys`[0m
+  [4;35;1mSQL (100.5ms)[0m   [0mCREATE INDEX `index_action_keys_on_action_type` ON `action_keys` (`action_type`)[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `action_data`[0m
+  [4;35;1mSQL (99.3ms)[0m   [0mCREATE INDEX `index_action_data_on_action_id` ON `action_data` (`action_id`)[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW KEYS FROM `action_data`[0m
+  [4;35;1mSQL (99.4ms)[0m   [0mCREATE INDEX `index_action_data_on_prop_key` ON `action_data` (`prop_key`)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `action_types`[0m
+  [4;35;1mSQL (100.2ms)[0m   [0mCREATE INDEX `index_action_types_on_action_type` ON `action_types` (`action_type`)[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `events`[0m
+  [4;35;1mSQL (98.9ms)[0m   [0mCREATE INDEX `index_events_on_participant_id_and_event_type` ON `events` (`participant_id`, `event_type`)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `event_keys`[0m
+  [4;35;1mSQL (89.6ms)[0m   [0mCREATE INDEX `index_event_keys_on_event_type` ON `event_keys` (`event_type`)[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `event_data`[0m
+  [4;35;1mSQL (100.9ms)[0m   [0mCREATE INDEX `index_event_data_on_event_id` ON `event_data` (`event_id`)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `event_data`[0m
+  [4;35;1mSQL (88.8ms)[0m   [0mCREATE INDEX `index_event_data_on_prop_key` ON `event_data` (`prop_key`)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `event_types`[0m
+  [4;35;1mSQL (100.0ms)[0m   [0mCREATE INDEX `index_event_types_on_event_type` ON `event_types` (`event_type`)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `pages`[0m
+  [4;35;1mSQL (100.7ms)[0m   [0mCREATE INDEX `index_pages_on_page_num` ON `pages` (`page_num`)[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `pages`[0m
+  [4;35;1mSQL (100.7ms)[0m   [0mCREATE INDEX `index_pages_on_module_id` ON `pages` (`module_id`)[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `participants`[0m
+  [4;35;1mSQL (110.5ms)[0m   [0mCREATE INDEX `index_participants_on_login_id` ON `participants` (`login_id`)[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `participants`[0m
+  [4;35;1mSQL (100.3ms)[0m   [0mCREATE INDEX `index_participants_on_deleted` ON `participants` (`deleted`)[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `participants`[0m
+  [4;35;1mSQL (110.1ms)[0m   [0mCREATE INDEX `index_participants_on_participant_type` ON `participants` (`participant_type`)[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `participant_keys`[0m
+  [4;35;1mSQL (100.5ms)[0m   [0mCREATE INDEX `index_participant_keys_on_participant_type` ON `participant_keys` (`participant_type`)[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW KEYS FROM `participant_data`[0m
+  [4;35;1mSQL (98.5ms)[0m   [0mCREATE INDEX `index_participant_data_on_participant_id` ON `participant_data` (`participant_id`)[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `participant_data`[0m
+  [4;35;1mSQL (100.0ms)[0m   [0mCREATE INDEX `index_participant_data_on_prop_key` ON `participant_data` (`prop_key`)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `participant_private_data`[0m
+  [4;35;1mSQL (100.5ms)[0m   [0mCREATE INDEX `index_participant_private_data_on_participant_id` ON `participant_private_data` (`participant_id`)[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `participant_private_data`[0m
+  [4;35;1mSQL (99.7ms)[0m   [0mCREATE INDEX `index_participant_private_data_on_prop_key` ON `participant_private_data` (`prop_key`)[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `participant_types`[0m
+  [4;35;1mSQL (110.2ms)[0m   [0mCREATE INDEX `index_participant_types_on_participant_type` ON `participant_types` (`participant_type`)[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100819145035')[0m
+Migrating to AddGenerateEventToPage (20100824144131)
+  [4;35;1mSQL (90.4ms)[0m   [0mALTER TABLE `pages` ADD `generate_event` varchar(255)[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100824144131')[0m
+Migrating to AddContactSupport (20100827160737)
+  [4;35;1mSQL (51.2ms)[0m   [0mCREATE TABLE `contacts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `event_id` int(11) NOT NULL, `participant_id` int(11) NOT NULL, `contact_type` varchar(255), `email` varchar(255), `phone_number` varchar(255), `start_time` datetime, `end_time` datetime, `notes` text, `conversation_id` int(11) NOT NULL, `initiator` varchar(10), `initiator_name` varchar(40), `duration` varchar(20), `prep_time` varchar(20), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (111.1ms)[0m   [0;1mCREATE TABLE `contact_categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255)) ENGINE=InnoDB[0m
+  [4;35;1mSQL (99.8ms)[0m   [0mCREATE TABLE `contact_categories_contacts` (`contact_id` int(11) NOT NULL, `contact_category_id` int(11) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (100.2ms)[0m   [0;1mCREATE TABLE `conversations` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `subject_text` varchar(255), `is_resolved` tinyint(1)) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100827160737')[0m
+Migrating to RemoveNullTriggerConstraintFromActions (20101019152509)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW FIELDS FROM `actions`[0m
+  [4;35;1mSQL (78.1ms)[0m   [0mALTER TABLE `actions` CHANGE `trigger_id` `trigger_id` int(11) DEFAULT NULL[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20101019152509')[0m
+Migrating to AddRequiredToQuestions (20110211175458)
+  [4;35;1mSQL (87.4ms)[0m   [0mALTER TABLE `questions` ADD `required` tinyint(1)[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110211175458')[0m
+Migrating to AddUpdatedAtToParticipantData (20110314143635)
+  [4;35;1mSQL (76.5ms)[0m   [0mALTER TABLE `participant_data` ADD `updated_at` datetime[0m
+  [4;36;1mSQL (77.8ms)[0m   [0;1mALTER TABLE `participant_private_data` ADD `updated_at` datetime[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110314143635')[0m
+Migrating to AddDetailedLoggingToTrigger (20110331135201)
+  [4;36;1mSQL (125.3ms)[0m   [0;1mALTER TABLE `triggers` ADD `detailed_logging` tinyint(1)[0m
+  [4;35;1mSQL (223.9ms)[0m   [0mALTER TABLE `participants` ADD `detailed_logging` tinyint(1)[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110331135201')[0m
+Migrating to AddSnapshotToParticipants (20110505142547)
+  [4;35;1mSQL (251.1ms)[0m   [0mALTER TABLE `participants` ADD `snapshot` tinyint(1) DEFAULT 0 NOT NULL[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110505142547')[0m
+Migrating to AddDisplayTargetToPage (20110511184650)
+  [4;35;1mSQL (154.5ms)[0m   [0mALTER TABLE `pages` ADD `display_target` varchar(255)[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110511184650')[0m
+Migrating to AddParticipantTypeToForm (20110524134032)
+  [4;35;1mSQL (121.0ms)[0m   [0mALTER TABLE `forms` ADD `participant_type` varchar(255) DEFAULT '*'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110524134032')[0m
+Migrating to AddInlineFlagToTrigger (20110725182944)
+  [4;35;1mSQL (109.5ms)[0m   [0mALTER TABLE `triggers` ADD `execute_inline` tinyint(1) DEFAULT 0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110725182944')[0m
+Migrating to AddResetPasswordToUsers (20110825194118)
+  [4;35;1mSQL (109.5ms)[0m   [0mALTER TABLE `users` ADD `reset_password` tinyint(1) DEFAULT 0[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110825194118')[0m
+Migrating to AddEmailHashToUsers (20110825205342)
+  [4;35;1mSQL (110.5ms)[0m   [0mALTER TABLE `users` ADD `email_hash` varchar(255)[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110825205342')[0m
+Migrating to AddIdleToTriggers (20110922180010)
+  [4;35;1mSQL (98.0ms)[0m   [0mALTER TABLE `triggers` ADD `idle` tinyint(1) DEFAULT 0[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110922180010')[0m
+Migrating to CreateLockedTriggers (20111013151808)
+  [4;35;1mSQL (117.5ms)[0m   [0mCREATE TABLE `locked_triggers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `participant_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20111013151808')[0m
+Migrating to CreatePendingTriggers (20111013151820)
+  [4;35;1mSQL (98.5ms)[0m   [0mCREATE TABLE `pending_triggers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `participant_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20111013151820')[0m
+Migrating to CreateSessions (20111028143147)
+  [4;35;1mSQL (98.3ms)[0m   [0mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20111028143147')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSHOW FIELDS FROM `action_data`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `action_data`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `action_data`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `action_keys`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mdescribe `action_keys`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `action_keys`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW FIELDS FROM `action_types`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mdescribe `action_types`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `action_types`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW FIELDS FROM `actions`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `actions`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `actions`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW FIELDS FROM `contact_categories`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `contact_categories`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `contact_categories`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSHOW FIELDS FROM `contact_categories_contacts`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mdescribe `contact_categories_contacts`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW KEYS FROM `contact_categories_contacts`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW FIELDS FROM `contacts`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `contacts`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `contacts`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `conversations`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mdescribe `conversations`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `conversations`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW FIELDS FROM `email_templates`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `email_templates`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `email_templates`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `event_data`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mdescribe `event_data`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `event_data`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `event_keys`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mdescribe `event_keys`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `event_keys`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `event_types`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mdescribe `event_types`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSHOW KEYS FROM `event_types`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `events`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `events`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `events`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `form_data`[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mdescribe `form_data`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `form_data`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `form_keys`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `form_keys`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `form_keys`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `form_types`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `form_types`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `form_types`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `forms`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mdescribe `forms`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `forms`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `locked_triggers`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mdescribe `locked_triggers`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `locked_triggers`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW FIELDS FROM `modules`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `modules`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `modules`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mdescribe `pages`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `pages`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW FIELDS FROM `participant_data`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `participant_data`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `participant_data`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `participant_keys`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mdescribe `participant_keys`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `participant_keys`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSHOW FIELDS FROM `participant_private_data`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mdescribe `participant_private_data`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `participant_private_data`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `participant_types`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mdescribe `participant_types`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `participant_types`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `participants`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mdescribe `participants`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `participants`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `pending_triggers`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mdescribe `pending_triggers`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `pending_triggers`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW FIELDS FROM `question_data`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mdescribe `question_data`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `question_data`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `question_keys`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `question_keys`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `question_keys`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `question_types`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `question_types`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `question_types`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `questions`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mdescribe `questions`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW KEYS FROM `questions`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW FIELDS FROM `sections`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mdescribe `sections`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `sections`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `sessions`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `sessions`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW FIELDS FROM `trigger_condition_data`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `trigger_condition_data`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `trigger_condition_data`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `trigger_condition_keys`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mdescribe `trigger_condition_keys`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `trigger_condition_keys`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FIELDS FROM `trigger_condition_types`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `trigger_condition_types`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `trigger_condition_types`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW FIELDS FROM `trigger_conditions`[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mdescribe `trigger_conditions`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `trigger_conditions`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW FIELDS FROM `trigger_data`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mdescribe `trigger_data`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `trigger_data`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `trigger_keys`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mdescribe `trigger_keys`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `trigger_keys`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `trigger_types`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `trigger_types`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `trigger_types`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `triggers`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mdescribe `triggers`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `triggers`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `validator_data`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mdescribe `validator_data`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `validator_data`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FIELDS FROM `validator_keys`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mdescribe `validator_keys`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `validator_keys`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSHOW FIELDS FROM `validator_types`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `validator_types`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSHOW KEYS FROM `validator_types`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW FIELDS FROM `validators`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mdescribe `validators`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW KEYS FROM `validators`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW FIELDS FROM `wasabi_daemon_notices`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `wasabi_daemon_notices`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `wasabi_daemon_notices`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1minsert into participants set id=1, login_id="tester" on duplicate key update login_id="tester"[0m
+  [4;35;1mParticipant Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `participants`[0m
+  [4;36;1mParticipant Load (16.9ms)[0m   [0;1mSELECT * FROM `participants` WHERE (`participants`.`id` = 1) [0m
+   validate_extra_data
+  [4;35;1mParticipantType Load (8.7ms)[0m   [0mSELECT * FROM `participant_types` WHERE (participant_type = '*') LIMIT 1[0m
+  [4;36;1mKernel::ParticipantKey Load (8.2ms)[0m   [0;1mSELECT * FROM `participant_keys` WHERE ((participant_type = '*' or participant_type = "*") and valid_key = 'form_updated_at') LIMIT 1[0m
+  [4;35;1mKernel::ParticipantKey Load (0.6ms)[0m   [0mSELECT * FROM `participant_keys` WHERE ((participant_type = '*' or participant_type = "*") and valid_key = 'password') LIMIT 1[0m
+  [4;36;1mKernel::ParticipantKey Load (0.2ms)[0m   [0;1mSELECT * FROM `participant_keys` WHERE ((participant_type = '*' or participant_type = "*") and valid_key = 'private_key') LIMIT 1[0m
+  [4;35;1mKernel::ParticipantKey Load (0.2ms)[0m   [0mSELECT * FROM `participant_keys` WHERE (participant_type = '*' and valid_key = 'password') LIMIT 1[0m
+  [4;36;1mKernel::ParticipantKey Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `participant_keys`[0m
+  [4;35;1mKernel::ParticipantKey Load (0.3ms)[0m   [0mSELECT * FROM `participant_keys` WHERE (participant_type = '*' and valid_key = 'private_key') LIMIT 1[0m
+  [4;36;1mKernel::ParticipantKey Load (0.2ms)[0m   [0;1mSELECT * FROM `participant_keys` WHERE (participant_type = '*' and valid_key = 'form_updated_at') LIMIT 1[0m
+  [4;35;1mKernel::ParticipantKey Load (0.2ms)[0m   [0mSELECT * FROM `participant_keys` WHERE (participant_type = '*' and valid_key = 'form_updated_at') LIMIT 1[0m
+  [4;36;1mKernel::ParticipantKey Load (0.1ms)[0m   [0;1mSELECT * FROM `participant_keys` WHERE (participant_type = '*' and valid_key = 'group_type') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (19.8ms)[0m   [0mselect count(*) as table_exists from information_schema.tables where table_schema = 'ddst_private_development' and table_name='participant_private_data'[0m
+  [4;36;1mSQL (66.0ms)[0m   [0;1mCREATE TABLE `ddst_private_development`.`participant_private_data` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `participant_id` int(11), `prop_key` varchar(255), `prop_value` varchar(255), `prop_value_binary` blob, `prop_value_boolean` tinyint(1), `prop_value_datetime` datetime, `prop_value_decimal` decimal(8,2), `prop_value_float` float, `prop_value_integer` int(11), `prop_value_text` text, `form` varchar(255) ) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-07-19 11:31:49) [GET]
+
+ActionController::RoutingError (No route matches "/images/A050r-thumbnail.jpg" with {:method=>:get}):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  /Users/daveg/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.17.beta14/lib/ruby-debug-ide.rb:127:in `debug_load'
+  /Users/daveg/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.17.beta14/lib/ruby-debug-ide.rb:127:in `debug_program'
+  /Users/daveg/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.17.beta14/bin/rdebug-ide:118
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2012-07-19 11:31:49) [GET]
+  Parameters: {"_"=>"1342711909040"}
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.7.2.min.js" with {:method=>:get}):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'

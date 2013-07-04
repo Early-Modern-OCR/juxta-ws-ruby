@@ -1,0 +1,1181 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<ram xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:noNamespaceSchemaLocation="http://www.rossettiarchive.org/ram.xsd"
+     archivetype="rad"
+     type="ms.collection"
+     id="a.gettymsbook"
+     metatype="web.manuscript"
+     workcode="misc">
+	
+	
+	
+	
+	  <ramheader>
+		    <filedesc>
+			      <titlestmt>
+				        <title>Rossetti Album (miscellaneous collection, Getty/Wormsley Library)</title>
+				        <author>Dante Gabriel Rossetti</author>
+				
+				
+			      </titlestmt>
+			      <editionstmt>
+				        <edition>1</edition>
+				        <copyright>J. Paul Getty Collection, Wormsley Library</copyright>
+			      </editionstmt>
+			      <extent/>
+			
+			
+			      <notesstmt/>
+			      <sourcedesc>
+				        <citnstruct>
+					          <title>[Untitled]</title>
+					          <author>DGR and others</author>
+					          <msprod>
+						            <date compdate="1835,1933">1835-1933</date>
+						            <type>Literary manuscripts, autograph letters, photographs, and cuttings.</type>
+						            <assign/>
+						            <collation/>
+						            <note>The earliest manuscript is a letter from DGR to his aunt Elizabeth, 9 July 1835; the most recent
+							material is Sidney Cockerell's 1933 notes. Cockerell's signature is on the endleaf, &#8220;Richmond,
+							Surrey, Dec. 4, 1902&#8221;.</note>
+					          </msprod>
+					          <scribe>DGR, CR, WMR, and others, with manuscript notes by WMR.</scribe>
+					          <corrector/>
+					          <provenance>
+						            <location>J. Paul Getty Collection, Wormsley Library.</location>
+						            <recnum/>
+						            <archivehist>This volume was originally compiled by WMR. It was assembled for an album by Sidney Cockerell
+							(1867-1962) and was bound by his brother Douglas in 1902. The album was sold at Sotheby's, 18 July 1972
+							(lot 424) and thence to the Wormsley Library.</archivehist>
+						
+					          </provenance>
+					          <physicaldesc>
+						            <binding>
+							              <cover>Brown goatskin with elaborately gilt tooling on the cover in a repeating design of flowers and
+								leaves incorporating the initials S. C. C. [i.e., Sidney Carlyle Cockerell]; gilt panelled spine.</cover>
+							              <endpapers>Inside cover is a photograph of the Pierpont Morgan Library <xref doc="a.1-1847.morgms.rad">Blessed Damozel manuscript</xref>. </endpapers>
+						            </binding>
+						            <paper>Manuscripts materials, of various sizes, affixed to quarto sheets: blue-gray, 21 x 25.5 cm</paper>
+						            <watermark/>
+						            <note/>
+					          </physicaldesc>
+				        </citnstruct>
+			      </sourcedesc>
+		    </filedesc>
+		    <encodingdesc/>
+		    <profiledesc>
+			      <commentaries>
+				        <head>Commentary</head>
+				        <section type="intro">
+					          <head>Introduction</head>
+					          <p>The album has a number of important DGR manuscripts, particularly early manuscripts: very early letters to
+						his aunt Elizabeth Polidori, to his mother, and to his brother; letters to Ford Madox Brown; an early draft
+						of the unfinished tale<xref doc="a.9p-1850.s121.raw">
+							              <title level="doc">&#8220;St Agnes of Intercession&#8221;</title>
+						            </xref> (here titled &#8220;St. Agnes of Recompensation&#8221;); and other important manuscripts
+						from various periods of DGR's life.</p>
+					          <p>Not everything in the notebook is transcribed in this file, and none of the materials have been made
+						available for digital reproduction.</p>
+				        </section>
+				        <section type="texthistcomp">
+					          <head>Textual History: Composition</head>
+					          <p/>
+				        </section>
+				        <section type="texthistrev">
+					          <head>Textual History: Revision</head>
+					          <p/>
+				        </section>
+				        <section type="prodhist">
+					          <head>Production History</head>
+					          <p/>
+				        </section>
+				        <section type="recepthist">
+					          <head>Reception History</head>
+					          <p/>
+				        </section>
+				        <section type="icon">
+					          <head>Iconographic</head>
+					          <p/>
+				        </section>
+				        <section type="printhist">
+					          <head>Printing History</head>
+					          <p/>
+				        </section>
+				        <section type="pictorial">
+					          <head>Pictorial</head>
+					          <p/>
+				        </section>
+				        <section type="historical">
+					          <head>Historical</head>
+					          <p/>
+				        </section>
+				        <section type="literary">
+					          <head>Literary</head>
+					          <p/>
+				        </section>
+				        <section type="translation">
+					          <head>Translation</head>
+					          <p/>
+				        </section>
+				        <section type="autobio">
+					          <head>Autobiographical</head>
+					          <p/>
+				        </section>
+				        <section type="biblio">
+					          <head>Bibliographic</head>
+					          <p/>
+				        </section>
+			      </commentaries>
+		    </profiledesc>
+		    <revisiondesc/>
+	  </ramheader>
+	  <text>
+		    <group>
+			      <text>
+				        <body>
+					          <page n="[1]" image="a."/>
+					          <pageheader>
+						            <note>Photograph of DGR and Ruskin in DGR's garden, 2 February 1862</note>
+					          </pageheader>
+					          <omit extent="text and photograph" reason="to be edited later"/>
+					          <epage/>
+				        </body>
+			      </text>
+			      <text>
+				        <body>
+					          <page n="[2]" image="a."/>
+					          <pageheader>
+						            <note>
+							              <xref doc="a.gettymsbook.rad">a photograph</xref> by Lewis Carroll, <xref doc="a.">
+								                <title level="pic">&#8220;A Game of Chess with Dante Rossetti&#8221;</title>
+							              </xref>; DGR and his mother playing chess in DGR's garden, with CR and Maria Rossetti watching</note>
+					          </pageheader>
+					          <omit extent="text and photograph" reason="to be edited later"/>
+					          <epage/>
+				        </body>
+			      </text>
+			      <text>
+				        <body>
+					          <page n="[3]" image="a."/>
+					          <pageheader>
+						            <note>DGR's letter to his aunt Eliza Polidori, &#8220;July 9 1835&#8221;</note>
+					          </pageheader>
+					          <omit extent="text" reason="to be edited later"/>
+					          <epage/>
+				        </body>
+			      </text>
+			      <text>
+				        <body>
+					          <page n="[4]" image="a."/>
+					          <pageheader>
+						            <note>DGR's letter to his mother, dated &#8220;Wednesday 22 Jan./45&#8221;.</note>
+					          </pageheader>
+					          <omit extent="text" reason="to be edited later"/>
+					          <epage/>
+				        </body>
+			      </text>
+			      <text>
+				        <body>
+					          <page n="[5]" image="a."/>
+					          <pageheader>
+						            <note>Reproduction of DGR's drawing <xref doc="a.s440.raw">
+								                <title level="pic">&#8220;D.G. Rossetti sitting to Elizabeth Siddal&#8221;</title>
+							              </xref>, dated September 1853.</note>
+					          </pageheader>
+					          <omit extent="text" reason="to be edited later"/>
+					          <epage/>
+				        </body>
+			      </text>
+			      <text>
+				        <body>
+					          <page n="[6]" image="a."/>
+					          <pageheader>
+						            <note>DGR's letter to Ford Madox Brown (conjecturally dated 12 April, 1852 by McGann and 4 December, 1852 by Fredeman).</note>
+					          </pageheader>
+					          <div0 anchor="5.1" type="letter" n="1">
+						            <p>14 Chatham Place Blackfriars<lb/> Saturday morning</p>
+						            <p>My dear Brown,<lb/> I have asked Hannay to come round to-morrow evening. He and you were the only
+							defaulters on Thursday except John Seddon, who it seems is out of town.</p>
+						            <p>Can you come in tomorrow instead?</p>
+						            <p>Do if you can. I will try and get William also, though I heard last night at Millais's that he was rather unwell.</p>
+						            <p>What do you think? My sketches are kicked out at that precious place in Pall Mall. I am of course more
+							than ever resolved to paint my picture of the pigs. Alas! my dear Brown, we are but too transcendent
+							spirits&#8212;far, far, in advance of the age.</p>
+						            <p>Do not bring up this subject to-morrow if Hannay or anyone else is present, as it is of no use trumpeting
+							one's grievances. But do come.</p>
+						            <p>Your friend,<lb/> Dante G. Rossetti</p>
+					          </div0>
+					          <epage/>
+				        </body>
+			      </text>
+			      <text>
+				        <body>
+					          <page n="[7]" image="a."/>
+					          <pageheader>
+						            <note>Three DGR letters: two to his mother, one to Gambart.</note>
+					          </pageheader>
+					          <omit extent="text" reason="to be edited later"/>
+					          <epage/>
+				        </body>
+			      </text>
+			      <text>
+				        <body>
+					          <page n="[8]" image="a."/>
+				
+					          <pageheader>
+						
+						            <note>Half sheet manuscript, 18 x 11 cm, signed, with watermark: PERIN/OLD STYLE. This manuscript was
+							printer's copy for the text printed in the 1874 <xref doc="a.ap4.a85.1874a.rad" from="730">
+								                <title level="per">
+									                  <hi rend="i">Athenaeum</hi>
+								                </title>
+							              </xref>.</note>
+					          </pageheader>
+					          <div0 anchor="7.1" type="sonnet" n="1" title="Spring" id="a.10-1873"
+                     workcode="10-1873">
+						            <divheader>
+							              <title>
+								                <hi rend="c">II.&#8212;Spring.</hi>
+							              </title>
+						            </divheader>
+						            <lg n="1" type="octave">
+							              <l n="1">Soft-littered is the new-year's lambing-fold,</l>
+							              <l n="2" indent="1">And in the hollowed haystack at its side</l>
+							              <l n="3" indent="1">The shepherd lies o' nights now, wakeful-eyed</l>
+							              <l n="4">At the ewes' travailing call through the dark cold.</l>
+							              <l n="5">The young rooks cheep 'mid the thick caw o' the old:</l>
+							              <l n="6" indent="1">And near unpeopled stream-sides, on the ground,</l>
+							              <l n="7" indent="1">By her spring-cry the moorhen's nest is found,</l>
+							              <l n="8">Where the drained flood-lands flaunt their marigold.</l>
+						            </lg>
+						            <lg n="2" type="sestet">
+							              <l n="9">Chill are the gusts to which the pastures cower,</l>
+							              <l n="10" indent="1">And chill the current where the young reeds stand</l>
+							              <l n="11" indent="1">As green and close as the young wheat on land:</l>
+							              <l n="12">Yet here the cuckoo and the cuckoo flower</l>
+							              <l n="13">
+								                <del>Pledge</del>
+								                <add>Plight</add> to the heart Spring's perfect gradual hour </l>
+							              <l n="14" indent="1" part="i">Whose breath shall soothe you like your dear one's hand.</l>
+						            </lg>
+						            <closer>
+							              <signed>Dante G. Rossetti</signed>
+						            </closer>
+					          </div0>
+					          <epage/>
+				        </body>
+			      </text>
+			      <text>
+				        <body>
+					          <page n="[9]" image="a."/>
+					          <pageheader>
+						            <note>DGR letter to his aunt Eliza Polidori, dated &#8220;4 Aug. 1871.&#8221;</note>
+					          </pageheader>
+					          <omit extent="text" reason="to be edited later"/>
+					          <epage/>
+				        </body>
+			      </text>
+			      <text>
+				        <body>
+					          <page n="[10]" image="a."/>
+					          <pageheader>
+						            <note>DGR letter to Phillip Webb with drawing of a design for a fireplace, ca. 1871.</note>
+					          </pageheader>
+					          <omit extent="text" reason="to be edited later"/>
+					          <epage/>
+				        </body>
+			      </text>
+			      <text>
+				        <body>
+					          <page n="[11]" image="a."/>
+					          <pageheader>
+						            <note>DGR letter to WMR, 24 Dec. 1874.</note>
+					          </pageheader>
+					          <omit extent="text" reason="to be edited later"/>
+					          <epage/>
+				        </body>
+			      </text>
+			      <text>
+				        <body>
+					          <page n="[12]" image="a."/>
+					          <pageheader>
+						            <note>CR letter to unknown correspondent regarding the correspondent's recent lecture.</note>
+					          </pageheader>
+					          <omit extent="text" reason="to be edited later"/>
+					          <epage/>
+				        </body>
+			      </text>
+			      <text>
+				        <body>
+					          <page n="[13]" image="a."/>
+					          <pageheader>
+						            <note>DGR letter to CR, dated 16 July 1880; unwatermarked, paper 18 x 11 cm. The last page of the letter has
+							DGR's fair copy of his sonnet on Chatterton.</note>
+					          </pageheader>
+					          <div0 anchor="12.1" type="sonnet" n="2" title="I. Thomas Chatterton." id="a.5-1880"
+                     workcode="5-1880">
+						            <divheader>
+							              <title>THOMAS CHATTERTON</title>
+						            </divheader>
+						            <lg n="1" type="octave">
+							              <l n="1">With Shakspeare's manhood at a boy's wild heart,&#8212;</l>
+							              <l n="2" indent="1" part="i"> Through Hamlet's doubt to Shakspeare near allied,</l>
+							              <l n="3" indent="2"> And kin to Milton through his Satan's pride,&#8212;</l>
+							              <l n="4">At Death's sole door he stooped, and craved a dart;</l>
+							              <l n="5">And to the dear new bower of England's art,&#8212;</l>
+							              <l n="6" indent="1"> Even to that shrine Time else had deified,</l>
+							              <l n="7" indent="2" part="i"> The unuttered heart that soared against his side,&#8212;</l>
+							              <l n="8">Drove the fell point, and smote life's seals apart.</l>
+						            </lg>
+						            <lg n="2" type="sestet">
+							              <l n="9">Thy nested home-loves, noble Chatterton;</l>
+							              <l n="10" indent="1"> The angel-trodden stair thy soul could trace</l>
+							              <l n="11" indent="1" part="i"> Up Redcliffe's spire; and in the world's armed space </l>
+							              <l n="12">Thy gallant sword-play:&#8212;these to many an one</l>
+							              <l n="13">Are sweet for ever; as thy grave unknown</l>
+							              <l n="14" indent="1"> And love-dream of thine unrecorded face.</l>
+						            </lg>
+						            <closer>
+							              <signed>D. G. R. 1880</signed>
+						            </closer>
+					          </div0>
+					          <epage/>
+				        </body>
+			      </text>
+			      <text>
+				        <body>
+					          <page n="[14]" image="a."/>
+					          <pageheader>
+						            <note>Two letters from DGR to Ford Madox Brown, 23 August 1864 and 5 December 1864.</note>
+					          </pageheader>
+					          <omit extent="text" reason="to be edited later"/>
+					          <epage/>
+				        </body>
+			      </text>
+			      <text>
+				        <body>
+					          <page n="[15]" image="a."/>
+					          <pageheader>
+						            <note>Two loose notebook leaves: unlined unwatermarked paper, 22 x 18 cm, with DGR's fair copy of
+							<xref doc="a.1-1865.s183.raw">&#8220;<title level="wrk">Aspecta Medusa</title>&#8221;</xref>; on the verso of the leaf with the poem are various notes,
+							including a note descriptive of the picture DGR was execute in 1867, <xref doc="a.s200.raw">
+								                <title level="pic">
+									                  <hi rend="i">Sir Tristram and La Belle Yseult Drinking the Love Potion</hi>
+								                </title>
+							              </xref>.</note>
+					          </pageheader>
+					          <div0 anchor="14.1" type="lyric" n="3" title="Aspecta Medusa." id="a.1-1865"
+                     workcode="1-1865.s183"
+                     dblwork="1-1865.s183">
+						            <divheader>
+							              <title>
+								                <foreign lang="latin">Aspecta Medusa</foreign>
+							              </title>
+						            </divheader>
+						            <lg n="1" type="quintain">
+							              <l n="1"> Andromeda, by Perseus saved and wed, </l>
+							              <l n="2"> Hankered each day to see the Gorgon's head:</l>
+							              <l n="3"> Till o'er a fount he held it, bade her lean,</l>
+							              <l n="4"> And mirrored in the wave was safely seen</l>
+							              <l n="5" part="i"> That death she lived by.</l>
+						            </lg>
+						            <lg n="2" type="quatrain">
+							              <l n="5" indent="1" part="f"> Let not thine eyes know</l>
+							              <l n="6"> Any forbidden thing itself, although</l>
+							              <l n="7"> It once should save as well as kill: but be</l>
+							              <l n="8"> Its shadow upon life enough for thee.</l>
+						            </lg>
+					          </div0>
+					          <epage/>
+				        </body>
+			      </text>
+			      <text>
+				        <body>
+					          <page n="[16]" image="a."/>
+					          <pageheader>
+						            <note>DGR's fair copy holograph manuscript of <xref doc="a.42-1869.raw">
+                        <title level="wrk">&#8220;One Girl&#8221;</title>
+                     </xref>, the second tercet clearly
+							scripted later than the first; with DGR's copy of Sappho's original Greek text and his literal translation
+							thus:<lb/>
+                     <lb/>
+							Like the sweet apple that reddens upon the top twig<lb/>
+							Atop upon the topmost,&#8212;and the apple-gatherers have overlooked&#8212;<lb/>
+							yet not altogether overlooked but they were not able to get at it.<lb/>
+                     <lb/>
+							This manuscript seems to pre-date the other fair copy in
+								the<xref doc="a.poemssonnets.fizms.rad" workcode="42-1869">Fitzwilliam Museum</xref>.</note>
+					          </pageheader>
+					          <div0 anchor="15.1" type="lyric" n="4" title="Beauty (A Combination from Sappho.)"
+                     id="a.42-1869"
+                     workcode="42-1869">
+						            <divheader>
+							              <title>One Girl. (From Sappho)</title>
+						            </divheader>
+						            <lg n="i" type="tercet">
+							              <l indent="2"> I.</l>
+							              <l n="1"> Like the sweet apple which reddens upon the topmost bough,</l>
+							              <l n="2"> A-top on the topmost twig,&#8212;which the pluckers forgot, somehow,&#8212;</l>
+							              <l n="3"> Forgot it not, nay, but got it not, for none could get it till now.</l>
+						            </lg>
+						            <lg n="II" type="tercet">
+							              <l indent="2"> II.</l>
+							              <l n="4"> Like the wild hyacinth flower which on the hills is found,</l>
+							              <l n="5"> Which the passing feet of the shepherds for ever tear and wound,</l>
+							              <l n="6"> Until the purple blossom is trodden into the ground.</l>
+						            </lg>
+					          </div0>
+					          <epage/>
+				        </body>
+			      </text>
+			      <text>
+				        <body>
+					          <page n="[17]" image="a."/>
+					          <pageheader>
+						            <note>DGR's holograph copy of his poem &#8220;Fior di Maggio&#8221;, on a fragment of manuscript
+							torn from a notebook (18 x 7cm).</note>
+					          </pageheader>
+					          <div0 anchor="16.1" type="lyric" n="5" title="Fior di Maggio" id="a.46-1869"
+                     workcode="46-1869">
+						            <divheader>
+							              <title level="wrk">Fior di Maggio</title>
+						            </divheader>
+						            <lg n="1" type="quatrain">
+							              <l n="1">O May sits crowned with hawthorn flower</l>
+							              <l n="2" indent="1"> And is Love's month they say,</l>
+							              <l n="3">And Love's the fruit that's ripened best </l>
+							              <l n="4" indent="1"> By ladies' eyes in May.</l>
+							              <l>Or</l>
+							              <l n="1a" r="1">O hawthorn is the May's own flower</l>
+							              <l n="2a" r="2" indent="1"> And May love's month they say</l>
+							              <l n="3a" r="3">And love etc.</l>
+						            </lg>
+					          </div0>
+					          <epage/>
+				        </body>
+			      </text>
+			      <text>
+				        <body>
+					          <page n="[18]" image="a."/>
+					          <pageheader>
+						            <note>Leaf with minor corrections of pages 409-410 of<title level="doc">
+								                <xref doc="a.1-1861.raw">
+									                  <hi rend="i">The Early Italian Poets</hi>
+								                </xref>
+							              </title>.
+						</note>
+					          </pageheader>
+					          <omit extent="text" reason="to be edited later"/>
+					          <epage/>
+				        </body>
+			      </text>
+			      <text>
+				        <body>
+					          <page n="[19]" image="a."/>
+					          <pageheader>
+						            <note>DGR's fair copy of his translation of the Wednesday sonnet from Folgore San Gemignano's
+							<xref doc="a.208d-1861.raw">
+                        <title level="wrk">&#8220;Seven Sonnets. Of the Week&#8221;</title>
+                     </xref>.</note>
+					          </pageheader>
+					          <div0 anchor="18.1" type="sonnet" n="6" title="Wednesday. The Day of Feasts"
+                     id="a.208da-1861"
+                     workcode="208d-1861"
+                     subset="a"
+                     rltdobject="208da-1861orig">
+						
+						            <lg n="1" type="quatorzain">
+							              <l n="1">And every Wednesday, as the swift days move, </l>
+							              <l n="2" indent="1"> Pheasant and peacock-shooting out of doors </l>
+							              <l n="3" indent="1"> You'll have, and multitude of hares to course, </l>
+							              <l n="4"> And after you come home, good cheer enough; </l>
+							              <l n="5"> And sweetest ladies at the board above, </l>
+							              <l n="6" indent="1"> Children of kings and counts and senators; </l>
+							              <l n="7" indent="1"> And comely-favoured youthful bachelors </l>
+							              <l n="8"> To serve them, bearing garlands, for true love. </l>
+							              <l n="9"> And still let cups of gold and silver ware, </l>
+							              <l n="10" indent="1"> Runlets of vernage-wine and wine of Greece, </l>
+							              <l n="11"> Comfits and cakes be found at bidding there; </l>
+							              <l n="12" indent="1"> And let your gifts of birds and game increase: </l>
+							              <l n="13"> And let all those who in your banquet share </l>
+							              <l n="14" indent="1"> Sit with bright faces perfectly at ease.</l>
+						            </lg>
+					          </div0>
+					          <epage/>
+				        </body>
+			      </text>
+			      <text>
+				        <body>
+					          <page n="[20]" image="a."/>
+					          <pageheader>
+						            <note>DGR's holograph copy of &#8220;Autumn
+							Song&#8221;, on a half sheet 11 x 18 cm.</note>
+					          </pageheader>
+					          <div0 anchor="19.1" type="song" n="7" title="Autumn Song" id="a.7-1848"
+                     workcode="7-1848">
+						            <divheader>
+							              <title level="wrk">Song</title>
+						            </divheader>
+						            <lg n="1" type="quintain">
+							              <l n="1">Know'st thou not at the fall of the leaf </l>
+							              <l n="2">How the heart feels a languid grief </l>
+							              <l n="3" indent="1"> Laid on it for a covering, </l>
+							              <l n="4" indent="1"> And how sleep seems a goodly thing </l>
+							              <l n="5">In Autumn at the fall of the leaf?</l>
+						            </lg>
+						            <lg n="2" type="quintain">
+							              <l n="6">And how the swift beat of the brain </l>
+							              <l n="7">Falters because it is in vain, </l>
+							              <l n="8" indent="1"> In Autumn at the fall of the leaf </l>
+							              <l n="9" indent="1"> Knowest thou not? and how the chief </l>
+							              <l n="10">Of joys seems&#8212;not to suffer pain?</l>
+						            </lg>
+						            <lg n="3" type="quintain">
+							              <l n="11">Know'st thou not at the fall of the leaf </l>
+							              <l n="12">How the soul feels like a dried sheaf </l>
+							              <l n="13" indent="1"> Bound up at length for harvesting, </l>
+							              <l n="14" indent="1"> And how death seems a comely thing </l>
+							              <l n="15">In Autumn at the fall of the leaf?</l>
+						            </lg>
+						            <p>Sept. 1848</p>
+					          </div0>
+					          <epage/>
+				        </body>
+			      </text>
+			      <text>
+				        <body>
+					          <page n="[21]" image="a."/>
+					          <pageheader>
+						            <note>DGR's holograph of &#8220;English May&#8221;, on a half sheet of typical lined notebook
+							paper (17.5 x 22 cm)</note>
+					          </pageheader>
+					          <div0 anchor="20.1" type="sonnet" n="8" title="English May" id="a.26-1869"
+                     workcode="26-1869">
+						            <divheader>
+							              <title level="wrk">English May</title>
+						            </divheader>
+						            <lg n="1" type="octave">
+							              <l n="1">Would God your health were as this month of May </l>
+							              <l n="2" indent="1"> Should be, were this not England,&#8212;and your face </l>
+							              <l n="3" indent="1"> Abroad, to give the gracious sunshine grace </l>
+							              <l n="4">And laugh beneath the budding hawthorn-spray. </l>
+							              <l n="5">But here the hedgerows pine from green to grey </l>
+							              <l n="6" indent="1"> While yet May's lyre is tuning, and her song </l>
+							              <l n="7" indent="1"> Is weak in shade that should in sun be strong; </l>
+							              <l n="8">And your pulse springs not to so faint a lay.</l>
+						            </lg>
+						            <lg n="2" type="sestet">
+							              <l n="9">If in my life be breath of Italy, </l>
+							              <l n="10" indent="1"> Would God that I might yield it all to you! </l>
+							              <l n="11" indent="1"> So, when such grafted warmth had burgeoned through </l>
+							              <l n="12">The languor of your Maytime's hawthorn-tree, </l>
+							              <l n="13">My spirit at rest should walk unseen and see </l>
+							              <l n="14" indent="1"> The garland of your beauty bloom anew.</l>
+						            </lg>
+					          </div0>
+					          <epage/>
+				        </body>
+			      </text>
+			      <text>
+				        <body>
+					          <page n="[22]" image="a."/>
+					          <pageheader>
+						            <note>Two photographs: a postcard reproduction of <xref doc="a.7-1881.s64.raw">
+								                <title level="pic">
+									                  <hi rend="i">Found</hi>
+								                </title>
+							              </xref> and a print of William Downey's <xref doc="a.sa223.rap">photograph of Fanny Cornforth</xref>.</note>
+					          </pageheader>
+					          <omit extent="text and photographs" reason="to be edited later"/>
+					          <epage/>
+				        </body>
+			      </text>
+			      <text>
+				        <body>
+					          <page n="[23]" image="a."/>
+					          <pageheader>
+						            <note>Two half-sheet holograph manuscripts with the sonnets <xref doc="a.4-1873.raw">
+                        <title level="wrk">&#8220;Pleasure and Memory&#8221;</title>
+                     </xref> and
+							<xref doc="a.7-1881.s64.raw">
+                        <title level="wrk">&#8220;Found&#8221;</title>
+                     </xref> (each 18 x 11.2 cm).</note>
+					          </pageheader>
+					          <div0 anchor="22.1" type="sonnet" n="9" title="Ardour and Memory." id="a.4-1873"
+                     workcode="4-1873">
+						            <divheader>
+							              <title level="wrk">Pleasure and Memory</title>
+						            </divheader>
+						            <lg n="1" type="octave">
+							              <l n="1">The cuckoo-throb, the heartbeat of the Spring;</l>
+							              <l n="2" indent="1"> The rosebud's blush that leaves it as it grows</l>
+							              <l n="3" indent="1"> Into the full-eyed fair unblushing rose;</l>
+							              <l n="4">The summer clouds that visit every wing</l>
+							              <l n="5">With fires of sunrise and of sunsetting;</l>
+							              <l n="6" indent="1"> The furtive flickering streams to light re-born</l>
+							              <l n="7" indent="1"> 'Mid airs new-fledged and valorous lusts of morn,</l>
+							              <l n="8">While all the daughters of the daybreak sing:&#8212;</l>
+						            </lg>
+						            <lg n="2" type="sestet">
+							              <l n="9">These pleasure loves, and memory: and when flown</l>
+							              <l n="10" indent="1"> All joys, and through dark forest-boughs in flight</l>
+							              <l n="11" indent="1"> The wind swoops onward brandishing the light,</l>
+							              <l n="12">Even yet the rose-tree's verdure left alone</l>
+							              <l n="13">Will flush all ruddy though the rose be gone;</l>
+							              <l n="14" indent="1"> With ditties and with dirges infinite.</l>
+						            </lg>
+					          </div0>
+					          <div0 anchor="22.2" type="sonnet" n="10" title="`Found.' (For a Picture.)"
+                     id="a.7-1881"
+                     workcode="7-1881.s64"
+                     dblwork="7-1881.s64">
+						            <divheader>
+							              <title level="wrk">Found</title>
+						            </divheader>
+						            <lg n="1" type="octave">
+							              <l n="1">&#8220;There is a budding morrow in midnight:&#8221;&#8212;</l>
+							              <l n="2" indent="1"> So sang our Keats, our English nightingale.</l>
+							              <l n="3" indent="1"> And here, as lamps across the bridge turn pale</l>
+							              <l n="4">In London's smokeless resurrection-light,</l>
+							              <l n="5">Dark breaks to dawn. But o'er the deadly blight</l>
+							              <l n="6" indent="1"> Of Love deflowered and sorrow of none avail,</l>
+							              <l n="7" indent="1"> Which makes this man gasp and this woman quail,</l>
+							              <l n="8">Can day from darkness ever again take flight?</l>
+						            </lg>
+						            <lg n="2" type="sestet">
+							              <l n="9">Ah! gave not these two hearts their mutual pledge,</l>
+							              <l n="10">Under one mantle sheltered 'neath the hedge</l>
+							              <l n="11" indent="1"> In gloaming courtship? And, O God! to-day</l>
+							              <l n="12" indent="2">He only knows he holds her;&#8212;but what part</l>
+							              <l n="13" indent="2">Can life now take? She cries in her <del>shut</del> 
+                        <add>locked</add> heart,&#8212;</l>
+							              <l n="14" indent="1"> &#8220;Leave me&#8212;I do not know you&#8212;go away!&#8221;</l>
+						            </lg>
+					          </div0>
+					          <epage/>
+				        </body>
+			      </text>
+			      <text>
+				        <body>
+					          <page n="[24/1]" image="a."/>
+					          <pageheader>
+						            <note>DGR's early copy, perhaps a draft, of his unfinished tale <xref doc="a.9p-1850.s121.raw">
+                        <title level="wrk">&#8220;St. Agnes of
+							Intercession&#8221;</title>
+                     </xref>&#8212; on six leaves of unwatermarked plain blue paper. The addition to the
+							title is made in pencil.</note>
+					          </pageheader>
+					          <div0 anchor="23.1" type="story" n="11" title="St. Agnes of Intercession"
+                     id="a.9p-1850"
+                     workcode="9p-1850.s121"
+                     dblwork="9p-1850.s121">
+						            <divheader>
+							              <title level="wrk">St Agnes <add>of Recompensation</add>
+							              </title>
+						            </divheader>
+						            <p n="1">Among my earliest recollections, none is stronger than that of my <lb/>father standing before the
+							fire when he came home in the London <lb/>winter evening, and singing to us, in his sweet generous tones:
+							some- <lb/>time ancient ditties of our own country&#8212;such songs as one might translate from
+							<lb/>the birds, and the brooks might set to music; sometimes <del>foreign songs</del>
+							              <add>those</add> with <lb/>which <add>foreign</add> travel had familiarized his youth,&#8212;among
+							them the great <lb/>tunes which have rung the world's changes since '89. I used to sit on <lb/>the <del>carpet</del>
+							              <add>hearth-rug</add>, listening to him, and look between his knees into the <lb/>fire till it burned my
+							face, while the <del>shapes</del> sights swarming up in it seemed <lb/>changed <add>and changed</add> with
+							the music: till the music and the fire and <lb/>my heart burned together, and I would take paper and
+							pencil, and try <lb/>to fix the shapes that rose within me. For my <lb/>hope was to be a painter.</p>
+						            <epage/>
+						            <page n="[25/2]" image="a."/>
+						            <p n="2">The first book I remember to have read of my own accord was <lb/>an old-fashioned work on Art which
+							my mother had,&#8212;&#8220;Hamilton's <lb/>English Conoscente.&#8221; It was a kind of
+							continental tour,&#8212;sufficiently <lb/>Della-Cruscan, from what I can recall of it,&#8212;and
+							contained notices <lb/>of works of art which the author had seen abroad, with engravings after <lb/>some
+							of them. These were in the English fashion of that day, executed <lb/>in dots and printed with red ink;
+							tasteless enough, no doubt, but <lb/>I yearned towards them, and would toil over them for days. One
+							<lb/>especially possessed for me a strong and indefinable charm: <del>it</del> it was <lb/>a Saint Agnes
+							in glory, by Bucciolo d'Orli Angiolieri. This plate <lb/>I could copy from the first with much more
+							success than I could any <lb/>of the others; indeed, it was mainly my love of the figure, and a
+							<lb/>desire to obtain some knowledge regarding it, which impelled me, <lb/>by one magnanimous effort upon
+							the &#8220;Conoscente,&#8221; to master in a <lb/>few days more of the difficult art of reading
+							than my mother's laborious <lb/>inculcations had accomplished during a year or two. However, what I
+							managed <lb/>to spell and puzzle out related chiefly to the executive qualities of <lb/>the picture, which
+							could be little understood by a mere <del>boy</del>
+							              <add>child</add>; of the<epage/>
+							              <page n="[26/3]" image="a."/>
+							              <lb/>artist himself, or the meaning of his work, the author of the book <lb/>appeared to know scarcely anything.</p>
+						            <p n="3">As I became older, my boyish impulse towards art grew into a <lb/>vital passion; till at last my
+							father took me from school and per- <lb/>mitted me my own bent of study. There is no need that I should
+							<lb/>dwell much upon the few next years of my life. The beginnings of <lb/>Art, entered on at all
+							seriously, present an alternation of extremes:&#8212; <lb/>on the one hand, the most bewildering
+							phases of mental endeavour, <lb/>on the other, a toil rigidly &amp; exact dealing often with trifles.
+							What <lb/>was then the precise shape of the cloud within my tabernacle, I could <lb/>scarcely say now; or
+							whether indeed I knew its form through so thick a veil or could be sure <lb/>of its presence there at all;
+							and as to which statue at the Museum <lb/>I drew most &#8212; or learned least from,&#8212;or
+							which Professor at the Academy <lb/>&#8220;set&#8221; the model in the worst
+							taste,&#8212;these are things which no one <lb/>need care to know. I may say here that I was wayward
+							enough <lb/> in the pursuit, if not in the purpose; that I cared even too little for <lb/>what could be
+							taught me by others; and that my original designs <lb/>
+							              <del>were much</del>
+							              <add>greatly</add> outnumbered my school-drawings.</p>
+						            <epage/>
+						            <page n="[27/4]" image="a."/>
+						            <p n="4">In most cases where study (such study, at least, as involves any <lb/>practical elements) has
+							benumbed that subtle transition which brings <lb/>youth out of boyhood; there <del>is</del>
+							              <add>comes</add> a point, after some while, when <lb/>the mind loses its suppleness, and being riveted
+							merely by the continuance <lb/>of the mechanical effort, the constrained senses <lb/>gradually assume
+							their utmost tension, and any urgent impression <lb/>from without will suffice to scatter the spell. The
+							student looks <lb/>up: the film of their own fixedness drops at once from before his eyes, <lb/>and for
+							the first time he sees his life in the face.</p>
+						            <p n="5">In my twentieth year, I might say that between one path of Art <lb/>and another, I worked hard. One
+							afternoon I was returning, after <lb/>an unprofitable morning, from a class for the model which I
+							attended; the day <lb/>was one of those oppressive lulls in autumn, when application, unless <lb/>under
+							sustained excitement, is all but impossible,&#8212;when the <del>senses</del>
+							              <add>perceptions</add>
+							              <lb/>seem curdled and the brain full of sand. On ascending the stairs to <lb/>my room, I heard voices
+							there, and when I entered, found my sister <lb/>Catharine, with another young lady, busily turning over my
+							sketches <lb/>and papers, as if in search of something. Catharine laughed, and <lb/>introduced her
+							companion as Miss Mary Ethell. There might have <lb/>been a little malice in the laugh, for I remembered
+							to have heard <lb/>the lady's <epage/>
+							              <page n="[28/5]" image="a."/>
+							              <lb/>name before, and to have then made in fun some teasing <lb/>inquiries about her, as one will of one's
+							sisters' friends. I bowed for <lb/>the introduction, and stood rebuked. She had her back to the
+							windowwhere the light was strong, <lb/>and I could not well see her features at the moment; but I made
+							sure <lb/>she was very beautiful, from the way that <lb/>she held her hands and her tranquil body.
+							Catharine told me they had been looking together <lb/>for a book of hers which I had had by me for some
+							time, and which <lb/>she had promised to Miss Ethell. I joined in the search, the book <lb/>was found, and
+							soon after they left my room. I had come in utterly <lb/>spiritless; but now I fell to and worked well for
+							several hours. In <lb/>the evening, when I went down stairs to the family, I found Miss Ethell still with
+							them; she remained rather <lb/>late: till she left I did not return to my room, nor, when there, was
+							<lb/>my work resumed that night. I had thought her more beautiful <lb/>than at first.</p>
+						            <p n="6">For <del>some months</del> about a year after this I am afraid I <lb/>neglected my studies almost
+							entirely, except so ,uch of them as <lb/>became a duty by the compensation it procured: <lb/> and when
+							that year was upon its close, Mary Ethell and <lb/>I were promised in marriage.</p>
+						            <epage/>
+						            <page n="[29/6]" image="a."/>
+						            <p n="7">Her station in life, though not lofty, was one of more ease <lb/>than my own, and I had the
+							satisfaction of knowing that it was <lb/> the earnestness of her attachment to me had deterred <lb/>her
+							parents from placing any obstacle in the way of our union. <del>At the same time</del> All <lb/>the more
+							<del>rigidly</del> on this account I now long to <lb/>
+							              <del>the task now devolve upon me of</del> obtain<del>ing</del> at once such a position <del>which</del>
+							              <lb/>as should raise me from <del>ever having to</del> reproach<add>ing</add>
+							              <del>myself</del> with <del>the</del> any sacrifice made <lb/>by her for my sake. It was in this
+							determination that I now set to work with all the energy of <lb/>which I was capable, upon a picture of
+							some size, involving various <lb/>aspects of study. The subject was a modern one, and indeed it has
+							<lb/>often seemed to me that all work, to be truly worthy, should be wrought <lb/>out of the age itself,
+							as well as out of the soul of its producer, which <lb/>must needs be a soul of the age. At this picture I
+							laboured unceasingly <lb/>my days and my nights. And Mary sat to me for <lb/>the principal female figure.
+							The exhibition to which I sent it opened <lb/>a few weeks after the completion of my twenty-second year.</p>
+					          </div0>
+					          <epage/>
+				        </body>
+			      </text>
+			      <text>
+				        <body>
+					          <page n="[30-31]" image="a."/>
+					          <pageheader>
+						            <note>DGR's holograph copy of his <xref doc="a.35p-1870.raw">review</xref> of Hake's <xref doc="a.">
+								                <title level="bk">
+									                  <hi rend="i">Madeline and other poems</hi>
+								                </title>
+							              </xref>, on two foolscap sheets watermarked &#8220;ETOWGOOD&#8221;.</note>
+					          </pageheader>
+					          <omit extent="text" reason="to be edited later"/>
+					          <epage/>
+				        </body>
+			      </text>
+			      <text>
+				        <body>
+					          <page n="[32]" image="a."/>
+					          <pageheader>
+						            <note>Early DGR holograph of &#8220;Mater Pulchrae Delectionis&#8221;, signed and dated (1847);
+							paper watermarked &#8220;1846&#8221;, 19 x 23.3cm</note>
+					          </pageheader>
+					          <div0 anchor="25.1" type="hymn" n="12" title="Mater Pulchrae Delectionis"
+                     id="a.2-1847"
+                     workcode="2-1847">
+						            <divheader>
+							              <title level="wrk">Mater Pulchrae Delectionis</title>
+						            </divheader>
+						            <lg n="1" type="stanza">
+							              <l n="1">Mother of the Fair Delight,</l>
+							              <l n="2">From the azure standing white</l>
+							              <l n="3">And looking golden in the light;&#8212;</l>
+							              <l n="4">With the shadow of the Heaven-roof</l>
+							              <l n="5">Upon thy hands lifted aloof</l>
+							              <l n="6">And a mystic quiet in thine eyes</l>
+							              <l n="7">Born of the hush of Paradise,</l>
+							              <l n="8">Seated beside the Ancient Three</l>
+							              <l n="9">Thyself a woman Trinity</l>
+							              <l n="10">Being the dear daughter of God</l>
+							              <l n="11" r="14">And the sorrows we have seemeth to last,&#8212;</l>
+							              <l n="12" r="15">Though the future falls not to the past</l>
+							              <l n="13" r="16">In the race that the Great Cycle runs,</l>
+							              <l n="14" r="17">Bethink thee of that olden once</l>
+							              <l n="15" r="18">Wherein to such as death may strike</l>
+							              <l n="16" r="19">Thou wert a sister, sisterlike:</l>
+							              <l n="17" r="20">Yea, even thou, who reignest now</l>
+							              <l n="18" r="21">Where the angels are they that bow,&#8212;</l>
+							              <l n="19" r="22">Thou hardly to be looked upon</l>
+							              <l n="20" r="23">By saints whose steps tread through the Sun,&#8212;</l>
+							              <l n="21" r="24">Thou, the most queenly, jubilant</l>
+							              <l n="22" r="25">Of the leaves of the Threefold Plant,&#8212;</l>
+							              <l n="23" r="26">Headstone of this humanity</l>
+							              <l n="24" r="27">Groundstone of the great Mystery,</l>
+							              <l n="25" r="28">Fashioned like us, yet more than we.</l>
+						            </lg>
+						            <lg n="2" type="stanza">
+							              <l n="26" r="29">I think that at the farthest top</l>
+							              <l n="27" r="30">My love just sees thee standing up </l>
+							              <l n="28" r="31">Where the light of the throne is bright:</l>
+							              <l n="29" r="32">Unto the left, unto the right,</l>
+							              <l n="30" r="33">The cherubim, order'd and join'd, </l>
+							              <l n="31" r="34">Slope inward to a golden point,</l>
+							              <l n="32" r="35">And from between the seraphim</l>
+							              <l n="33" r="36">The glory cometh like a hymn;</l>
+							              <l n="34" r="37">All is aquiet, nothing stirs;</l>
+							              <l n="35" r="38">The peace of nineteen hundred years</l>
+							              <l n="36" r="39">Is within thee and without thee;</l>
+							              <l n="37" r="40">And the Godshine falls about thee;</l>
+							              <l n="38" r="41">And thy face looks from the veil</l>
+							              <l n="39" r="42">Sweetly, and solemnly, and well,</l>
+							              <l n="40" r="43">Like to a thought of Rapha�l.</l>
+						            </lg>
+						            <lg n="3" type="stanza">
+							              <l n="41" r="44">Oh if that look can stoop so far,</l>
+							              <l n="42" r="45">Let it reach down from star to star</l>
+							              <l n="43" r="46">And try to see us where we are;</l>
+							              <l n="44" r="47">For the griefs we weep came like swift death,</l>
+							              <l n="45" r="48">But the slow comfort loitereth.</l>
+							              <l n="46" r="49">Sometimes it even seems to us</l>
+							              <l n="47" r="50">That we are overbold, when thus</l>
+							              <l n="48" r="51">We cry, and hope we shall be heard;&#8212;</l>
+							              <l n="49" r="52">Being much less than a short word,&#8212;</l>
+							              <l n="50" r="53">Mere shadow that abideth not,&#8212;</l>
+							              <l n="51" r="54">Dusty nothing, soon forgot.</l>
+							              <l n="52" r="55">O Lady Mary be not loth</l>
+							              <l n="53" r="56">To listen, thou whom the stars clothe!</l>
+							              <l n="54" r="57">Bend thine ear, and pour back thy hair,</l>
+							              <l n="55" r="58">And let our voice come to thee there</l>
+							              <l n="56" r="59">Where, seeing, thou mayst not be seen;</l>
+							              <l n="57" r="60">Help us a little, Mary queen!</l>
+							              <l n="58" r="61">Into the shadow thrust thy face,</l>
+							              <l n="59" r="62">Bowing thee from the glory-place,</l>
+							              <l n="60" r="63">Saint Mary the Virgin, full of grace!</l>
+						            </lg>
+						            <closer>
+							              <signed>By G. C. D. R.<lb/>1847</signed>
+						            </closer>
+					          </div0>
+					          <epage/>
+				        </body>
+			      </text>
+			      <text>
+				        <body>
+					          <page n="[33]" image="a."/>
+					          <pageheader>
+						            <note>DGR's early draft holograph of the first sonnet of the<xref doc="a.4-1847.raw">
+								                <title level="wrk">&#8220;Filii Filia&#8221;</title>
+							              </xref> pair, with WMR's notes on the verso. Unwatermarked paper 18 x 11.2cm. The received revision of
+							line 14 is written in pencil at the upper right corner of the manuscript; and the revisions in lines 9,
+							10, and 12 are all in pencil as well.</note>
+					          </pageheader>
+					          <div0 anchor="26.1" type="sonnet" n="13" title="Filii Filia" id="a.4-1847"
+                     workcode="4-1847">
+						            <divheader>
+							              <title level="wrk">An Annunciation<lb/>(Early <del>Florentine/Flemish</del> German)<lb/>seen in a sale room</title>
+						            </divheader>
+						            <lg n="1" type="octave">
+							              <l n="1">The lilies stand before her like a screen </l>
+							              <l n="2" indent="1"> Through which, upon this warm and solemn day, </l>
+							              <l n="3" indent="1"> God <del>can be heard. And</del> 
+                        <add>surely hears. For</add> there she kneels to pray </l>
+							
+							              <l n="4">To whom our prayers belong&#8212;Mary the Queen&#8212;</l>
+							              <l n="5">She was Faith's Present, parting what had been </l>
+							              <l n="6" indent="1"> From what began with her, and is for aye. </l>
+							              <l n="7" indent="1"> On either hand, God's twofold system lay: </l>
+							              <l n="8">With meek bowed face a Virgin prayed between.</l>
+						            </lg>
+						            <lg n="2" type="sestet">
+							              <l n="9">So prays she, and the Dove flies <del>over</del> 
+                        <add>in to</add> her, </l>
+							
+							              <l n="10" indent="1"> And she has turned. <del>In</del> 
+                        <add>At</add> the low porch is one </l>
+							
+							              <l n="11" indent="2"> Who looks as though deep awe made him to smile. </l>
+							              <l n="12">Heavy with heat, the plants <del>give</del> 
+                        <add>yield</add> shadow there; </l>
+							
+							              <l n="13" indent="1"> The loud flies cross each other in the sun; </l>
+							              <l n="14" indent="2">
+                        <del>And stretching back, the poplars form an aisle.</del>
+								
+							              </l>
+							              <l n="14a" indent="2">
+								                <add>And the aisled pillars meet the poplar-aisle.</add>
+							              </l>
+						            </lg>
+						            <closer>
+							              <date>Nov. 1847</date>
+						            </closer>
+					          </div0>
+					          <epage/>
+				        </body>
+			      </text>
+			      <text>
+				        <body>
+					          <page n="[33v]" image="a."/>
+					          <pageheader>
+						            <note>The page has WMR's note on DGR's poem on the overleaf: &#8220;This is one of the earliest of
+							DGR's published poems&#8212;my impression is that it must be his first original sonnet, barring some
+							of those written bouts rimes.&#8221;.</note>
+					          </pageheader>
+					          <epage/>
+				        </body>
+			      </text>
+			      <text>
+				        <body>
+					          <page n="[34]" image="a."/>
+					          <pageheader>
+						            <note>DGR's holograph fair copy of &#8220;A Sea-Spell&#8221;, on half-sheet (18.11.2cm).</note>
+					          </pageheader>
+					          <div0 anchor="28.1" type="sonnet" n="14" title="A Sea-Spell (for a Picture)"
+                     id="a.23-1869"
+                     workcode="23-1869.s248"
+                     dblwork="23-1869.s248">
+						            <divheader>
+							              <title level="wrk">A Sea-Spell</title>
+						            </divheader>
+						            <lg n="1" type="octave">
+							              <l n="1">Her lute hangs shadowed in the apple-tree, </l>
+							              <l n="2" indent="1"> While flashing fingers weave the sweet-strung spell </l>
+							              <l n="3" indent="1"> Between its chords; and as the wild notes swell, </l>
+							              <l n="4">The sea-bird for those branches leaves the sea. </l>
+							              <l n="5">But to what sound her listening ear stoops she? </l>
+							              <l n="6" indent="1"> What netherworld gulf-whispers doth she hear, </l>
+							              <l n="7" indent="1"> In answering echoes from what planisphere, </l>
+							              <l n="8">Along the wind, along the estuary?</l>
+						            </lg>
+						            <lg n="2" type="sestet">
+							              <l n="9">She sinks into her spell: and when full soon </l>
+							              <l n="10" indent="1"> Her lips move and she soars into her song, </l>
+							              <l n="11" indent="1"> What creatures of the midmost main shall throng </l>
+							              <l n="12">In furrowed surf-clouds to the summoning rune; </l>
+							              <l n="13">Till he, the fated mariner, hears her cry, </l>
+							              <l n="14">And up her rock, bare-breasted, comes to die?</l>
+						            </lg>
+					          </div0>
+					          <epage/>
+				        </body>
+			      </text>
+			      <text>
+				        <body>
+					          <page n="[35]" image="a."/>
+					          <pageheader>
+						            <note>DGR's holograph fair copy on half sheet (18 x 11.2cm).</note>
+					          </pageheader>
+					          <div0 anchor="29.1" type="sonnet" n="15" title="Fiammetta (for a Picture)"
+                     id="a.1-1879"
+                     workcode="1-1879.s252"
+                     dblwork="1-1879.s252">
+						            <divheader>
+							              <title level="wrk">A Vision of Fiammetta</title>
+						            </divheader>
+						            <lg n="1" type="octave">
+							              <l n="1">Behold Fiammetta, shown in Vision here.</l>
+							              <l n="2" indent="1"> Gloom-girt 'mid Spring-flushed apple-growth she stands;</l>
+							              <l n="3" indent="1"> And as she sways the branches with her hands,</l>
+							              <l n="4">Along her arm the sundered bloom falls sheer,</l>
+							              <l n="5">In separate petals shed, each like a tear;</l>
+							              <l n="6" indent="1"> While from the quivering bough the bird expands</l>
+							              <l n="7" indent="1"> His wings. And lo! thy spirit understands</l>
+							              <l n="8">Life shaken and shower'd and flown, and Death drawn near.</l>
+						            </lg>
+						            <lg n="2" type="sestet">
+							              <l n="9">All stirs with change. Her garments beat the air:</l>
+							              <l n="10" indent="1"> The angel circling round her aureole</l>
+							              <l n="11" indent="1"> Shimmers in flight against the tree's grey bole:</l>
+							              <l n="12">While she, with reassuring eyes most fair,</l>
+							              <l n="13">A presage and a promise stands; as 'twere</l>
+							              <l n="14" indent="1"> On Death's dark storm the rainbow of the Soul.</l>
+						            </lg>
+						            <closer>
+							              <signed>D. G. Rossetti</signed> 
+							              <date>1878</date>
+						            </closer>
+					          </div0>
+					          <epage/>
+				        </body>
+			      </text>
+			      <text>
+				        <body>
+					          <page n="[36]" image="a."/>
+					          <pageheader>
+						            <note>DGR's fair copy of <xref doc="a.44-1871.raw">&#8220;The Brothers&#8221;</xref>, copied on pages 1 and 3 of a small folded
+							sheet (11.5 x 18 cm), with <xref doc="a.50-1871.raw">&#8220;Hamlet's Soliloquy, by the Laureate&#8221;</xref> on page 4.</note>
+					          </pageheader>
+					          <div0 anchor="30.1" type="satire" n="16"
+                     title="The Brothers: By a Scotch Bard and English  Reviewer"
+                     id="a.44-1871"
+                     workcode="44-1871">
+						            <divheader>
+							              <title level="wrk">The Brothers<lb/>by a Contemptuous Contemporary</title>
+						            </divheader>
+						            <lg n="1" type="sexain">
+							              <l n="1">We are two brothers of one race, </l>
+							              <l n="2"> Though which acts fairest, who can trace? </l>
+							              <l n="3" indent="1"> (Mister Strahan's in a blue blue funk.) </l>
+							              <l n="4"> Here are some poets and they sell, </l>
+							              <l n="5">Therefore revenge becomes me well </l>
+							              <l n="6" indent="1"> (For I Tom Maitland too am a skunk.)</l>
+						            </lg>
+						            <lg n="2" type="sexain">
+							              <l n="7"> Strahan pays: it would be a burning shame</l>
+							              <l n="8"> If his should prove a losing game</l>
+							              <l n="9" indent="1"> (Poor dear Strahan in a blue blue funk.) </l>
+							              <l n="10"> So every blessed bard I'll slate </l>
+							              <l n="11"> Till no one sells but the Laureate</l>
+							              <l n="12" indent="1"> (For I Tom Maitland write like a skunk.)</l>
+						            </lg>
+						            <lg n="3" type="sexain">
+							              <l n="13"> I took a beast of a poet's tome,</l>
+							              <l n="14"> And nailed a cheque, &amp; brought them home</l>
+							              <l n="15" indent="1"> (Dear dear Strahan get well of your funk.) </l>
+							              <l n="16"> And after supper, in lieu of bed, </l>
+							              <l n="17"> I warmed wet towels round my head,</l>
+							              <l n="18" indent="1"> (And there Tom Maitland sat like a skunk.)</l>
+						            </lg>
+						            <lg n="4" type="sexain">
+							              <l n="19"> Of eyelids kisd and all the rest</l>
+							              <l n="20"> And rosy cheeks that lie on one's breast</l>
+							              <l n="21" indent="1"> (Which put poor Strahan in a blue blue funk.) </l>
+							              <l n="22"> I told the worst that <del>tongue</del> pen can tell, </l>
+							              <l n="23"> And did my duty extremely well. </l>
+							              <l n="24" indent="1"> (For cant Tom Maitland just be a skunk?)</l>
+						            </lg>
+						            <epage/>
+						            <page n="[37]" image="a."/>
+						            <lg n="5" type="sexain">
+							              <l n="25"> I crowed out loud in the silent night, </l>
+							              <l n="26"> I made my digs so sharp and bright.</l>
+							              <l n="27" indent="1"> (To think that Strahan's in a blue blue funk!) </l>
+							              <l n="28"> In our Contemptuous Review </l>
+							              <l n="29"> I stuck the beggar through and through</l>
+							              <l n="30" indent="1"> (Yes, Strahan, Tom Maitland <hi rend="i">can</hi> be a skunk!)</l>
+						            </lg>
+						            <lg n="6" type="sexain">
+							              <l n="31"> Today as I'm told these bards were read, </l>
+							              <l n="32"> But tonight they are so, so jolly dead!</l>
+							              <l n="33" indent="1"> (Who says that Strahan's in a blue blue funk?) </l>
+							              <l n="34"> And now they're wrapped in a printer's sheet, </l>
+							              <l n="35">Let's fling them at the Laureate's feet. </l>
+							              <l n="36" indent="1"> (Yet what if he say, poor Tom's a skunk?)</l>
+						            </lg>
+						            <divheader>
+                     <title>L'Envoi</title>
+                  </divheader>
+						            <lg n="7" type="sexain">
+							              <l n="37">There was a contemptuous review</l>
+							              <l n="38">Of me!&#8212;indeed, there were one or two</l>
+							              <l n="39">Some time back in my mortal funk.</l>
+							              <l n="40">And the same folks praised a beast like this!</l>
+							              <l n="41">But by Jove! He'll learn now what it is</l>
+							              <l n="42">To be despised by a common skunk.</l>
+						            </lg>
+					          </div0>
+					          <epage/>
+				        </body>
+			      </text>
+			      <text>
+				        <body>
+					          <page n="[38]" image="a."/>
+					          <pageheader>
+						            <note>DGR's fair copy holograph of &#8220;Hamlet's Soliloquy. By the Laureate&#8221;: see editor's
+							note for previous page.</note>
+					          </pageheader>
+					          <div0 anchor="31.1" type="satire" n="17" title="Hamlet's Soliloquy. by the Laureate"
+                     id="a.50-1871"
+                     workcode="50-1871">
+						            <divheader>
+							              <title>Hamlet's Soliloquy. By the Laureate</title>
+						            </divheader>
+						            <lg n="1" type="sexain">
+							              <l n="1"> To be or not to be (that is the question)</l>
+							              <l n="2"> A pill for Strahan's increasing indigestion. </l>
+							              <l n="3"> Whether 'tis nobler in <del>the mind</del> a bard to suffer </l>
+							              <l n="4"> The trading tricks of that outrageous buffer </l>
+							              <l n="5"> Or to take arms against a sea of troubles</l>
+							              <l n="6"> And keep my copyrights his stipend doubles?</l>
+						            </lg>
+					          </div0>
+					          <epage/>
+				        </body>
+			      </text>
+			      <text>
+				        <body>
+					          <page n="[38]" image="a."/>
+					          <pageheader>
+						            <note>DGR's notes and designs for the picture frame for <xref doc="a.s164.raw">
+								                <title level="pic">
+									                  <hi rend="i">Fazio's Mistress</hi>
+								                </title>
+							              </xref> sent to George Boyce, dated Feb. 1861 by DGR. In the page center DGR writes &#8220;Square
+							Frame / Bonifazio's Mistress&#8221;, and surrounding it on the page are twelve designs for bosses for
+							the picture: iris, poppy, wood sorrel, hemlock, with the names for each written inside the poppy blossom.
+							Page size: 16 x 21 cm.</note>
+					          </pageheader>
+					          <omit extent="text and images" reason="to be edited later"/>
+					          <epage/>
+				        </body>
+			      </text>
+			      <text>
+				        <body>
+					          <page n="[39-40]" image="a."/>
+					          <pageheader>
+						            <note>Four draft holograph stanzas (5, 6, 1 and 2) of <title level="wrk">
+								                <xref doc="a.ees001.raw">&#8220;A Year and A Day&#8221;</xref>
+							              </title>by Elizabeth Siddal with two photographs of drawings of her by DGR.</note>
+					          </pageheader>
+					          <div0 anchor="33.1" type="lyric" n="18" workcode="ees001">
+					             <lg>
+                     <l>Still it is but the memory</l>
+					                <l>Of something I have seen</l>
+						               <l>In the dreamy summer weather</l>
+						               <l>When the green leaves came between</l>
+						               <l>The shadow of my dear love's face</l>
+						               <l>So far and strange it seems</l>
+					             </lg>
+					             <lg>
+                     <l>The river ever running down</l>
+					                <l>Between its grassy bed</l>
+						               <l>The voices of a thousand Birds</l>
+						               <l>That sing above my head</l>
+						               <l>Shall bring to me a sudden dream</l>
+						               <l>When this sad dream is dead</l>
+					             </lg>
+						            <closer>E.E.S.</closer>
+						            <lg>
+                     <l>How days have grown into a year</l>
+					                <l>Sad hours that bring the day.</l>
+						               <l>Since I could take my first dear Love</l>
+						               <l>And kiss him the old way</l>
+						               <l>Still the green leaves touch me on the cheek</l>
+						               <l>Dear Christ this month of May</l>
+						
+					             </lg>
+                  <lg>
+                     <l>I lie among the tall green grass</l>
+					                <l>That spreads above my head</l>
+						               <l>And covers up my wasted cheek</l>
+						               <l>And folds me in its bed</l>
+						               <l>Tenderly and lovingly</l>
+						               <l>Like grass upon the dead.</l>
+					             </lg>
+					          </div0>
+					          <epage/>
+				        </body>
+			      </text>
+			
+		    </group>
+	  </text>
+</ram>

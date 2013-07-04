@@ -1,0 +1,2767 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+                
+<!DOCTYPE teiCorpus.2 PUBLIC "-//TEI P4//DTD Main DTD Driver File//EN" "DTD/tei2.dtd" [
+<!ENTITY % TEI.mixed 'INCLUDE'>
+<!ENTITY % TEI.linking 'INCLUDE'>
+<!ENTITY % TEI.figures 'INCLUDE'>
+<!ENTITY % TEI.XML 'INCLUDE'>
+<!ENTITY % TEI.corpus "INCLUDE">
+<!ENTITY % ISOlat1 SYSTEM 'iso-lat1.ent'> %ISOlat1;
+<!ENTITY % ISOlat2 SYSTEM 'iso-lat2.ent'> %ISOlat2;
+<!ENTITY % ISOpub SYSTEM 'iso-pub.ent'> %ISOpub;
+<!ENTITY % ISOnum SYSTEM 'iso-num.ent'> %ISOnum;
+<!-- The following entities, attributes, and notations have been added by 
+Laura Mandell on 20051019 -->
+        <!NOTATION jpeg  PUBLIC
+   'ISO DIS 10918//NOTATION JPEG Graphics Format//EN' >
+   <!NOTATION gif PUBLIC
+   '-//TEI//NOTATION
+   Compuserve Graphics Interchange Format//EN' >
+   <!NOTATION tiff PUBLIC
+   '-//TEI//NOTATION Aldus Tagged Image File Format//EN'>
+   <!NOTATION png PUBLIC
+   '-//TEI//NOTATION IETF RFC2083 Portable Network Graphics//EN'>
+   <!NOTATION pdf PUBLIC
+   '-//TEI//NOTATION Adobe Photoshop Graphics Format//EN' >
+   <!NOTATION html SYSTEM "text/html">
+   <!NOTATION text SYSTEM "text/html">
+   <!NOTATION php SYSTEM "xhtml">
+            <!ENTITY % myFigures SYSTEM  "figuresFMN1823.ent"> %myFigures;
+   <!ENTITY % myURLs SYSTEM "urlsFMN1823.ent"> %myURLs;
+   <!ATTLIST xref workcode CDATA #IMPLIED>
+   <!ATTLIST name place CDATA  #IMPLIED>
+   <!ATTLIST name date CDATA #IMPLIED>
+   <!ATTLIST div id CDATA #IMPLIED>
+   <!ATTLIST div refid CDATA #IMPLIED>
+   <!ATTLIST catDesc type CDATA #IMPLIED>
+   <!ATTLIST author type CDATA #IMPLIED>
+   ]> 
+        <teiCorpus.2>
+<teiHeader type="corpus">
+<fileDesc TEIform="fileDesc">
+<titleStmt TEIform="titleStmt">
+<title level="m" type="main" TEIform="title">Forget Me Not, </title>
+<title level="m" type="subordinate" TEIform="title">A Christmas and New Year's Present for 1823</title>
+<editor role="editor" TEIform="editor">
+<name reg="Coombe, William" date="1742-1823" place="UK" TEIform="name">William Coombe</name>
+</editor>
+<sponsor TEIform="sponsor">Miami University</sponsor>
+<sponsor TEIform="sponsor">The Poetess Archive: Collections</sponsor>
+<respStmt TEIform="respStmt">
+<resp TEIform="resp">Editor</resp>
+<name TEIform="name">Katherine D. Harris</name>
+</respStmt>
+<respStmt TEIform="respStmt">
+<resp TEIform="resp">Editor</resp>
+<name TEIform="name">Harry Hootman</name>
+</respStmt>
+<respStmt TEIform="respStmt">
+<resp TEIform="resp">TEI, XSL</resp>
+<name TEIform="name">Laura Mandell</name>
+</respStmt>
+<respStmt TEIform="respStmt">
+<resp TEIform="resp">base file TEI</resp>
+<name TEIform="name">Zach Weir</name>
+</respStmt>
+</titleStmt>
+<editionStmt TEIform="editionStmt">
+<edition TEIform="edition">
+<date TEIform="date">18230000</date>
+</edition>
+</editionStmt>
+<extent TEIform="extent">TEI formatted filesize uncompressed: approx. 52.4 kbytes</extent>
+<publicationStmt TEIform="publicationStmt">
+<idno TEIform="idno">FMN1823</idno>
+<publisher TEIform="publisher">King Library, Miami University</publisher>
+<pubPlace TEIform="pubPlace">Oxford, OH</pubPlace>
+<date TEIform="date">20051107</date>
+<availability status="unknown" TEIform="availability">
+<p TEIform="p"> Miami University makes a claim of copyright only to original contributions
+                        made by the Poetess Tradition participants and other members of the university
+                        community. Miami University makes no claim of copyright to the original
+                        text. Permission is granted to download, transmit or otherwise reproduce,
+                        distribute or display the contributions to this work claimed by Miami
+                        University for non-profit educational purposes, provided that this header is
+                        included in its entirety. For inquiries about commercial uses, please contact:<address TEIform="address">
+<addrLine TEIform="addrLine">Judith Session, Dean</addrLine>
+<addrLine TEIform="addrLine">King Library</addrLine>
+<addrLine TEIform="addrLine">Miami University</addrLine>
+<addrLine TEIform="addrLine">Oxford, OH 45056</addrLine>
+<addrLine TEIform="addrLine">United States of America</addrLine>
+<addrLine TEIform="addrLine">EMail: sessioja@muohio.edu</addrLine>
+</address>
+</p>
+</availability>
+</publicationStmt>
+<seriesStmt TEIform="seriesStmt">
+<title TEIform="title">The Poetess Archive: an Electronic Collection</title>
+<respStmt TEIform="respStmt">
+<name TEIform="name">Laura Mandell,</name>
+<resp TEIform="resp">General Editor.</resp>
+</respStmt>
+</seriesStmt>
+<sourceDesc default="NO" TEIform="sourceDesc">
+<biblStruct default="NO" TEIform="biblStruct">
+<monogr TEIform="monogr">
+<!-- In -->
+<title level="m" type="main" TEIform="title">Forget Me Not, </title>
+<title level="m" type="subordinate" TEIform="title">A Christmas and New Year's Present for 1823</title>
+<editor role="editor" TEIform="editor">
+<name reg="Coombe, William" date="1742-1823" place="UK" TEIform="name">William Coombe</name>
+</editor>
+<imprint TEIform="imprint">
+<pubPlace TEIform="pubPlace">London, UK</pubPlace>
+<publisher TEIform="publisher">
+<name reg="Ackermann, R." date="0000-0000" place="UK" TEIform="name">R. Ackermann</name>
+</publisher>
+<date TEIform="date">18230000</date>
+</imprint>
+</monogr>
+</biblStruct>
+<p TEIform="p">Images for this volume were provided by the Beinecke Rare Book and Manuscript Library, Yale University.</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc TEIform="encodingDesc">
+<editorialDecl default="NO" TEIform="editorialDecl">
+<p TEIform="p">This document follows the rules specified for TEI use by NINES.</p>
+<p TEIform="p">All quotation marks and apostrophes have been transcribed as entity references.</p>
+<p TEIform="p">Any dashes occurring in line breaks have been removed.</p>
+<p TEIform="p">Because of web browser variability, all colons and hyphens have been typed on the
+                    U.S. keyboard; dashes have been rendered as two hyphens.</p>
+<p TEIform="p">Special characters (letters with accents, etc.)  have been coded according to Unicode rather than as entity references.</p>
+<p TEIform="p">Page numbers appear at the beginning of each page, no matter where originally placed.</p>
+</editorialDecl>
+<classDecl TEIform="classDecl">
+<taxonomy TEIform="taxonomy">
+<category TEIform="category">
+<catDesc type="ps" TEIform="catDesc">Primary</catDesc>
+</category>
+<category TEIform="category">
+<catDesc type="genre" TEIform="catDesc">collection literary annual</catDesc>
+</category>
+</taxonomy>
+</classDecl>
+</encodingDesc>
+<revisionDesc TEIform="revisionDesc">
+<change TEIform="change">
+<date TEIform="date">20060422</date>
+<respStmt TEIform="respStmt">
+<resp TEIform="resp">Last changed by</resp>
+<name TEIform="name">Laura Mandell</name>
+</respStmt>
+<item TEIform="item">encoding, transforming</item>
+</change>
+<change TEIform="change">
+<date TEIform="date">20060414</date>
+<respStmt TEIform="respStmt">
+<resp TEIform="resp">changed by</resp>
+<name TEIform="name">Zach Weir</name>
+</respStmt>
+<item TEIform="item"> XML coding; XSL application: Oxygen</item>
+</change>
+</revisionDesc>
+</teiHeader>
+<TEI.2 id="front1">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title level="a">Boards of Forget Me Not, A Christmas and New Year's Present for 1823</title>
+<author type="producer">
+<name place="UK" date="0000-0000" reg="Ackermann, R.">Ackermann, R.</name>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>18230000</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<idno>FMN1823corpus.xml-front1</idno>
+<publisher>King Library, Miami University</publisher>
+<pubPlace>Oxford, OH</pubPlace>
+<date>20051107</date>
+<availability>
+<p> Miami University makes a claim of copyright only to original contributions
+                                made by the Poetess Archive participants and other members of the university
+                                community. Miami University makes no claim of copyright to the original
+                                text. Permission is granted to download, transmit or otherwise reproduce,
+                                distribute or display the contributions to this work claimed by Miami
+                                University for non-profit educational purposes, provided that this header is
+                                included in its entirety. For inquiries about commercial uses, please contact:<address>
+<addrLine>Judith Session, Dean</addrLine>
+<addrLine>King Library</addrLine>
+<addrLine>Miami University</addrLine>
+<addrLine>Oxford, OH 45056</addrLine>
+<addrLine>United States of America</addrLine>
+<addrLine>EMail: sessioja@muohio.edu</addrLine>
+</address>
+</p>
+</availability>
+</publicationStmt>
+<sourceDesc>
+<biblStruct>
+<analytic>
+<title level="a">Book Boards</title>
+<author type="producer">
+<name place="UK" date="0000-0000" reg="Ackermann, R.">Ackermann, R.</name>
+</author>
+</analytic>
+<monogr>
+<title type="main" level="m">Forget Me Not, </title>
+<title type="subordinate" level="m">A Christmas and New Year's Present for 1823</title>
+<editor>
+<name place="UK" date="1742-1823" reg="Coombe, William">William Coombe</name>
+</editor>
+<imprint>
+<pubPlace>London, UK</pubPlace>
+<publisher>
+<name place="UK" date="0000-0000" reg="Ackermann, R.">Ackermann, R.</name>
+</publisher>
+<date>18230000</date>
+</imprint>
+</monogr>
+</biblStruct>
+<p TEIform="p">Images for this volume were provided by the Beinecke Rare Book and Manuscript Library, Yale University.</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<editorialDecl>
+<p>This document follows the rules specified for TEI use by NINES.</p>
+<p>All quotation marks and apostrophes have been transcribed as entity references.</p>
+<p>Any dashes occurring in line breaks have been removed.</p>
+<p>Because of web browser variability, all colons and hyphens have been typed on the
+                            U.S. keyboard; dashes have been rendered as two hyphens.</p>
+<p>Special characters (letters with accents, etc.)  have been coded according to Unicode rather than as entity references.</p>
+<p>Page numbers appear at the beginning of each page, no matter where originally placed.</p>
+</editorialDecl>
+<classDecl>
+<taxonomy>
+<category>
+<catDesc type="ps">Primary</catDesc>
+</category>
+<category>
+<catDesc type="genre">boards</catDesc>
+</category>
+</taxonomy>
+</classDecl>
+</encodingDesc>
+<revisionDesc>
+<change>
+<date>20060422</date>
+<respStmt>
+<resp>encoding by </resp>
+<name>Laura Mandell</name>
+</respStmt>
+<item>encoding, transforming</item>
+</change>
+<change>
+<date>20060422</date>
+<respStmt>
+<resp>encoding by </resp>
+<name>Laura Mandell</name>
+</respStmt>
+<item>encoding, transforming</item>
+</change>
+</revisionDesc>
+</teiHeader>
+<text>
+<front>
+<div type="boards" id="B1" org="uniform" sample="complete" part="N" TEIform="div">
+<head TEIform="head">Book Boards</head>
+<p rend="center" TEIform="p">
+<xref doc="boards" targOrder="U" from="ROOT" to="DITTO" TEIform="xref">
+<figure entity="smboards" TEIform="figure"/>
+</xref>
+</p>
+</div>
+</front>
+<body>
+<p/>
+</body>
+</text>
+</TEI.2>
+<TEI.2 id="front2">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title level="a">Frontispiece to Forget Me Not, A Christmas and New Year's Present for 1823</title>
+<author type="painter">
+<name place="Italy" date="0000-0000" reg="Gimignano, Vincenzio de san">Gimignano, Vincenzio de san</name>
+</author>
+<author type="engraver">
+<name place="UK" date="0000-0000" reg="Agar, J.">Agar, J.</name>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>18230000</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<idno>FMN1823corpus.xml-front2</idno>
+<publisher>King Library, Miami University</publisher>
+<pubPlace>Oxford, OH</pubPlace>
+<date>20051107</date>
+<availability>
+<p> Miami University makes a claim of copyright only to original contributions
+                                made by the Poetess Archive participants and other members of the university
+                                community. Miami University makes no claim of copyright to the original
+                                text. Permission is granted to download, transmit or otherwise reproduce,
+                                distribute or display the contributions to this work claimed by Miami
+                                University for non-profit educational purposes, provided that this header is
+                                included in its entirety. For inquiries about commercial uses, please contact:<address>
+<addrLine>Judith Session, Dean</addrLine>
+<addrLine>King Library</addrLine>
+<addrLine>Miami University</addrLine>
+<addrLine>Oxford, OH 45056</addrLine>
+<addrLine>United States of America</addrLine>
+<addrLine>EMail: sessioja@muohio.edu</addrLine>
+</address>
+</p>
+</availability>
+</publicationStmt>
+<sourceDesc>
+<biblStruct>
+<analytic>
+<title level="a">Frontispiece</title>
+<author type="painter">
+<name place="Italy" date="0000-0000" reg="Gimignano, Vincenzio de san">Gimignano, Vincenzio de san</name>
+</author>
+<author type="engraver">
+<name place="UK" date="0000-0000" reg="Agar, J.">Agar, J.</name>
+</author>
+</analytic>
+<monogr>
+<title type="main" level="m">Forget Me Not, </title>
+<title type="subordinate" level="m">A Christmas and New Year's Present for 1823</title>
+<editor>
+<name place="UK" date="1742-1823" reg="Coombe, William">William Coombe</name>
+</editor>
+<imprint>
+<pubPlace>London, UK</pubPlace>
+<publisher>
+<name place="UK" date="0000-0000" reg="Ackermann, R.">Ackermann, R.</name>
+</publisher>
+<date>18230000</date>
+</imprint>
+</monogr>
+</biblStruct>
+<p TEIform="p">Images for this volume were provided by the Beinecke Rare Book and Manuscript Library, Yale University.</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<editorialDecl>
+<p>This document follows the rules specified for TEI use by NINES.</p>
+<p>All quotation marks and apostrophes have been transcribed as entity references.</p>
+<p>Any dashes occurring in line breaks have been removed.</p>
+<p>Because of web browser variability, all colons and hyphens have been typed on the
+                            U.S. keyboard; dashes have been rendered as two hyphens.</p>
+<p>Special characters (letters with accents, etc.)  have been coded according to Unicode rather than as entity references.</p>
+<p>Page numbers appear at the beginning of each page, no matter where originally placed.</p>
+</editorialDecl>
+<classDecl>
+<taxonomy>
+<category>
+<catDesc type="ps">Primary</catDesc>
+</category>
+<category>
+<catDesc type="genre">frontispiece</catDesc>
+</category>
+</taxonomy>
+</classDecl>
+</encodingDesc>
+<revisionDesc>
+<change>
+<date>20060422</date>
+<respStmt>
+<resp>encoding by </resp>
+<name>Laura Mandell</name>
+</respStmt>
+<item>encoding, transforming</item>
+</change>
+<change>
+<date>20060422</date>
+<respStmt>
+<resp>encoding by </resp>
+<name>Laura Mandell</name>
+</respStmt>
+<item>encoding, transforming</item>
+</change>
+</revisionDesc>
+</teiHeader>
+<text>
+<front>
+<div type="frontispiece" id="FP" org="uniform" sample="complete" part="N" TEIform="div">
+<head TEIform="head">Frontispiece</head>
+<p rend="center" TEIform="p">
+<xref doc="image1" targOrder="U" from="ROOT" to="DITTO" TEIform="xref">
+<figure entity="smimage1" TEIform="figure">
+<head TEIform="head">
+<title TEIform="title">MADONNA.</title>
+<bibl default="NO" TEIform="bibl">
+<author type="painter" TEIform="author">From a painting by <name reg="Gimignano, Vincenzio de san" date="0000-0000" place="Italy" TEIform="name">Vincenzio de san Gimignano</name>
+</author> in the Dresden Gallery.<lb TEIform="lb"/>
+<author type="engraver" TEIform="author">Engraved by <name reg="Agar, J." date="0000-0000" place="UK" TEIform="name">J. Agar</name>
+</author>
+</bibl>
+</head>
+</figure>
+</xref>
+</p>
+</div>
+</front>
+<body>
+<p/>
+</body>
+</text>
+</TEI.2>
+<TEI.2 id="front3">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title level="a">Forget Me Not, A Christmas and New Year's Present for 1823  (Title Page)</title>
+<author type="producer">
+<name place="UK" date="0000-0000" reg="Ackermann, R.">Ackermann, R.</name>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>18230000</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<idno>FMN1823corpus.xml-front3</idno>
+<publisher>King Library, Miami University</publisher>
+<pubPlace>Oxford, OH</pubPlace>
+<date>20051107</date>
+<availability>
+<p> Miami University makes a claim of copyright only to original contributions
+                                made by the Poetess Archive participants and other members of the university
+                                community. Miami University makes no claim of copyright to the original
+                                text. Permission is granted to download, transmit or otherwise reproduce,
+                                distribute or display the contributions to this work claimed by Miami
+                                University for non-profit educational purposes, provided that this header is
+                                included in its entirety. For inquiries about commercial uses, please contact:<address>
+<addrLine>Judith Session, Dean</addrLine>
+<addrLine>King Library</addrLine>
+<addrLine>Miami University</addrLine>
+<addrLine>Oxford, OH 45056</addrLine>
+<addrLine>United States of America</addrLine>
+<addrLine>EMail: sessioja@muohio.edu</addrLine>
+</address>
+</p>
+</availability>
+</publicationStmt>
+<sourceDesc>
+<biblStruct>
+<analytic>
+<title level="a">Title Page</title>
+<author type="producer">
+<name place="UK" date="0000-0000" reg="Ackermann, R.">Ackermann, R.</name>
+</author>
+</analytic>
+<monogr>
+<title type="main" level="m">Forget Me Not, </title>
+<title type="subordinate" level="m">A Christmas and New Year's Present for 1823</title>
+<editor>
+<name place="UK" date="1742-1823" reg="Coombe, William">William Coombe</name>
+</editor>
+<imprint>
+<pubPlace>London, UK</pubPlace>
+<publisher>
+<name place="UK" date="0000-0000" reg="Ackermann, R.">Ackermann, R.</name>
+</publisher>
+<date>18230000</date>
+</imprint>
+</monogr>
+</biblStruct>
+<p TEIform="p">Images for this volume were provided by the Beinecke Rare Book and Manuscript Library, Yale University.</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<editorialDecl>
+<p>This document follows the rules specified for TEI use by NINES.</p>
+<p>All quotation marks and apostrophes have been transcribed as entity references.</p>
+<p>Any dashes occurring in line breaks have been removed.</p>
+<p>Because of web browser variability, all colons and hyphens have been typed on the
+                            U.S. keyboard; dashes have been rendered as two hyphens.</p>
+<p>Special characters (letters with accents, etc.)  have been coded according to Unicode rather than as entity references.</p>
+<p>Page numbers appear at the beginning of each page, no matter where originally placed.</p>
+</editorialDecl>
+<classDecl>
+<taxonomy>
+<category>
+<catDesc type="ps">Primary</catDesc>
+</category>
+<category>
+<catDesc type="genre">titlepage</catDesc>
+</category>
+</taxonomy>
+</classDecl>
+</encodingDesc>
+<revisionDesc>
+<change>
+<date>20060422</date>
+<respStmt>
+<resp>encoding by </resp>
+<name>Laura Mandell</name>
+</respStmt>
+<item>encoding, transforming</item>
+</change>
+<change>
+<date>20060422</date>
+<respStmt>
+<resp>encoding by </resp>
+<name>Laura Mandell</name>
+</respStmt>
+<item>encoding, transforming</item>
+</change>
+</revisionDesc>
+</teiHeader>
+<text>
+<front>
+<div type="titlepage" id="TP" org="uniform" sample="complete" part="N" TEIform="div">
+<head TEIform="head">Title Page</head>
+<p rend="center" TEIform="p">
+<xref doc="titlepage" targOrder="U" from="ROOT" to="DITTO" TEIform="xref">
+<figure entity="smtitlepage" TEIform="figure"/>
+</xref>
+</p>
+</div>
+</front>
+<body>
+<p>These html pages have been generated from xml pages. You can see the original xml by clicking on the "tei" icon: <figure entity="tei"/>
+<lb/>
+                The xsl transformers are available on this site as well: 
+                <lb/>
+<lb/>FMN.xml -----------&gt;   FMNcorpus.xsl  ------------&gt;  FMNcorpus.xml ------------&gt; tei-xsl-4.3.5/P4/html/teihtml.xsl ------------&gt; web pages<lb/>
+<lb/>
+                To use the teihtml.xsl, you will need to download the whole tei-xsl folder. Laura Mandell wrote the transform to make a TEI document into a corpus file (susceptible of being made into individualized Web pages).  The transform from a corpus file to individual Web pages came originally from Sebastian Rahtz of Oxford Univ., but it has been much modified (by Laura Mandell).</p>
+</body>
+</text>
+</TEI.2>
+<TEI.2 id="front4">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title level="a">Inscription Page for Forget Me Not, A Christmas and New Year's Present for 1823</title>
+<author type="producer">
+<name place="UK" date="0000-0000" reg="Ackermann, R.">Ackermann, R.</name>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>18230000</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<idno>FMN1823corpus.xml-front4</idno>
+<publisher>King Library, Miami University</publisher>
+<pubPlace>Oxford, OH</pubPlace>
+<date>20051107</date>
+<availability>
+<p> Miami University makes a claim of copyright only to original contributions
+                                made by the Poetess Archive participants and other members of the university
+                                community. Miami University makes no claim of copyright to the original
+                                text. Permission is granted to download, transmit or otherwise reproduce,
+                                distribute or display the contributions to this work claimed by Miami
+                                University for non-profit educational purposes, provided that this header is
+                                included in its entirety. For inquiries about commercial uses, please contact:<address>
+<addrLine>Judith Session, Dean</addrLine>
+<addrLine>King Library</addrLine>
+<addrLine>Miami University</addrLine>
+<addrLine>Oxford, OH 45056</addrLine>
+<addrLine>United States of America</addrLine>
+<addrLine>EMail: sessioja@muohio.edu</addrLine>
+</address>
+</p>
+</availability>
+</publicationStmt>
+<sourceDesc>
+<biblStruct>
+<analytic>
+<title level="a">Inscription Page</title>
+<author type="producer">
+<name place="UK" date="0000-0000" reg="Ackermann, R.">Ackermann, R.</name>
+</author>
+</analytic>
+<monogr>
+<title type="main" level="m">Forget Me Not, </title>
+<title type="subordinate" level="m">A Christmas and New Year's Present for 1823</title>
+<editor>
+<name place="UK" date="1742-1823" reg="Coombe, William">William Coombe</name>
+</editor>
+<imprint>
+<pubPlace>London, UK</pubPlace>
+<publisher>
+<name place="UK" date="0000-0000" reg="Ackermann, R.">Ackermann, R.</name>
+</publisher>
+<date>18230000</date>
+</imprint>
+</monogr>
+</biblStruct>
+<p TEIform="p">Images for this volume were provided by the Beinecke Rare Book and Manuscript Library, Yale University.</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<editorialDecl>
+<p>This document follows the rules specified for TEI use by NINES.</p>
+<p>All quotation marks and apostrophes have been transcribed as entity references.</p>
+<p>Any dashes occurring in line breaks have been removed.</p>
+<p>Because of web browser variability, all colons and hyphens have been typed on the
+                            U.S. keyboard; dashes have been rendered as two hyphens.</p>
+<p>Special characters (letters with accents, etc.)  have been coded according to Unicode rather than as entity references.</p>
+<p>Page numbers appear at the beginning of each page, no matter where originally placed.</p>
+</editorialDecl>
+<classDecl>
+<taxonomy>
+<category>
+<catDesc type="ps">Primary</catDesc>
+</category>
+<category>
+<catDesc type="genre">inscription</catDesc>
+</category>
+</taxonomy>
+</classDecl>
+</encodingDesc>
+<revisionDesc>
+<change>
+<date>20060422</date>
+<respStmt>
+<resp>encoding by </resp>
+<name>Laura Mandell</name>
+</respStmt>
+<item>encoding, transforming</item>
+</change>
+<change>
+<date>20060422</date>
+<respStmt>
+<resp>encoding by </resp>
+<name>Laura Mandell</name>
+</respStmt>
+<item>encoding, transforming</item>
+</change>
+</revisionDesc>
+</teiHeader>
+<text>
+<front>
+<div type="inscription" id="IN" org="uniform" sample="complete" part="N" TEIform="div">
+<head TEIform="head">Inscription Page</head>
+<p rend="center" TEIform="p">
+<xref doc="image2" targOrder="U" from="ROOT" to="DITTO" TEIform="xref">
+<figure entity="smimage2" TEIform="figure"/>
+</xref>
+</p>
+</div>
+</front>
+<body>
+<p/>
+</body>
+</text>
+</TEI.2>
+<TEI.2 id="front5">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title level="a">Table of Contents in Forget Me Not, A Christmas and New Year's Present for 1823 (page images)</title>
+<editor>
+<name place="UK" date="1742-1823" reg="Coombe, William">Coombe, William</name>
+</editor>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>18230000</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<idno>FMN1823corpus.xml-front5</idno>
+<publisher>King Library, Miami University</publisher>
+<pubPlace>Oxford, OH</pubPlace>
+<date>20051107</date>
+<availability>
+<p> Miami University makes a claim of copyright only to original contributions
+                                made by the Poetess Archive participants and other members of the university
+                                community. Miami University makes no claim of copyright to the original
+                                text. Permission is granted to download, transmit or otherwise reproduce,
+                                distribute or display the contributions to this work claimed by Miami
+                                University for non-profit educational purposes, provided that this header is
+                                included in its entirety. For inquiries about commercial uses, please contact:<address>
+<addrLine>Judith Session, Dean</addrLine>
+<addrLine>King Library</addrLine>
+<addrLine>Miami University</addrLine>
+<addrLine>Oxford, OH 45056</addrLine>
+<addrLine>United States of America</addrLine>
+<addrLine>EMail: sessioja@muohio.edu</addrLine>
+</address>
+</p>
+</availability>
+</publicationStmt>
+<sourceDesc>
+<biblStruct>
+<analytic>
+<title level="a">Table of Contents (page images)</title>
+<author>
+<name place="UK" date="1742-1823" reg="Coombe, William">Coombe, William</name>
+</author>
+</analytic>
+<monogr>
+<title type="main" level="m">Forget Me Not, </title>
+<title type="subordinate" level="m">A Christmas and New Year's Present for 1823</title>
+<editor>
+<name place="UK" date="1742-1823" reg="Coombe, William">William Coombe</name>
+</editor>
+<imprint>
+<pubPlace>London, UK</pubPlace>
+<publisher>
+<name place="UK" date="0000-0000" reg="Ackermann, R.">Ackermann, R.</name>
+</publisher>
+<date>18230000</date>
+</imprint>
+</monogr>
+</biblStruct>
+<p TEIform="p">Images for this volume were provided by the Beinecke Rare Book and Manuscript Library, Yale University.</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<editorialDecl>
+<p>This document follows the rules specified for TEI use by NINES.</p>
+<p>All quotation marks and apostrophes have been transcribed as entity references.</p>
+<p>Any dashes occurring in line breaks have been removed.</p>
+<p>Because of web browser variability, all colons and hyphens have been typed on the
+                            U.S. keyboard; dashes have been rendered as two hyphens.</p>
+<p>Special characters (letters with accents, etc.)  have been coded according to Unicode rather than as entity references.</p>
+<p>Page numbers appear at the beginning of each page, no matter where originally placed.</p>
+</editorialDecl>
+<classDecl>
+<taxonomy>
+<category>
+<catDesc type="ps">Primary</catDesc>
+</category>
+<category>
+<catDesc type="genre">contents</catDesc>
+</category>
+</taxonomy>
+</classDecl>
+</encodingDesc>
+<revisionDesc>
+<change>
+<date>20060422</date>
+<respStmt>
+<resp>encoding by </resp>
+<name>Laura Mandell</name>
+</respStmt>
+<item>encoding, transforming</item>
+</change>
+<change>
+<date>20060422</date>
+<respStmt>
+<resp>encoding by </resp>
+<name>Laura Mandell</name>
+</respStmt>
+<item>encoding, transforming</item>
+</change>
+</revisionDesc>
+</teiHeader>
+<text>
+<front>
+<div type="pageimage" id="piTC" org="uniform" sample="complete" part="N" TEIform="div">
+<head TEIform="head">Table of Contents (page image)</head>
+<p rend="center" TEIform="p">
+<xref doc="toc" targOrder="U" from="ROOT" to="DITTO" TEIform="xref">
+<figure entity="smtoc" TEIform="figure"/>
+</xref>
+</p>
+</div>
+</front>
+<body>
+<p/>
+</body>
+</text>
+</TEI.2>
+<TEI.2 id="front6">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title level="a">Table of Contents, Forget Me Not, A Christmas and New Year's Present for 1823</title>
+<editor>
+<name place="UK" date="1742-1823" reg="Coombe, William">Coombe, William</name>
+</editor>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>18230000</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<idno>FMN1823corpus.xml-front6</idno>
+<publisher>King Library, Miami University</publisher>
+<pubPlace>Oxford, OH</pubPlace>
+<date>20051107</date>
+<availability>
+<p> Miami University makes a claim of copyright only to original contributions
+                                made by the Poetess Archive participants and other members of the university
+                                community. Miami University makes no claim of copyright to the original
+                                text. Permission is granted to download, transmit or otherwise reproduce,
+                                distribute or display the contributions to this work claimed by Miami
+                                University for non-profit educational purposes, provided that this header is
+                                included in its entirety. For inquiries about commercial uses, please contact:<address>
+<addrLine>Judith Session, Dean</addrLine>
+<addrLine>King Library</addrLine>
+<addrLine>Miami University</addrLine>
+<addrLine>Oxford, OH 45056</addrLine>
+<addrLine>United States of America</addrLine>
+<addrLine>EMail: sessioja@muohio.edu</addrLine>
+</address>
+</p>
+</availability>
+</publicationStmt>
+<sourceDesc>
+<biblStruct>
+<analytic>
+<title level="a">Table of Contents</title>
+<editor>
+<name place="UK" date="1742-1823" reg="Coombe, William">Coombe, William</name>
+</editor>
+</analytic>
+<monogr>
+<title type="main" level="m">Forget Me Not, </title>
+<title type="subordinate" level="m">A Christmas and New Year's Present for 1823</title>
+<editor>
+<name place="UK" date="1742-1823" reg="Coombe, William">William Coombe</name>
+</editor>
+<imprint>
+<pubPlace>London, UK</pubPlace>
+<publisher>
+<name place="UK" date="0000-0000" reg="Ackermann, R.">Ackermann, R.</name>
+</publisher>
+<date>18230000</date>
+<biblScope>iii-iv</biblScope>
+</imprint>
+</monogr>
+</biblStruct>
+<p TEIform="p">Images for this volume were provided by the Beinecke Rare Book and Manuscript Library, Yale University.</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<editorialDecl>
+<p>This document follows the rules specified for TEI use by NINES.</p>
+<p>All quotation marks and apostrophes have been transcribed as entity references.</p>
+<p>Any dashes occurring in line breaks have been removed.</p>
+<p>Because of web browser variability, all colons and hyphens have been typed on the
+                            U.S. keyboard; dashes have been rendered as two hyphens.</p>
+<p>Special characters (letters with accents, etc.)  have been coded according to Unicode rather than as entity references.</p>
+<p>Page numbers appear at the beginning of each page, no matter where originally placed.</p>
+</editorialDecl>
+<classDecl>
+<taxonomy>
+<category>
+<catDesc type="ps">Primary</catDesc>
+</category>
+<category>
+<catDesc type="genre">contents</catDesc>
+</category>
+</taxonomy>
+</classDecl>
+</encodingDesc>
+<revisionDesc>
+<change>
+<date>20060422</date>
+<respStmt>
+<resp>encoding by </resp>
+<name>Laura Mandell</name>
+</respStmt>
+<item>encoding, transforming</item>
+</change>
+<change>
+<date>20060422</date>
+<respStmt>
+<resp>encoding by </resp>
+<name>Laura Mandell</name>
+</respStmt>
+<item>encoding, transforming</item>
+</change>
+</revisionDesc>
+</teiHeader>
+<text>
+<front>
+<div type="pageimage">
+<p>
+<xref rend="innerpageimage" doc="toc">
+<figure entity="pageimage"/>
+</xref>
+</p>
+</div>
+<div type="contents" id="toc" org="uniform" sample="complete" part="N" TEIform="div">
+<pb n="iii" TEIform="pb"/>
+<head TEIform="head">Table of Contents</head>
+<p TEIform="p">CONTENTS.                                                                                                      PAGE<lb TEIform="lb"/>
+<xref doc="A1" targOrder="U" from="ROOT" to="DITTO" TEIform="xref">[Advertisement]</xref>                                                                                                  [v]<lb TEIform="lb"/>
+<xref doc="P1" targOrder="U" from="ROOT" to="DITTO" TEIform="xref">Poetical Address</xref>                                                                                                  3<lb TEIform="lb"/>
+<lb TEIform="lb"/>
+                    Illustrations of the Twelve Months. 	 <lb TEIform="lb"/>
+<lb TEIform="lb"/>
+<xref doc="F3" targOrder="U" from="ROOT" to="DITTO" TEIform="xref">January [Engraving]</xref>                                                                                             5<lb TEIform="lb"/>
+<xref doc="F4" targOrder="U" from="ROOT" to="DITTO" TEIform="xref">February [Engraving]</xref>                                                                                           7<lb TEIform="lb"/>
+<xref doc="F5" targOrder="U" from="ROOT" to="DITTO" TEIform="xref">March [Engraving]</xref>                                                                                                9<lb TEIform="lb"/>
+<xref doc="F6" targOrder="U" from="ROOT" to="DITTO" TEIform="xref">April [Engraving]</xref>                                                                                                 11<lb TEIform="lb"/>
+<xref doc="F7" targOrder="U" from="ROOT" to="DITTO" TEIform="xref">May [Engraving]</xref>                                                                                                  13<lb TEIform="lb"/>
+<xref doc="F8" targOrder="U" from="ROOT" to="DITTO" TEIform="xref">June [Engraving]</xref>                                                                                                 15<lb TEIform="lb"/>
+<xref doc="F9" targOrder="U" from="ROOT" to="DITTO" TEIform="xref">July [Engraving]</xref>                                                                                                  17<lb TEIform="lb"/>
+<xref doc="F10" targOrder="U" from="ROOT" to="DITTO" TEIform="xref">August [Engraving]</xref>                                                                                             19<lb TEIform="lb"/>
+<xref doc="F11" targOrder="U" from="ROOT" to="DITTO" TEIform="xref">September [Engraving]</xref>                                                                                       21<lb TEIform="lb"/>
+<xref doc="F12" targOrder="U" from="ROOT" to="DITTO" TEIform="xref">October [Engraving]</xref>                                                                                            23<lb TEIform="lb"/>
+<xref doc="F13" targOrder="U" from="ROOT" to="DITTO" TEIform="xref">November [Engraving]</xref>                                                                                        25<lb TEIform="lb"/>
+<xref doc="F14" targOrder="U" from="ROOT" to="DITTO" TEIform="xref">December [Engraving]</xref>                                                                                        27<lb TEIform="lb"/>
+                    
+                    The Church-yard of Schwyzt                                                                                  29<lb TEIform="lb"/>
+                    The Bridal of St. Domingo                                                                                      84<lb TEIform="lb"/>
+                    The Magic Mirror                                                                                                  133<lb TEIform="lb"/>
+                    Comfort in Death (extracted from the Papers of Colonel L---)                             154<lb TEIform="lb"/>
+                    The Confessional                                                                                                 165<lb TEIform="lb"/>
+                    The Pastry-cook of Madrigal                                                                                182<lb TEIform="lb"/>
+                    On Making and Conciliating Enemies. By Augustus von Kotzebue                       192<lb TEIform="lb"/>
+                    Ferdinand Franck; an Auto-biographical Sketch                                                   195<lb TEIform="lb"/>
+<pb n="iv" TEIform="pb"/>
+                    
+                    
+                    PAGE<lb TEIform="lb"/>
+                    Genealogy of the European Sovereigns and Living Members of their Families                                           273<lb TEIform="lb"/>
+                    Reigning Sovereigns of Europe with the Date of their Accession                                                               340<lb TEIform="lb"/>
+                    Lists of the Diplomatic Agents of the Principal Courts of Europe                                                                343<lb TEIform="lb"/>
+                    
+                    
+                    Population of Great Britain, according to the census of 1821.<lb TEIform="lb"/>
+<lb TEIform="lb"/>
+                    I. General Summary of Houses, Families, and Persons in Great Britain, in 1821                                                                          362<lb TEIform="lb"/>
+                    II.  Comparative State of the Population of the Counties and Shires of Great Britain, in 1811 and 1821                                     363<lb TEIform="lb"/>
+                    III.  Table, exhibiting the Population of the Metropolis at different Periods, since the Year 1700                                                 366<lb TEIform="lb"/>
+                    IV.  Population of the several Parishes of the Metropolis                                                                                                              367<lb TEIform="lb"/>
+                    V.  Population of the Principal Towns and Boroughs of England, Wales, and Scotland, in 1821                                                    370<lb TEIform="lb"/>
+                    VI.  Summary of Baptisms, Burials, and Marriages in the Metropolis and in England and Wales, in the Years 1811 to 1821, inclusive  376<lb TEIform="lb"/>
+                    
+                    Population of upwards of Seven Hundred of the Principal Cities in the World, exclusively of Great Britain                                  377<lb TEIform="lb"/>
+                    Historical Chronicle for 1822                                                                                                                                                        388</p>
+</div>
+</front>
+<body>
+<p/>
+</body>
+</text>
+</TEI.2>
+<TEI.2 id="front7">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title level="a">Advertisement to Forget Me Not, A Christmas and New Year's Present for 1823</title>
+<author>
+<name place="" date="" reg=""/>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>18230000</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<idno>FMN1823corpus.xml-front7</idno>
+<publisher>King Library, Miami University</publisher>
+<pubPlace>Oxford, OH</pubPlace>
+<date>20051107</date>
+<availability>
+<p> Miami University makes a claim of copyright only to original contributions
+                                made by the Poetess Archive participants and other members of the university
+                                community. Miami University makes no claim of copyright to the original
+                                text. Permission is granted to download, transmit or otherwise reproduce,
+                                distribute or display the contributions to this work claimed by Miami
+                                University for non-profit educational purposes, provided that this header is
+                                included in its entirety. For inquiries about commercial uses, please contact:<address>
+<addrLine>Judith Session, Dean</addrLine>
+<addrLine>King Library</addrLine>
+<addrLine>Miami University</addrLine>
+<addrLine>Oxford, OH 45056</addrLine>
+<addrLine>United States of America</addrLine>
+<addrLine>EMail: sessioja@muohio.edu</addrLine>
+</address>
+</p>
+</availability>
+</publicationStmt>
+<sourceDesc>
+<biblStruct>
+<analytic>
+<title level="a">Advertisement</title>
+<author>
+<name place="" date="" reg=""/>
+</author>
+</analytic>
+<monogr>
+<title type="main" level="m">Forget Me Not, </title>
+<title type="subordinate" level="m">A Christmas and New Year's Present for 1823</title>
+<editor>
+<name place="UK" date="1742-1823" reg="Coombe, William">William Coombe</name>
+</editor>
+<imprint>
+<pubPlace>London, UK</pubPlace>
+<publisher>
+<name place="UK" date="0000-0000" reg="Ackermann, R.">Ackermann, R.</name>
+</publisher>
+<date>18230000</date>
+<biblScope>v-viii</biblScope>
+</imprint>
+</monogr>
+</biblStruct>
+<p TEIform="p">Images for this volume were provided by the Beinecke Rare Book and Manuscript Library, Yale University.</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<editorialDecl>
+<p>This document follows the rules specified for TEI use by NINES.</p>
+<p>All quotation marks and apostrophes have been transcribed as entity references.</p>
+<p>Any dashes occurring in line breaks have been removed.</p>
+<p>Because of web browser variability, all colons and hyphens have been typed on the
+                            U.S. keyboard; dashes have been rendered as two hyphens.</p>
+<p>Special characters (letters with accents, etc.)  have been coded according to Unicode rather than as entity references.</p>
+<p>Page numbers appear at the beginning of each page, no matter where originally placed.</p>
+</editorialDecl>
+<classDecl>
+<taxonomy>
+<category>
+<catDesc type="ps">Primary</catDesc>
+</category>
+<category>
+<catDesc type="genre">advertisement</catDesc>
+</category>
+</taxonomy>
+</classDecl>
+</encodingDesc>
+<revisionDesc>
+<change>
+<date>20060422</date>
+<respStmt>
+<resp>encoding by </resp>
+<name>Laura Mandell</name>
+</respStmt>
+<item>encoding, transforming</item>
+</change>
+<change>
+<date>20060422</date>
+<respStmt>
+<resp>encoding by </resp>
+<name>Laura Mandell</name>
+</respStmt>
+<item>encoding, transforming</item>
+</change>
+</revisionDesc>
+</teiHeader>
+<text>
+<front>
+<pb n="v"/>
+<div type="advertisement" id="A1" org="uniform" sample="complete" part="N" TEIform="div">
+<pb n="v" TEIform="pb"/>
+<head TEIform="head">Advertisement</head>
+<head TEIform="head">
+<name reg="Coombe, William" date="1742-1823" place="UK" TEIform="name">by William Coombe</name>
+</head>
+<p TEIform="p">The British Public is here presented with the first attempt to rival the numerous and elegant publications of the Continent, expressly designed to serve as tokens of remembrance, friendship, or affection, at that season of the year which ancient custom has particularly consecrated to the interchange of such memorials.  The Publisher flatters himself that as well from the nature of the literary department, in which it has been his aim to unite the agreeable with the useful, as from the execution of the graphic embellishments, this first volume of the Forget-Me-Not will be deemed not unworthy of the purpose for which it is intended.</p>
+<pb n="vi" TEIform="pb"/>
+<p TEIform="p">The Plates consist of a highly finished engraving, by Agar, of a Madonna, after Gemignano, on whom the genius of his master Raphael so largely rested, an emblematical representations of the Twelve Months, also engraved by Agar, from designs by Burney.  These embellishments, to which the names of the artists alone must be a sufficient recommendation, are accompanied with poetical illustrations from the pen of an eminently popular writer.*<note n="1" place="foot" resp="Forget Me Not Editor, William Coombe [?]" anchored="yes" TEIform="note">* The author of the Three Tours of Dr. Syntax; the Dance of Death; the Dance of Life; and the History of Johnny Qua Genus.  <ref target="N1" targOrder="U" TEIform="ref">BACK.</ref>
+</note>
+<anchor id="N1" TEIform="anchor"/>
+</p>
+<p TEIform="p">In addition to the above-mentioned Plates, there will be found at the beginning of the volume an engraved wreath of the flower, bearing the name selected for the title of this work, with a blank for the purpose of receiving a presentation inscription.</p>
+<p TEIform="p">It would be superfluous to enter into any comments on the literary compositions which from the chief portion of this vo-<pb n="vii" TEIform="pb"/>lume; they must be left to speak for themselves; but among the documents introduced into the concluding sheets, the Publisher begs leave to direct the Reader's attention to the important Tables exhibiting the results of the late Census, compiled from the returns of the Population of Great Britain, just printed by order of the House of Commons.  For some of the other useful articles of reference in this part of the volume, he professes his obligations to the Gotha Almanac, a work of acknowledged accuracy and of high reputation on the Continent.</p>
+<p TEIform="p">It is intended that the Forget-Me-Not shall be ready for delivery every year, early in November; and the Publisher has no doubt that, in the prosecution of his plan, he shall be enabled, by experience, to introduce improvements into the succeeding volumes, for which he shall neglect no means to secure the contributions of the most eminent writers, both at home and abroad -- while his long and extensive connexion with the Arts, and the credit with<pb n="viii" TEIform="pb"/> which he has acquitted himself in his various undertakings in that line, will, he trusts, be a satisfactory pledge that his best exertions shall not be wanting to give to this Work a decided superiority in regard to its embellishments, over every other existing publication of the kind.</p>
+</div>
+</front>
+<body>
+<p/>
+</body>
+</text>
+</TEI.2>
+<TEI.2 id="text1">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title level="a">[Poetical] Address, </title>
+<author>
+<name place="UK" date="0000-0000" reg="[anon.]">[Anonymous]</name>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>18230000</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<idno>FMN1823corpus.xml-text1</idno>
+<publisher>King Library, Miami University</publisher>
+<pubPlace>Oxford, OH</pubPlace>
+<date>20051107</date>
+<availability>
+<p> Miami University makes a claim of copyright only to original contributions
+                                made by the Poetess Archive participants and other members of the university
+                                community. Miami University makes no claim of copyright to the original
+                                text. Permission is granted to download, transmit or otherwise reproduce,
+                                distribute or display the contributions to this work claimed by Miami
+                                University for non-profit educational purposes, provided that this header is
+                                included in its entirety. For inquiries about commercial uses, please contact:<address>
+<addrLine>Judith Session, Dean</addrLine>
+<addrLine>King Library</addrLine>
+<addrLine>Miami University</addrLine>
+<addrLine>Oxford, OH 45056</addrLine>
+<addrLine>United States of America</addrLine>
+<addrLine>EMail: sessioja@muohio.edu</addrLine>
+</address>
+</p>
+</availability>
+</publicationStmt>
+<sourceDesc>
+<biblStruct>
+<analytic>
+<title level="a">[Poetical] Address, </title>
+<author>
+<name place="UK" date="0000-0000" reg="[anon.]">[Anonymous]</name>
+</author>
+</analytic>
+<monogr>
+<title type="main" level="m">Forget Me Not, </title>
+<title type="subordinate" level="m">A Christmas and New Year's Present for 1823</title>
+<editor>
+<name place="UK" date="1742-1823" reg="Coombe, William">William Coombe</name>
+</editor>
+<imprint>
+<pubPlace>London, UK</pubPlace>
+<publisher>
+<name place="UK" date="0000-0000" reg="Ackermann, R.">Ackermann, R.</name>
+</publisher>
+<date>18230000</date>
+<biblScope>3-4</biblScope>
+</imprint>
+</monogr>
+</biblStruct>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<editorialDecl>
+<p>This document follows the rules specified for TEI use by NINES.</p>
+<p>All quotation marks and apostrophes have been transcribed as entity references.</p>
+<p>Any dashes occurring in line breaks have been removed.</p>
+<p>Because of web browser variability, all colons and hyphens have been typed on the
+                            U.S. keyboard; dashes have been rendered as two hyphens.</p>
+<p>Special characters (letters with accents, etc.)  have been coded according to Unicode rather than as entity references.</p>
+<p>Page numbers appear at the beginning of each page, no matter where originally placed.</p>
+</editorialDecl>
+<classDecl>
+<taxonomy>
+<category>
+<catDesc type="ps">Primary</catDesc>
+</category>
+<category>
+<catDesc type="genre">poem</catDesc>
+</category>
+</taxonomy>
+</classDecl>
+</encodingDesc>
+<revisionDesc>
+<change>
+<date>20060422</date>
+<respStmt>
+<resp>encoding by </resp>
+<name>Laura Mandell</name>
+</respStmt>
+<item>encoding, transforming</item>
+</change>
+<change>
+<date>20060422</date>
+<respStmt>
+<resp>encoding by </resp>
+<name>Laura Mandell</name>
+</respStmt>
+<item>encoding, transforming</item>
+</change>
+</revisionDesc>
+</teiHeader>
+<text>
+<body>
+<pb n="3"/>
+<div type="poem" id="P1" org="uniform" sample="complete" part="N" TEIform="div">
+<head TEIform="head">[Poetical] Address, </head>
+<head TEIform="head">
+<name reg="[anon.]" date="0000-0000" place="UK" TEIform="name">[Anonymous]</name>
+</head>
+<pb n="3" TEIform="pb"/>
+<lg type="stanza" org="uniform" sample="complete" part="N" TEIform="lg">
+<l rend="indent2" part="N" TEIform="l">Another year is gone and past,</l>
+<l rend="indent1" part="N" TEIform="l">Nor life, nor time, was made to last:</l>
+<l rend="indent1" part="N" TEIform="l">As through the months which are no more,</l>
+<l rend="indent2" part="N" TEIform="l">So through the time now passing o'er,</l>
+<l rend="indent1" part="N" TEIform="l">I said, and say, each fleeting day,</l>
+</lg>
+<lb TEIform="lb"/>
+<lg type="stanza" org="uniform" sample="complete" part="N" TEIform="lg">
+<l rend="indent3" part="N" TEIform="l">Forget Me Not.</l>
+</lg>
+<lb TEIform="lb"/>
+<lg type="stanza" org="uniform" sample="complete" part="N" TEIform="lg">
+<l rend="indent1" part="N" TEIform="l">While the chill <emph TEIform="emph">Winter's</emph> bound in frost,</l>
+<l rend="indent1" part="N" TEIform="l">And Nature's gayest beauty's lost;</l>
+<l rend="indent1" part="N" TEIform="l">While the crackling dry faggots blaze,</l>
+<l rend="indent2" part="N" TEIform="l">And echoing songs the Minstrels raise;</l>
+<l rend="indent1" part="N" TEIform="l">Through day or night, 'mid your delight,</l>
+</lg>
+<lb TEIform="lb"/>
+<lg type="stanza" org="uniform" sample="complete" part="N" TEIform="lg">
+<l rend="indent3" part="N" TEIform="l">Forget Me Not.</l>
+</lg>
+<lb TEIform="lb"/>
+<lg type="stanza" org="uniform" sample="complete" part="N" TEIform="lg">
+<l rend="indent1" part="N" TEIform="l">When Phoebus calls the blooming <emph TEIform="emph">Spring</emph>,</l>
+<l rend="indent1" part="N" TEIform="l">And tells the nightingale to sing;</l>
+<l rend="indent1" part="N" TEIform="l">When other strains, and other measures,</l>
+<l rend="indent2" part="N" TEIform="l">Awake the soul to softer pleasures;</l>
+<l rend="indent1" part="N" TEIform="l">Amid the day, while zephyrs play,</l>
+</lg>
+<lb TEIform="lb"/>
+<lg type="stanza" org="uniform" sample="complete" part="N" TEIform="lg">
+<l rend="indent3" part="N" TEIform="l">Forget Me Not.</l>
+</lg>
+<lb TEIform="lb"/>
+<pb n="4" TEIform="pb"/>
+<lg type="stanza" org="uniform" sample="complete" part="N" TEIform="lg">
+<l rend="indent1" part="N" TEIform="l">When <emph TEIform="emph">Summer</emph> bids its bounty yield</l>
+<l rend="indent1" part="N" TEIform="l">The yellow harvests of the field;</l>
+<l rend="indent1" part="N" TEIform="l">When rural sports the hear employ</l>
+<l rend="indent2" part="N" TEIform="l">In many a festival of joy;</l>
+<l rend="indent1" part="N" TEIform="l">Amid those hours, in shady bowers,</l>
+</lg>
+<lb TEIform="lb"/>
+<lg type="stanza" org="uniform" sample="complete" part="N" TEIform="lg">
+<l rend="indent3" part="N" TEIform="l">Forget Me Not.</l>
+</lg>
+<lb TEIform="lb"/>
+<lg type="stanza" org="uniform" sample="complete" part="N" TEIform="lg">
+<l rend="indent1" part="N" TEIform="l">When <emph TEIform="emph">Autumn's</emph> loaded branches shine,</l>
+<l rend="indent1" part="N" TEIform="l">And bursting clusters give their wine;</l>
+<l rend="indent1" part="N" TEIform="l">When the yearly sun grows old,</l>
+<l rend="indent2" part="N" TEIform="l">And heat begins to yield to cold,</l>
+<l rend="indent1" part="N" TEIform="l">While the leaves fall -- within the hall</l>
+</lg>
+<lb TEIform="lb"/>
+<lg type="stanza" org="uniform" sample="complete" part="N" TEIform="lg">
+<l rend="indent3" part="N" TEIform="l">Forget Me Not.</l>
+</lg>
+<lb TEIform="lb"/>
+<lg type="stanza" org="uniform" sample="complete" part="N" TEIform="lg">
+<l rend="indent1" part="N" TEIform="l">Through ev'ry change and chance of time,</l>
+<l rend="indent1" part="N" TEIform="l">In life's first days, in pleasure's prime;</l>
+<l rend="indent1" part="N" TEIform="l">Or, in advancing years, when age</l>
+<l rend="indent1" part="N" TEIform="l">Begins to mark life's closing page;</l>
+<l rend="indent1" part="N" TEIform="l">Through the varying seasons all,</l>
+<l rend="indent2" part="N" TEIform="l">Whate'er my lot, FORGET ME NOT,</l>
+<l rend="indent1" part="N" TEIform="l">And keep my gift, though the gift be small.</l>
+</lg>
+</div>
+</body>
+</text>
+</TEI.2>
+<TEI.2 id="text2">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title level="a">January</title>
+<author type="painter">
+<name place="UK" date="0000-0000" reg="Burney, E. F.">Burney, E. F.</name>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>18230000</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<idno>FMN1823corpus.xml-text2</idno>
+<publisher>King Library, Miami University</publisher>
+<pubPlace>Oxford, OH</pubPlace>
+<date>20051107</date>
+<availability>
+<p> Miami University makes a claim of copyright only to original contributions
+                                made by the Poetess Archive participants and other members of the university
+                                community. Miami University makes no claim of copyright to the original
+                                text. Permission is granted to download, transmit or otherwise reproduce,
+                                distribute or display the contributions to this work claimed by Miami
+                                University for non-profit educational purposes, provided that this header is
+                                included in its entirety. For inquiries about commercial uses, please contact:<address>
+<addrLine>Judith Session, Dean</addrLine>
+<addrLine>King Library</addrLine>
+<addrLine>Miami University</addrLine>
+<addrLine>Oxford, OH 45056</addrLine>
+<addrLine>United States of America</addrLine>
+<addrLine>EMail: sessioja@muohio.edu</addrLine>
+</address>
+</p>
+</availability>
+</publicationStmt>
+<sourceDesc>
+<biblStruct>
+<analytic>
+<title level="a">January</title>
+<author type="painter">
+<name place="UK" date="0000-0000" reg="Burney, E. F.">Burney, E. F.</name>
+</author>
+</analytic>
+<monogr>
+<title type="main" level="m">Forget Me Not, </title>
+<title type="subordinate" level="m">A Christmas and New Year's Present for 1823</title>
+<editor>
+<name place="UK" date="1742-1823" reg="Coombe, William">William Coombe</name>
+</editor>
+<imprint>
+<pubPlace>London, UK</pubPlace>
+<publisher>
+<name place="UK" date="0000-0000" reg="Ackermann, R.">Ackermann, R.</name>
+</publisher>
+<date>18230000</date>
+</imprint>
+</monogr>
+</biblStruct>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<editorialDecl>
+<p>This document follows the rules specified for TEI use by NINES.</p>
+<p>All quotation marks and apostrophes have been transcribed as entity references.</p>
+<p>Any dashes occurring in line breaks have been removed.</p>
+<p>Because of web browser variability, all colons and hyphens have been typed on the
+                            U.S. keyboard; dashes have been rendered as two hyphens.</p>
+<p>Special characters (letters with accents, etc.)  have been coded according to Unicode rather than as entity references.</p>
+<p>Page numbers appear at the beginning of each page, no matter where originally placed.</p>
+</editorialDecl>
+<classDecl>
+<taxonomy>
+<category>
+<catDesc type="ps">Primary</catDesc>
+</category>
+<category>
+<catDesc type="genre">picture</catDesc>
+</category>
+</taxonomy>
+</classDecl>
+</encodingDesc>
+<revisionDesc>
+<change>
+<date>20060422</date>
+<respStmt>
+<resp>encoding by </resp>
+<name>Laura Mandell</name>
+</respStmt>
+<item>encoding, transforming</item>
+</change>
+<change>
+<date>20060422</date>
+<respStmt>
+<resp>encoding by </resp>
+<name>Laura Mandell</name>
+</respStmt>
+<item>encoding, transforming</item>
+</change>
+</revisionDesc>
+</teiHeader>
+<text>
+<body>
+<div type="picture" id="F3" org="uniform" sample="complete" part="N" TEIform="div">
+<head TEIform="head">January</head>
+<p rend="center" TEIform="p">
+<figure entity="smimage3" n="3" TEIform="figure">
+<head TEIform="head">
+<bibl default="NO" TEIform="bibl">
+<author type="painter" TEIform="author">From a painting by <name reg="Burney, E. F." date="0000-0000" place="UK" TEIform="name">E. F. Burney</name>
+</author>
+</bibl>
+</head>
+</figure>
+</p>
+<p TEIform="p">
+<xref doc="tiff1" targOrder="U" from="ROOT" to="DITTO" TEIform="xref">
+<figure entity="gettiff" TEIform="figure"/>
+</xref>
+</p>
+</div>
+</body>
+</text>
+</TEI.2>
+<TEI.2 id="text3">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title level="a">February</title>
+<author type="painter">
+<name place="UK" date="0000-0000" reg="Burney, E. F.">Burney, E. F.</name>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>18230000</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<idno>FMN1823corpus.xml-text3</idno>
+<publisher>King Library, Miami University</publisher>
+<pubPlace>Oxford, OH</pubPlace>
+<date>20051107</date>
+<availability>
+<p> Miami University makes a claim of copyright only to original contributions
+                                made by the Poetess Archive participants and other members of the university
+                                community. Miami University makes no claim of copyright to the original
+                                text. Permission is granted to download, transmit or otherwise reproduce,
+                                distribute or display the contributions to this work claimed by Miami
+                                University for non-profit educational purposes, provided that this header is
+                                included in its entirety. For inquiries about commercial uses, please contact:<address>
+<addrLine>Judith Session, Dean</addrLine>
+<addrLine>King Library</addrLine>
+<addrLine>Miami University</addrLine>
+<addrLine>Oxford, OH 45056</addrLine>
+<addrLine>United States of America</addrLine>
+<addrLine>EMail: sessioja@muohio.edu</addrLine>
+</address>
+</p>
+</availability>
+</publicationStmt>
+<sourceDesc>
+<biblStruct>
+<analytic>
+<title level="a">February</title>
+<author type="painter">
+<name place="UK" date="0000-0000" reg="Burney, E. F.">Burney, E. F.</name>
+</author>
+</analytic>
+<monogr>
+<title type="main" level="m">Forget Me Not, </title>
+<title type="subordinate" level="m">A Christmas and New Year's Present for 1823</title>
+<editor>
+<name place="UK" date="1742-1823" reg="Coombe, William">William Coombe</name>
+</editor>
+<imprint>
+<pubPlace>London, UK</pubPlace>
+<publisher>
+<name place="UK" date="0000-0000" reg="Ackermann, R.">Ackermann, R.</name>
+</publisher>
+<date>18230000</date>
+</imprint>
+</monogr>
+</biblStruct>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<editorialDecl>
+<p>This document follows the rules specified for TEI use by NINES.</p>
+<p>All quotation marks and apostrophes have been transcribed as entity references.</p>
+<p>Any dashes occurring in line breaks have been removed.</p>
+<p>Because of web browser variability, all colons and hyphens have been typed on the
+                            U.S. keyboard; dashes have been rendered as two hyphens.</p>
+<p>Special characters (letters with accents, etc.)  have been coded according to Unicode rather than as entity references.</p>
+<p>Page numbers appear at the beginning of each page, no matter where originally placed.</p>
+</editorialDecl>
+<classDecl>
+<taxonomy>
+<category>
+<catDesc type="ps">Primary</catDesc>
+</category>
+<category>
+<catDesc type="genre">picture</catDesc>
+</category>
+</taxonomy>
+</classDecl>
+</encodingDesc>
+<revisionDesc>
+<change>
+<date>20060422</date>
+<respStmt>
+<resp>encoding by </resp>
+<name>Laura Mandell</name>
+</respStmt>
+<item>encoding, transforming</item>
+</change>
+<change>
+<date>20060422</date>
+<respStmt>
+<resp>encoding by </resp>
+<name>Laura Mandell</name>
+</respStmt>
+<item>encoding, transforming</item>
+</change>
+</revisionDesc>
+</teiHeader>
+<text>
+<body>
+<div type="picture" id="F4" org="uniform" sample="complete" part="N" TEIform="div">
+<head TEIform="head">February</head>
+<p rend="center" TEIform="p">
+<figure entity="smimage4" n="4" TEIform="figure">
+<head TEIform="head">
+<bibl default="NO" TEIform="bibl">
+<author type="painter" TEIform="author">From a painting by <name reg="Burney, E. F." date="0000-0000" place="UK" TEIform="name">E. F. Burney</name>
+</author>
+</bibl>
+</head>
+</figure>
+</p>
+<p TEIform="p">
+<xref doc="tiff2" targOrder="U" from="ROOT" to="DITTO" TEIform="xref">
+<figure entity="gettiff" TEIform="figure"/>
+</xref>
+</p>
+</div>
+</body>
+</text>
+</TEI.2>
+<TEI.2 id="text4">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title level="a">March</title>
+<author type="painter">
+<name place="UK" date="0000-0000" reg="Burney, E. F.">Burney, E. F.</name>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>18230000</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<idno>FMN1823corpus.xml-text4</idno>
+<publisher>King Library, Miami University</publisher>
+<pubPlace>Oxford, OH</pubPlace>
+<date>20051107</date>
+<availability>
+<p> Miami University makes a claim of copyright only to original contributions
+                                made by the Poetess Archive participants and other members of the university
+                                community. Miami University makes no claim of copyright to the original
+                                text. Permission is granted to download, transmit or otherwise reproduce,
+                                distribute or display the contributions to this work claimed by Miami
+                                University for non-profit educational purposes, provided that this header is
+                                included in its entirety. For inquiries about commercial uses, please contact:<address>
+<addrLine>Judith Session, Dean</addrLine>
+<addrLine>King Library</addrLine>
+<addrLine>Miami University</addrLine>
+<addrLine>Oxford, OH 45056</addrLine>
+<addrLine>United States of America</addrLine>
+<addrLine>EMail: sessioja@muohio.edu</addrLine>
+</address>
+</p>
+</availability>
+</publicationStmt>
+<sourceDesc>
+<biblStruct>
+<analytic>
+<title level="a">March</title>
+<author type="painter">
+<name place="UK" date="0000-0000" reg="Burney, E. F.">Burney, E. F.</name>
+</author>
+</analytic>
+<monogr>
+<title type="main" level="m">Forget Me Not, </title>
+<title type="subordinate" level="m">A Christmas and New Year's Present for 1823</title>
+<editor>
+<name place="UK" date="1742-1823" reg="Coombe, William">William Coombe</name>
+</editor>
+<imprint>
+<pubPlace>London, UK</pubPlace>
+<publisher>
+<name place="UK" date="0000-0000" reg="Ackermann, R.">Ackermann, R.</name>
+</publisher>
+<date>18230000</date>
+</imprint>
+</monogr>
+</biblStruct>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<editorialDecl>
+<p>This document follows the rules specified for TEI use by NINES.</p>
+<p>All quotation marks and apostrophes have been transcribed as entity references.</p>
+<p>Any dashes occurring in line breaks have been removed.</p>
+<p>Because of web browser variability, all colons and hyphens have been typed on the
+                            U.S. keyboard; dashes have been rendered as two hyphens.</p>
+<p>Special characters (letters with accents, etc.)  have been coded according to Unicode rather than as entity references.</p>
+<p>Page numbers appear at the beginning of each page, no matter where originally placed.</p>
+</editorialDecl>
+<classDecl>
+<taxonomy>
+<category>
+<catDesc type="ps">Primary</catDesc>
+</category>
+<category>
+<catDesc type="genre">picture</catDesc>
+</category>
+</taxonomy>
+</classDecl>
+</encodingDesc>
+<revisionDesc>
+<change>
+<date>20060422</date>
+<respStmt>
+<resp>encoding by </resp>
+<name>Laura Mandell</name>
+</respStmt>
+<item>encoding, transforming</item>
+</change>
+<change>
+<date>20060422</date>
+<respStmt>
+<resp>encoding by </resp>
+<name>Laura Mandell</name>
+</respStmt>
+<item>encoding, transforming</item>
+</change>
+</revisionDesc>
+</teiHeader>
+<text>
+<body>
+<div type="picture" id="F5" org="uniform" sample="complete" part="N" TEIform="div">
+<head TEIform="head">March</head>
+<p rend="center" TEIform="p">
+<figure entity="smimage5" n="5" TEIform="figure">
+<head TEIform="head">
+<bibl default="NO" TEIform="bibl">
+<author type="painter" TEIform="author">From a painting by <name reg="Burney, E. F." date="0000-0000" place="UK" TEIform="name">E. F. Burney</name>
+</author>
+</bibl>
+</head>
+</figure>
+</p>
+<p TEIform="p">
+<xref doc="tiff3" targOrder="U" from="ROOT" to="DITTO" TEIform="xref">
+<figure entity="gettiff" TEIform="figure"/>
+</xref>
+</p>
+</div>
+</body>
+</text>
+</TEI.2>
+<TEI.2 id="text5">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title level="a">April</title>
+<author type="painter">
+<name place="UK" date="0000-0000" reg="Burney, E. F.">Burney, E. F.</name>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>18230000</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<idno>FMN1823corpus.xml-text5</idno>
+<publisher>King Library, Miami University</publisher>
+<pubPlace>Oxford, OH</pubPlace>
+<date>20051107</date>
+<availability>
+<p> Miami University makes a claim of copyright only to original contributions
+                                made by the Poetess Archive participants and other members of the university
+                                community. Miami University makes no claim of copyright to the original
+                                text. Permission is granted to download, transmit or otherwise reproduce,
+                                distribute or display the contributions to this work claimed by Miami
+                                University for non-profit educational purposes, provided that this header is
+                                included in its entirety. For inquiries about commercial uses, please contact:<address>
+<addrLine>Judith Session, Dean</addrLine>
+<addrLine>King Library</addrLine>
+<addrLine>Miami University</addrLine>
+<addrLine>Oxford, OH 45056</addrLine>
+<addrLine>United States of America</addrLine>
+<addrLine>EMail: sessioja@muohio.edu</addrLine>
+</address>
+</p>
+</availability>
+</publicationStmt>
+<sourceDesc>
+<biblStruct>
+<analytic>
+<title level="a">April</title>
+<author type="painter">
+<name place="UK" date="0000-0000" reg="Burney, E. F.">Burney, E. F.</name>
+</author>
+</analytic>
+<monogr>
+<title type="main" level="m">Forget Me Not, </title>
+<title type="subordinate" level="m">A Christmas and New Year's Present for 1823</title>
+<editor>
+<name place="UK" date="1742-1823" reg="Coombe, William">William Coombe</name>
+</editor>
+<imprint>
+<pubPlace>London, UK</pubPlace>
+<publisher>
+<name place="UK" date="0000-0000" reg="Ackermann, R.">Ackermann, R.</name>
+</publisher>
+<date>18230000</date>
+</imprint>
+</monogr>
+</biblStruct>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<editorialDecl>
+<p>This document follows the rules specified for TEI use by NINES.</p>
+<p>All quotation marks and apostrophes have been transcribed as entity references.</p>
+<p>Any dashes occurring in line breaks have been removed.</p>
+<p>Because of web browser variability, all colons and hyphens have been typed on the
+                            U.S. keyboard; dashes have been rendered as two hyphens.</p>
+<p>Special characters (letters with accents, etc.)  have been coded according to Unicode rather than as entity references.</p>
+<p>Page numbers appear at the beginning of each page, no matter where originally placed.</p>
+</editorialDecl>
+<classDecl>
+<taxonomy>
+<category>
+<catDesc type="ps">Primary</catDesc>
+</category>
+<category>
+<catDesc type="genre">picture</catDesc>
+</category>
+</taxonomy>
+</classDecl>
+</encodingDesc>
+<revisionDesc>
+<change>
+<date>20060422</date>
+<respStmt>
+<resp>encoding by </resp>
+<name>Laura Mandell</name>
+</respStmt>
+<item>encoding, transforming</item>
+</change>
+<change>
+<date>20060422</date>
+<respStmt>
+<resp>encoding by </resp>
+<name>Laura Mandell</name>
+</respStmt>
+<item>encoding, transforming</item>
+</change>
+</revisionDesc>
+</teiHeader>
+<text>
+<body>
+<div type="picture" id="F6" org="uniform" sample="complete" part="N" TEIform="div">
+<head TEIform="head">April</head>
+<p rend="center" TEIform="p">
+<figure entity="smimage6" n="6" TEIform="figure">
+<head TEIform="head">
+<bibl default="NO" TEIform="bibl">
+<author type="painter" TEIform="author">From a painting by <name reg="Burney, E. F." date="0000-0000" place="UK" TEIform="name">E. F. Burney</name>
+</author>
+</bibl>
+</head>
+</figure>
+</p>
+<p TEIform="p">
+<xref doc="tiff4" targOrder="U" from="ROOT" to="DITTO" TEIform="xref">
+<figure entity="gettiff" TEIform="figure"/>
+</xref>
+</p>
+</div>
+</body>
+</text>
+</TEI.2>
+<TEI.2 id="text6">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title level="a">May</title>
+<author type="painter">
+<name place="UK" date="0000-0000" reg="Burney, E. F.">Burney, E. F.</name>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>18230000</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<idno>FMN1823corpus.xml-text6</idno>
+<publisher>King Library, Miami University</publisher>
+<pubPlace>Oxford, OH</pubPlace>
+<date>20051107</date>
+<availability>
+<p> Miami University makes a claim of copyright only to original contributions
+                                made by the Poetess Archive participants and other members of the university
+                                community. Miami University makes no claim of copyright to the original
+                                text. Permission is granted to download, transmit or otherwise reproduce,
+                                distribute or display the contributions to this work claimed by Miami
+                                University for non-profit educational purposes, provided that this header is
+                                included in its entirety. For inquiries about commercial uses, please contact:<address>
+<addrLine>Judith Session, Dean</addrLine>
+<addrLine>King Library</addrLine>
+<addrLine>Miami University</addrLine>
+<addrLine>Oxford, OH 45056</addrLine>
+<addrLine>United States of America</addrLine>
+<addrLine>EMail: sessioja@muohio.edu</addrLine>
+</address>
+</p>
+</availability>
+</publicationStmt>
+<sourceDesc>
+<biblStruct>
+<analytic>
+<title level="a">May</title>
+<author type="painter">
+<name place="UK" date="0000-0000" reg="Burney, E. F.">Burney, E. F.</name>
+</author>
+</analytic>
+<monogr>
+<title type="main" level="m">Forget Me Not, </title>
+<title type="subordinate" level="m">A Christmas and New Year's Present for 1823</title>
+<editor>
+<name place="UK" date="1742-1823" reg="Coombe, William">William Coombe</name>
+</editor>
+<imprint>
+<pubPlace>London, UK</pubPlace>
+<publisher>
+<name place="UK" date="0000-0000" reg="Ackermann, R.">Ackermann, R.</name>
+</publisher>
+<date>18230000</date>
+</imprint>
+</monogr>
+</biblStruct>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<editorialDecl>
+<p>This document follows the rules specified for TEI use by NINES.</p>
+<p>All quotation marks and apostrophes have been transcribed as entity references.</p>
+<p>Any dashes occurring in line breaks have been removed.</p>
+<p>Because of web browser variability, all colons and hyphens have been typed on the
+                            U.S. keyboard; dashes have been rendered as two hyphens.</p>
+<p>Special characters (letters with accents, etc.)  have been coded according to Unicode rather than as entity references.</p>
+<p>Page numbers appear at the beginning of each page, no matter where originally placed.</p>
+</editorialDecl>
+<classDecl>
+<taxonomy>
+<category>
+<catDesc type="ps">Primary</catDesc>
+</category>
+<category>
+<catDesc type="genre">picture</catDesc>
+</category>
+</taxonomy>
+</classDecl>
+</encodingDesc>
+<revisionDesc>
+<change>
+<date>20060422</date>
+<respStmt>
+<resp>encoding by </resp>
+<name>Laura Mandell</name>
+</respStmt>
+<item>encoding, transforming</item>
+</change>
+<change>
+<date>20060422</date>
+<respStmt>
+<resp>encoding by </resp>
+<name>Laura Mandell</name>
+</respStmt>
+<item>encoding, transforming</item>
+</change>
+</revisionDesc>
+</teiHeader>
+<text>
+<body>
+<div type="picture" id="F7" org="uniform" sample="complete" part="N" TEIform="div">
+<head TEIform="head">May</head>
+<p rend="center" TEIform="p">
+<figure entity="smimage7" n="7" TEIform="figure">
+<head TEIform="head">
+<bibl default="NO" TEIform="bibl">
+<author type="painter" TEIform="author">From a painting by <name reg="Burney, E. F." date="0000-0000" place="UK" TEIform="name">E. F. Burney</name>
+</author>
+</bibl>
+</head>
+</figure>
+</p>
+<p TEIform="p">
+<xref doc="tiff5" targOrder="U" from="ROOT" to="DITTO" TEIform="xref">
+<figure entity="gettiff" TEIform="figure"/>
+</xref>
+</p>
+</div>
+</body>
+</text>
+</TEI.2>
+<TEI.2 id="text7">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title level="a">June</title>
+<author type="painter">
+<name place="UK" date="0000-0000" reg="Burney, E. F.">Burney, E. F.</name>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>18230000</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<idno>FMN1823corpus.xml-text7</idno>
+<publisher>King Library, Miami University</publisher>
+<pubPlace>Oxford, OH</pubPlace>
+<date>20051107</date>
+<availability>
+<p> Miami University makes a claim of copyright only to original contributions
+                                made by the Poetess Archive participants and other members of the university
+                                community. Miami University makes no claim of copyright to the original
+                                text. Permission is granted to download, transmit or otherwise reproduce,
+                                distribute or display the contributions to this work claimed by Miami
+                                University for non-profit educational purposes, provided that this header is
+                                included in its entirety. For inquiries about commercial uses, please contact:<address>
+<addrLine>Judith Session, Dean</addrLine>
+<addrLine>King Library</addrLine>
+<addrLine>Miami University</addrLine>
+<addrLine>Oxford, OH 45056</addrLine>
+<addrLine>United States of America</addrLine>
+<addrLine>EMail: sessioja@muohio.edu</addrLine>
+</address>
+</p>
+</availability>
+</publicationStmt>
+<sourceDesc>
+<biblStruct>
+<analytic>
+<title level="a">June</title>
+<author type="painter">
+<name place="UK" date="0000-0000" reg="Burney, E. F.">Burney, E. F.</name>
+</author>
+</analytic>
+<monogr>
+<title type="main" level="m">Forget Me Not, </title>
+<title type="subordinate" level="m">A Christmas and New Year's Present for 1823</title>
+<editor>
+<name place="UK" date="1742-1823" reg="Coombe, William">William Coombe</name>
+</editor>
+<imprint>
+<pubPlace>London, UK</pubPlace>
+<publisher>
+<name place="UK" date="0000-0000" reg="Ackermann, R.">Ackermann, R.</name>
+</publisher>
+<date>18230000</date>
+</imprint>
+</monogr>
+</biblStruct>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<editorialDecl>
+<p>This document follows the rules specified for TEI use by NINES.</p>
+<p>All quotation marks and apostrophes have been transcribed as entity references.</p>
+<p>Any dashes occurring in line breaks have been removed.</p>
+<p>Because of web browser variability, all colons and hyphens have been typed on the
+                            U.S. keyboard; dashes have been rendered as two hyphens.</p>
+<p>Special characters (letters with accents, etc.)  have been coded according to Unicode rather than as entity references.</p>
+<p>Page numbers appear at the beginning of each page, no matter where originally placed.</p>
+</editorialDecl>
+<classDecl>
+<taxonomy>
+<category>
+<catDesc type="ps">Primary</catDesc>
+</category>
+<category>
+<catDesc type="genre">picture</catDesc>
+</category>
+</taxonomy>
+</classDecl>
+</encodingDesc>
+<revisionDesc>
+<change>
+<date>20060422</date>
+<respStmt>
+<resp>encoding by </resp>
+<name>Laura Mandell</name>
+</respStmt>
+<item>encoding, transforming</item>
+</change>
+<change>
+<date>20060422</date>
+<respStmt>
+<resp>encoding by </resp>
+<name>Laura Mandell</name>
+</respStmt>
+<item>encoding, transforming</item>
+</change>
+</revisionDesc>
+</teiHeader>
+<text>
+<body>
+<div type="picture" id="F8" org="uniform" sample="complete" part="N" TEIform="div">
+<head TEIform="head">June</head>
+<p rend="center" TEIform="p">
+<figure entity="smimage8" n="8" TEIform="figure">
+<head TEIform="head">
+<bibl default="NO" TEIform="bibl">
+<author type="painter" TEIform="author">From a painting by <name reg="Burney, E. F." date="0000-0000" place="UK" TEIform="name">E. F. Burney</name>
+</author>
+</bibl>
+</head>
+</figure>
+</p>
+<p TEIform="p">
+<xref doc="tiff6" targOrder="U" from="ROOT" to="DITTO" TEIform="xref">
+<figure entity="gettiff" TEIform="figure"/>
+</xref>
+</p>
+</div>
+</body>
+</text>
+</TEI.2>
+<TEI.2 id="text8">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title level="a">July</title>
+<author type="painter">
+<name place="UK" date="0000-0000" reg="Burney, E. F.">Burney, E. F.</name>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>18230000</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<idno>FMN1823corpus.xml-text8</idno>
+<publisher>King Library, Miami University</publisher>
+<pubPlace>Oxford, OH</pubPlace>
+<date>20051107</date>
+<availability>
+<p> Miami University makes a claim of copyright only to original contributions
+                                made by the Poetess Archive participants and other members of the university
+                                community. Miami University makes no claim of copyright to the original
+                                text. Permission is granted to download, transmit or otherwise reproduce,
+                                distribute or display the contributions to this work claimed by Miami
+                                University for non-profit educational purposes, provided that this header is
+                                included in its entirety. For inquiries about commercial uses, please contact:<address>
+<addrLine>Judith Session, Dean</addrLine>
+<addrLine>King Library</addrLine>
+<addrLine>Miami University</addrLine>
+<addrLine>Oxford, OH 45056</addrLine>
+<addrLine>United States of America</addrLine>
+<addrLine>EMail: sessioja@muohio.edu</addrLine>
+</address>
+</p>
+</availability>
+</publicationStmt>
+<sourceDesc>
+<biblStruct>
+<analytic>
+<title level="a">July</title>
+<author type="painter">
+<name place="UK" date="0000-0000" reg="Burney, E. F.">Burney, E. F.</name>
+</author>
+</analytic>
+<monogr>
+<title type="main" level="m">Forget Me Not, </title>
+<title type="subordinate" level="m">A Christmas and New Year's Present for 1823</title>
+<editor>
+<name place="UK" date="1742-1823" reg="Coombe, William">William Coombe</name>
+</editor>
+<imprint>
+<pubPlace>London, UK</pubPlace>
+<publisher>
+<name place="UK" date="0000-0000" reg="Ackermann, R.">Ackermann, R.</name>
+</publisher>
+<date>18230000</date>
+</imprint>
+</monogr>
+</biblStruct>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<editorialDecl>
+<p>This document follows the rules specified for TEI use by NINES.</p>
+<p>All quotation marks and apostrophes have been transcribed as entity references.</p>
+<p>Any dashes occurring in line breaks have been removed.</p>
+<p>Because of web browser variability, all colons and hyphens have been typed on the
+                            U.S. keyboard; dashes have been rendered as two hyphens.</p>
+<p>Special characters (letters with accents, etc.)  have been coded according to Unicode rather than as entity references.</p>
+<p>Page numbers appear at the beginning of each page, no matter where originally placed.</p>
+</editorialDecl>
+<classDecl>
+<taxonomy>
+<category>
+<catDesc type="ps">Primary</catDesc>
+</category>
+<category>
+<catDesc type="genre">picture</catDesc>
+</category>
+</taxonomy>
+</classDecl>
+</encodingDesc>
+<revisionDesc>
+<change>
+<date>20060422</date>
+<respStmt>
+<resp>encoding by </resp>
+<name>Laura Mandell</name>
+</respStmt>
+<item>encoding, transforming</item>
+</change>
+<change>
+<date>20060422</date>
+<respStmt>
+<resp>encoding by </resp>
+<name>Laura Mandell</name>
+</respStmt>
+<item>encoding, transforming</item>
+</change>
+</revisionDesc>
+</teiHeader>
+<text>
+<body>
+<div type="picture" id="F9" org="uniform" sample="complete" part="N" TEIform="div">
+<head TEIform="head">July</head>
+<p rend="center" TEIform="p">
+<figure entity="smimage9" n="9" TEIform="figure">
+<head TEIform="head">
+<bibl default="NO" TEIform="bibl">
+<author type="painter" TEIform="author">From a painting by <name reg="Burney, E. F." date="0000-0000" place="UK" TEIform="name">E. F. Burney</name>
+</author>
+</bibl>
+</head>
+</figure>
+</p>
+<p TEIform="p">
+<xref doc="tiff7" targOrder="U" from="ROOT" to="DITTO" TEIform="xref">
+<figure entity="gettiff" TEIform="figure"/>
+</xref>
+</p>
+</div>
+</body>
+</text>
+</TEI.2>
+<TEI.2 id="text9">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title level="a">August</title>
+<author type="painter">
+<name place="UK" date="0000-0000" reg="Burney, E. F.">Burney, E. F.</name>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>18230000</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<idno>FMN1823corpus.xml-text9</idno>
+<publisher>King Library, Miami University</publisher>
+<pubPlace>Oxford, OH</pubPlace>
+<date>20051107</date>
+<availability>
+<p> Miami University makes a claim of copyright only to original contributions
+                                made by the Poetess Archive participants and other members of the university
+                                community. Miami University makes no claim of copyright to the original
+                                text. Permission is granted to download, transmit or otherwise reproduce,
+                                distribute or display the contributions to this work claimed by Miami
+                                University for non-profit educational purposes, provided that this header is
+                                included in its entirety. For inquiries about commercial uses, please contact:<address>
+<addrLine>Judith Session, Dean</addrLine>
+<addrLine>King Library</addrLine>
+<addrLine>Miami University</addrLine>
+<addrLine>Oxford, OH 45056</addrLine>
+<addrLine>United States of America</addrLine>
+<addrLine>EMail: sessioja@muohio.edu</addrLine>
+</address>
+</p>
+</availability>
+</publicationStmt>
+<sourceDesc>
+<biblStruct>
+<analytic>
+<title level="a">August</title>
+<author type="painter">
+<name place="UK" date="0000-0000" reg="Burney, E. F.">Burney, E. F.</name>
+</author>
+</analytic>
+<monogr>
+<title type="main" level="m">Forget Me Not, </title>
+<title type="subordinate" level="m">A Christmas and New Year's Present for 1823</title>
+<editor>
+<name place="UK" date="1742-1823" reg="Coombe, William">William Coombe</name>
+</editor>
+<imprint>
+<pubPlace>London, UK</pubPlace>
+<publisher>
+<name place="UK" date="0000-0000" reg="Ackermann, R.">Ackermann, R.</name>
+</publisher>
+<date>18230000</date>
+</imprint>
+</monogr>
+</biblStruct>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<editorialDecl>
+<p>This document follows the rules specified for TEI use by NINES.</p>
+<p>All quotation marks and apostrophes have been transcribed as entity references.</p>
+<p>Any dashes occurring in line breaks have been removed.</p>
+<p>Because of web browser variability, all colons and hyphens have been typed on the
+                            U.S. keyboard; dashes have been rendered as two hyphens.</p>
+<p>Special characters (letters with accents, etc.)  have been coded according to Unicode rather than as entity references.</p>
+<p>Page numbers appear at the beginning of each page, no matter where originally placed.</p>
+</editorialDecl>
+<classDecl>
+<taxonomy>
+<category>
+<catDesc type="ps">Primary</catDesc>
+</category>
+<category>
+<catDesc type="genre">picture</catDesc>
+</category>
+</taxonomy>
+</classDecl>
+</encodingDesc>
+<revisionDesc>
+<change>
+<date>20060422</date>
+<respStmt>
+<resp>encoding by </resp>
+<name>Laura Mandell</name>
+</respStmt>
+<item>encoding, transforming</item>
+</change>
+<change>
+<date>20060422</date>
+<respStmt>
+<resp>encoding by </resp>
+<name>Laura Mandell</name>
+</respStmt>
+<item>encoding, transforming</item>
+</change>
+</revisionDesc>
+</teiHeader>
+<text>
+<body>
+<div type="picture" id="F10" org="uniform" sample="complete" part="N" TEIform="div">
+<head TEIform="head">August</head>
+<p rend="center" TEIform="p">
+<figure entity="smimage10" n="10" TEIform="figure">
+<head TEIform="head">
+<bibl default="NO" TEIform="bibl">
+<author type="painter" TEIform="author">From a painting by <name reg="Burney, E. F." date="0000-0000" place="UK" TEIform="name">E. F. Burney</name>
+</author>
+</bibl>
+</head>
+</figure>
+</p>
+<p TEIform="p">
+<xref doc="tiff8" targOrder="U" from="ROOT" to="DITTO" TEIform="xref">
+<figure entity="gettiff" TEIform="figure"/>
+</xref>
+</p>
+</div>
+</body>
+</text>
+</TEI.2>
+<TEI.2 id="text10">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title level="a">September</title>
+<author type="painter">
+<name place="UK" date="0000-0000" reg="Burney, E. F.">Burney, E. F.</name>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>18230000</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<idno>FMN1823corpus.xml-text10</idno>
+<publisher>King Library, Miami University</publisher>
+<pubPlace>Oxford, OH</pubPlace>
+<date>20051107</date>
+<availability>
+<p> Miami University makes a claim of copyright only to original contributions
+                                made by the Poetess Archive participants and other members of the university
+                                community. Miami University makes no claim of copyright to the original
+                                text. Permission is granted to download, transmit or otherwise reproduce,
+                                distribute or display the contributions to this work claimed by Miami
+                                University for non-profit educational purposes, provided that this header is
+                                included in its entirety. For inquiries about commercial uses, please contact:<address>
+<addrLine>Judith Session, Dean</addrLine>
+<addrLine>King Library</addrLine>
+<addrLine>Miami University</addrLine>
+<addrLine>Oxford, OH 45056</addrLine>
+<addrLine>United States of America</addrLine>
+<addrLine>EMail: sessioja@muohio.edu</addrLine>
+</address>
+</p>
+</availability>
+</publicationStmt>
+<sourceDesc>
+<biblStruct>
+<analytic>
+<title level="a">September</title>
+<author type="painter">
+<name place="UK" date="0000-0000" reg="Burney, E. F.">Burney, E. F.</name>
+</author>
+</analytic>
+<monogr>
+<title type="main" level="m">Forget Me Not, </title>
+<title type="subordinate" level="m">A Christmas and New Year's Present for 1823</title>
+<editor>
+<name place="UK" date="1742-1823" reg="Coombe, William">William Coombe</name>
+</editor>
+<imprint>
+<pubPlace>London, UK</pubPlace>
+<publisher>
+<name place="UK" date="0000-0000" reg="Ackermann, R.">Ackermann, R.</name>
+</publisher>
+<date>18230000</date>
+</imprint>
+</monogr>
+</biblStruct>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<editorialDecl>
+<p>This document follows the rules specified for TEI use by NINES.</p>
+<p>All quotation marks and apostrophes have been transcribed as entity references.</p>
+<p>Any dashes occurring in line breaks have been removed.</p>
+<p>Because of web browser variability, all colons and hyphens have been typed on the
+                            U.S. keyboard; dashes have been rendered as two hyphens.</p>
+<p>Special characters (letters with accents, etc.)  have been coded according to Unicode rather than as entity references.</p>
+<p>Page numbers appear at the beginning of each page, no matter where originally placed.</p>
+</editorialDecl>
+<classDecl>
+<taxonomy>
+<category>
+<catDesc type="ps">Primary</catDesc>
+</category>
+<category>
+<catDesc type="genre">picture</catDesc>
+</category>
+</taxonomy>
+</classDecl>
+</encodingDesc>
+<revisionDesc>
+<change>
+<date>20060422</date>
+<respStmt>
+<resp>encoding by </resp>
+<name>Laura Mandell</name>
+</respStmt>
+<item>encoding, transforming</item>
+</change>
+<change>
+<date>20060422</date>
+<respStmt>
+<resp>encoding by </resp>
+<name>Laura Mandell</name>
+</respStmt>
+<item>encoding, transforming</item>
+</change>
+</revisionDesc>
+</teiHeader>
+<text>
+<body>
+<div type="picture" id="F11" org="uniform" sample="complete" part="N" TEIform="div">
+<head TEIform="head">September</head>
+<p rend="center" TEIform="p">
+<figure entity="smimage11" n="11" TEIform="figure">
+<head TEIform="head">
+<bibl default="NO" TEIform="bibl">
+<author type="painter" TEIform="author">From a painting by <name reg="Burney, E. F." date="0000-0000" place="UK" TEIform="name">E. F. Burney</name>
+</author>
+</bibl>
+</head>
+</figure>
+</p>
+<p TEIform="p">
+<xref doc="tiff9" targOrder="U" from="ROOT" to="DITTO" TEIform="xref">
+<figure entity="gettiff" TEIform="figure"/>
+</xref>
+</p>
+</div>
+</body>
+</text>
+</TEI.2>
+<TEI.2 id="text11">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title level="a">October</title>
+<author type="painter">
+<name place="UK" date="0000-0000" reg="Burney, E. F.">Burney, E. F.</name>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>18230000</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<idno>FMN1823corpus.xml-text11</idno>
+<publisher>King Library, Miami University</publisher>
+<pubPlace>Oxford, OH</pubPlace>
+<date>20051107</date>
+<availability>
+<p> Miami University makes a claim of copyright only to original contributions
+                                made by the Poetess Archive participants and other members of the university
+                                community. Miami University makes no claim of copyright to the original
+                                text. Permission is granted to download, transmit or otherwise reproduce,
+                                distribute or display the contributions to this work claimed by Miami
+                                University for non-profit educational purposes, provided that this header is
+                                included in its entirety. For inquiries about commercial uses, please contact:<address>
+<addrLine>Judith Session, Dean</addrLine>
+<addrLine>King Library</addrLine>
+<addrLine>Miami University</addrLine>
+<addrLine>Oxford, OH 45056</addrLine>
+<addrLine>United States of America</addrLine>
+<addrLine>EMail: sessioja@muohio.edu</addrLine>
+</address>
+</p>
+</availability>
+</publicationStmt>
+<sourceDesc>
+<biblStruct>
+<analytic>
+<title level="a">October</title>
+<author type="painter">
+<name place="UK" date="0000-0000" reg="Burney, E. F.">Burney, E. F.</name>
+</author>
+</analytic>
+<monogr>
+<title type="main" level="m">Forget Me Not, </title>
+<title type="subordinate" level="m">A Christmas and New Year's Present for 1823</title>
+<editor>
+<name place="UK" date="1742-1823" reg="Coombe, William">William Coombe</name>
+</editor>
+<imprint>
+<pubPlace>London, UK</pubPlace>
+<publisher>
+<name place="UK" date="0000-0000" reg="Ackermann, R.">Ackermann, R.</name>
+</publisher>
+<date>18230000</date>
+</imprint>
+</monogr>
+</biblStruct>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<editorialDecl>
+<p>This document follows the rules specified for TEI use by NINES.</p>
+<p>All quotation marks and apostrophes have been transcribed as entity references.</p>
+<p>Any dashes occurring in line breaks have been removed.</p>
+<p>Because of web browser variability, all colons and hyphens have been typed on the
+                            U.S. keyboard; dashes have been rendered as two hyphens.</p>
+<p>Special characters (letters with accents, etc.)  have been coded according to Unicode rather than as entity references.</p>
+<p>Page numbers appear at the beginning of each page, no matter where originally placed.</p>
+</editorialDecl>
+<classDecl>
+<taxonomy>
+<category>
+<catDesc type="ps">Primary</catDesc>
+</category>
+<category>
+<catDesc type="genre">picture</catDesc>
+</category>
+</taxonomy>
+</classDecl>
+</encodingDesc>
+<revisionDesc>
+<change>
+<date>20060422</date>
+<respStmt>
+<resp>encoding by </resp>
+<name>Laura Mandell</name>
+</respStmt>
+<item>encoding, transforming</item>
+</change>
+<change>
+<date>20060422</date>
+<respStmt>
+<resp>encoding by </resp>
+<name>Laura Mandell</name>
+</respStmt>
+<item>encoding, transforming</item>
+</change>
+</revisionDesc>
+</teiHeader>
+<text>
+<body>
+<div type="picture" id="F12" org="uniform" sample="complete" part="N" TEIform="div">
+<head TEIform="head">October</head>
+<p rend="center" TEIform="p">
+<figure entity="smimage12" n="12" TEIform="figure">
+<head TEIform="head">
+<bibl default="NO" TEIform="bibl">
+<author type="painter" TEIform="author">From a painting by <name reg="Burney, E. F." date="0000-0000" place="UK" TEIform="name">E. F. Burney</name>
+</author>
+</bibl>
+</head>
+</figure>
+</p>
+<p TEIform="p">
+<xref doc="tiff10" targOrder="U" from="ROOT" to="DITTO" TEIform="xref">
+<figure entity="gettiff" TEIform="figure"/>
+</xref>
+</p>
+</div>
+</body>
+</text>
+</TEI.2>
+<TEI.2 id="text12">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title level="a">November</title>
+<author type="painter">
+<name place="UK" date="0000-0000" reg="Burney, E. F.">Burney, E. F.</name>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>18230000</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<idno>FMN1823corpus.xml-text12</idno>
+<publisher>King Library, Miami University</publisher>
+<pubPlace>Oxford, OH</pubPlace>
+<date>20051107</date>
+<availability>
+<p> Miami University makes a claim of copyright only to original contributions
+                                made by the Poetess Archive participants and other members of the university
+                                community. Miami University makes no claim of copyright to the original
+                                text. Permission is granted to download, transmit or otherwise reproduce,
+                                distribute or display the contributions to this work claimed by Miami
+                                University for non-profit educational purposes, provided that this header is
+                                included in its entirety. For inquiries about commercial uses, please contact:<address>
+<addrLine>Judith Session, Dean</addrLine>
+<addrLine>King Library</addrLine>
+<addrLine>Miami University</addrLine>
+<addrLine>Oxford, OH 45056</addrLine>
+<addrLine>United States of America</addrLine>
+<addrLine>EMail: sessioja@muohio.edu</addrLine>
+</address>
+</p>
+</availability>
+</publicationStmt>
+<sourceDesc>
+<biblStruct>
+<analytic>
+<title level="a">November</title>
+<author type="painter">
+<name place="UK" date="0000-0000" reg="Burney, E. F.">Burney, E. F.</name>
+</author>
+</analytic>
+<monogr>
+<title type="main" level="m">Forget Me Not, </title>
+<title type="subordinate" level="m">A Christmas and New Year's Present for 1823</title>
+<editor>
+<name place="UK" date="1742-1823" reg="Coombe, William">William Coombe</name>
+</editor>
+<imprint>
+<pubPlace>London, UK</pubPlace>
+<publisher>
+<name place="UK" date="0000-0000" reg="Ackermann, R.">Ackermann, R.</name>
+</publisher>
+<date>18230000</date>
+</imprint>
+</monogr>
+</biblStruct>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<editorialDecl>
+<p>This document follows the rules specified for TEI use by NINES.</p>
+<p>All quotation marks and apostrophes have been transcribed as entity references.</p>
+<p>Any dashes occurring in line breaks have been removed.</p>
+<p>Because of web browser variability, all colons and hyphens have been typed on the
+                            U.S. keyboard; dashes have been rendered as two hyphens.</p>
+<p>Special characters (letters with accents, etc.)  have been coded according to Unicode rather than as entity references.</p>
+<p>Page numbers appear at the beginning of each page, no matter where originally placed.</p>
+</editorialDecl>
+<classDecl>
+<taxonomy>
+<category>
+<catDesc type="ps">Primary</catDesc>
+</category>
+<category>
+<catDesc type="genre">picture</catDesc>
+</category>
+</taxonomy>
+</classDecl>
+</encodingDesc>
+<revisionDesc>
+<change>
+<date>20060422</date>
+<respStmt>
+<resp>encoding by </resp>
+<name>Laura Mandell</name>
+</respStmt>
+<item>encoding, transforming</item>
+</change>
+<change>
+<date>20060422</date>
+<respStmt>
+<resp>encoding by </resp>
+<name>Laura Mandell</name>
+</respStmt>
+<item>encoding, transforming</item>
+</change>
+</revisionDesc>
+</teiHeader>
+<text>
+<body>
+<div type="picture" id="F13" org="uniform" sample="complete" part="N" TEIform="div">
+<head TEIform="head">November</head>
+<p rend="center" TEIform="p">
+<figure entity="smimage13" n="13" TEIform="figure">
+<head TEIform="head">
+<bibl default="NO" TEIform="bibl">
+<author type="painter" TEIform="author">From a painting by <name reg="Burney, E. F." date="0000-0000" place="UK" TEIform="name">E. F. Burney</name>
+</author>
+</bibl>
+</head>
+</figure>
+</p>
+<p TEIform="p">
+<xref doc="tiff11" targOrder="U" from="ROOT" to="DITTO" TEIform="xref">
+<figure entity="gettiff" TEIform="figure"/>
+</xref>
+</p>
+</div>
+</body>
+</text>
+</TEI.2>
+<TEI.2 id="text13">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title level="a">December</title>
+<author type="painter">
+<name place="UK" date="0000-0000" reg="Burney, E. F.">Burney, E. F.</name>
+</author>
+</titleStmt>
+<editionStmt>
+<edition>
+<date>18230000</date>
+</edition>
+</editionStmt>
+<publicationStmt>
+<idno>FMN1823corpus.xml-text13</idno>
+<publisher>King Library, Miami University</publisher>
+<pubPlace>Oxford, OH</pubPlace>
+<date>20051107</date>
+<availability>
+<p> Miami University makes a claim of copyright only to original contributions
+                                made by the Poetess Archive participants and other members of the university
+                                community. Miami University makes no claim of copyright to the original
+                                text. Permission is granted to download, transmit or otherwise reproduce,
+                                distribute or display the contributions to this work claimed by Miami
+                                University for non-profit educational purposes, provided that this header is
+                                included in its entirety. For inquiries about commercial uses, please contact:<address>
+<addrLine>Judith Session, Dean</addrLine>
+<addrLine>King Library</addrLine>
+<addrLine>Miami University</addrLine>
+<addrLine>Oxford, OH 45056</addrLine>
+<addrLine>United States of America</addrLine>
+<addrLine>EMail: sessioja@muohio.edu</addrLine>
+</address>
+</p>
+</availability>
+</publicationStmt>
+<sourceDesc>
+<biblStruct>
+<analytic>
+<title level="a">December</title>
+<author type="painter">
+<name place="UK" date="0000-0000" reg="Burney, E. F.">Burney, E. F.</name>
+</author>
+</analytic>
+<monogr>
+<title type="main" level="m">Forget Me Not, </title>
+<title type="subordinate" level="m">A Christmas and New Year's Present for 1823</title>
+<editor>
+<name place="UK" date="1742-1823" reg="Coombe, William">William Coombe</name>
+</editor>
+<imprint>
+<pubPlace>London, UK</pubPlace>
+<publisher>
+<name place="UK" date="0000-0000" reg="Ackermann, R.">Ackermann, R.</name>
+</publisher>
+<date>18230000</date>
+</imprint>
+</monogr>
+</biblStruct>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<editorialDecl>
+<p>This document follows the rules specified for TEI use by NINES.</p>
+<p>All quotation marks and apostrophes have been transcribed as entity references.</p>
+<p>Any dashes occurring in line breaks have been removed.</p>
+<p>Because of web browser variability, all colons and hyphens have been typed on the
+                            U.S. keyboard; dashes have been rendered as two hyphens.</p>
+<p>Special characters (letters with accents, etc.)  have been coded according to Unicode rather than as entity references.</p>
+<p>Page numbers appear at the beginning of each page, no matter where originally placed.</p>
+</editorialDecl>
+<classDecl>
+<taxonomy>
+<category>
+<catDesc type="ps">Primary</catDesc>
+</category>
+<category>
+<catDesc type="genre">picture</catDesc>
+</category>
+</taxonomy>
+</classDecl>
+</encodingDesc>
+<revisionDesc>
+<change>
+<date>20060422</date>
+<respStmt>
+<resp>encoding by </resp>
+<name>Laura Mandell</name>
+</respStmt>
+<item>encoding, transforming</item>
+</change>
+<change>
+<date>20060422</date>
+<respStmt>
+<resp>encoding by </resp>
+<name>Laura Mandell</name>
+</respStmt>
+<item>encoding, transforming</item>
+</change>
+</revisionDesc>
+</teiHeader>
+<text>
+<body>
+<div type="picture" id="F14" org="uniform" sample="complete" part="N" TEIform="div">
+<head TEIform="head">December</head>
+<p rend="center" TEIform="p">
+<figure entity="smimage14" n="14" TEIform="figure">
+<head TEIform="head">
+<bibl default="NO" TEIform="bibl">
+<author type="painter" TEIform="author">From a painting by <name reg="Burney, E. F." date="0000-0000" place="UK" TEIform="name">E. F. Burney</name>
+</author>
+</bibl>
+</head>
+</figure>
+</p>
+<p TEIform="p">
+<xref doc="tiff12" targOrder="U" from="ROOT" to="DITTO" TEIform="xref">
+<figure entity="gettiff" TEIform="figure"/>
+</xref>
+</p>
+</div>
+</body>
+</text>
+</TEI.2>
+</teiCorpus.2>

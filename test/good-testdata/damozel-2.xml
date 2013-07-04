@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<juxta-document>
+<bibliographic>
+<title>The Blessed Damozel (1872 autograph MS fragment)</title>
+<short-title>1872 Fragment</short-title>
+<author>Dante Gabriel Rossetti</author>
+<editor></editor>
+<source>Princeton University Library</source>
+<date>1872 (circa)</date>
+<notes>
+</notes>
+</bibliographic>
+<text><m_s id="page1" type="p" img="1-1847.princefrag.1.jpg" n="1" />
+<m_s id="page1stanza1" type="st." n="1" />
+<m_s id="page1line1" type="l." n="1" />Around her, lovers, newly met<m_e refid="page1line1" />
+<m_s id="page1line2" type="l." n="2" /> 'Mid deathless love's acclaims,<m_e refid="page1line2" />
+<m_s id="page1line3" type="l." n="3" />Spoke evermore among themselves<m_e refid="page1line3" />
+<m_s id="page1line4" type="l." n="4" /> Their rapturous new names;<m_e refid="page1line4" />
+<m_s id="page1line5" type="l." n="5" />And the souls mounting up to God<m_e refid="page1line5" />
+<m_s id="page1line6" type="l." n="6" /> Went by her like thin flames.<m_e refid="page1line6" />
+<m_e refid="page1stanza1" /><m_e refid="page1" /></text>
+</juxta-document>

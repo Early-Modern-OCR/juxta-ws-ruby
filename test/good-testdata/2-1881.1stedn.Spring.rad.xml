@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<ram xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:noNamespaceSchemaLocation="http://www.rossettiarchive.org/ram.xsd"
+     archivetype="rad"
+     type="book"
+     id="a.2-1881.1stedn"
+     metatype="web.book"
+     workcode="2-1881"
+     image="a.2-1881.1sted.design.tif"
+     version="1stedn">
+
+    <ramheader>
+        <filedesc>
+            <titlestmt>
+                <title>Ballads and Sonnets (1881), first edition</title>
+                <author>Dante Gabriel Rossetti</author>
+                
+                
+            </titlestmt>
+            <editionstmt>
+                <edition>1</edition>
+            </editionstmt>
+            <extent/>
+            
+            
+            <notesstmt/>
+            <sourcedesc>
+                <citnstruct>
+                    <title>Ballads and Sonnets</title>
+                    <author>Dante Gabriel Rossetti</author>
+                    <imprint>
+                        <publisher>F. S. Ellis</publisher>
+                        <printer>Chiswick Press, C. Wittingham and Co.</printer>
+                        <city>London</city>
+                        <date compdate="1881-10-17">1881 October 17</date>
+                        <edition>1</edition>
+                        <prepub/>
+                        <pagination> [2 unpaginated], [i-v], vi-xii, [1-3], 4 - 68, [69 - 71], 72 -
+                            95, [96 - 99], 100 - 159, [160], [2 unpaginated], [161-163], 164 - 263.
+                            [264 - 267], 268 - 307, [308 - 311], 312 - 335, [336], [2 adverts]</pagination>
+                        <issue>1</issue>
+                        <authorization>DGR</authorization>
+                        <collation>[A]<hi rend="sup">6</hi>, B - L<hi rend="sup">8</hi>, x<hi rend="sup">1</hi>, M -Y<hi rend="sup">8</hi>
+                        </collation>
+                    </imprint>
+                    <provenance>
+                        <location>Alderman Library, U. of Virginia</location>
+                        <recnum>PR5244.B2 1881 (Copy 1)</recnum>
+                        <note/>
+                    </provenance>
+                    <physicaldesc>
+                        <binding>
+                            <cover>Original publisher's green cloth, gold stamped design</cover>
+                            <endpapers>blue floral</endpapers>
+                        </binding>
+                        <typography>
+                            <typeface>
+                                <point>10 point; 6 point leading</point>
+                                <font>roman</font>
+                            </typeface>
+                            <pagelines>
+                                <number>17, 24</number>
+                                <length/>
+                            </pagelines>
+                            <margin type="top">2 cm</margin>
+                            <margin type="bottom">3.8 cm</margin>
+                            <margin type="right">3 cm</margin>
+                            <margin type="left">1.5 cm</margin>
+                            <note>The number of lines per page varies. For the longer poems, like
+                                the opening ballads, the number is 17/page; for the sonnets, as in
+                                    <title level="wrk">The House of Life</title> sequence, the
+                                number is 24.</note>
+                        </typography>
+                        <paper/>
+                        <watermark/>
+                        <size>19 x 12.8cm (crown octavo)</size>
+                        
+                    </physicaldesc>
+                </citnstruct>
+            </sourcedesc>
+        </filedesc>
+        <encodingdesc/>
+        <profiledesc>
+            <commentaries>
+                <head>Commentary</head>
+                <section type="intro">
+                    <head>Introduction</head>
+                    <p>The <hi rend="i">
+                            <title level="doc">Ballads and Sonnets</title>
+                        </hi> volume began as part of DGR's project to bring out a new and expanded
+                        edition of his 1870 <hi rend="i">
+                            <xref doc="a.1-1870.raw">
+                                <title level="doc">Poems</title>
+                            </xref>
+                        </hi>, which had gone out of print in 1878. Although the idea for a new
+                        edition was being explicitly broached as early as February 1880, the book
+                        became a practical possibility sometime around September 1880, when DGR had
+                        finished composing &#8220;<xref doc="a.1-1878.raw">
+                            <title level="wrk">The White Ship</title>
+                        </xref>&#8221; (see <bibl>
+                            <author>Bryson</author>, <hi rend="i">DGR and Jane Morris</hi>,
+                        <pages>155</pages>).</bibl> DGR was writing a good deal of new poetry by the
+                        fall, and in November a publication plan was being formulated by DGR's
+                        publisher Ellis, who suggested putting &#8220;<quote>the old and the
+                            new together</quote>&#8221; in one volume. DGR agreed. The new
+                        volume entered its final planning stage in December (see WMR's
+                            <bibl>Unpublished Diary, <pages>226</pages>).</bibl>
+                    </p>
+                    <p>DGR accomplished a number of works at this time &#8212; &#8220;<xref doc="a.5-1881.raw">
+                            <title level="wrk">The King's Tragedy</title>
+                        </xref>&#8221; was begun in December, &#8220;<xref doc="a.29-1871.raw">
+                            <title level="wrk">Rose Mary</title>
+                        </xref>&#8221; was finished in February, 1881 and &#8220;<xref doc="a.1-1878.raw">
+                            <title level="wrk">The White Ship</title>
+                        </xref>&#8221; in April, and &#8220;<xref doc="a.22-1881.raw">
+                            <title level="wrk">The House of Life</title>
+                        </xref>&#8221; sequence was being completely recast. In December he saw
+                        that &#8220;<quote>This series now consists of 100 Sonnets (though I
+                            omit several of the M. S. ones) and forms 2 Parts viz Part I Youth and
+                            Change Part II Change and Fate[.] I shall have nearly 50 Sonnets besides
+                            the House of Life ones</quote>&#8221; (letter to Jane Morris, 13
+                        December 1880: <bibl>Bryson, <pages>167-168</pages>)</bibl>. Indeed, all
+                        these new sonnets and the new ballads clearly dictated the title of the book
+                        that finally emerged.</p>
+                    <p> At first DGR planned a single new volume, and in December 1880 this was
+                        still his plan; the book was <quote>to be called <hi rend="i">Poems Old and New</hi>
+                        </quote> (letter to Mrs. Morris, 17 December: <bibl>Fredeman, <title level="doc">
+                                <hi rend="i">Correspondence</hi>
+                            </title> 80.386</bibl>). The decision to produce two new volumes, one
+                        comprising (for the most part) new poetry, the other older work, was made in
+                        January 1881 (see WMR's <bibl>Unpublished Diary, <pages>232</pages>
+                        </bibl>). DGR's greatest attention was given to the new work, the <hi rend="i">
+                            <title level="doc">Ballads and Sonnets</title>
+                        </hi> volume, a fact that shaped the schedule of publication for both
+                        books. DGR's customary meticulousness dragged out the production process,
+                        which was further delayed by Whittingham's slow delivery of the proofs. And
+                        other obstacles arose. First was Jane Morris's apprehensions about the
+                        personal character of &#8220;<xref doc="a.22-1881.raw">
+                            <title level="wrk">The House of Life</title>
+                        </xref>&#8221; sequence, second the publisher's desire &#8212; after so many delays &#8212; to put off publishing even further, until
+                        a better commercial moment should arrive. This was judged to be early fall,
+                        so while <hi rend="i">
+                            <title level="doc">Ballads and Sonnets</title>
+                        </hi> was ready for publication by the end of June, it did not appear until
+                        late October.</p>
+                </section>
+                <section type="texthistcomp">
+                    <head>Textual History: Composition</head>
+                    <p>The composition of the book involves the history of the composition of
+                        various individual pieces in the book, and most importantly the three long
+                        ballads as well as the new version of &#8220;<xref doc="a.22-1881.raw">
+                            <title level="wrk">The House of Life</title>
+                        </xref>&#8221;. The process extended over the better part of a year,
+                        from the late summer of 1880 to mid-summer 1881. An important event was the
+                        decision to include the whole of &#8220;<xref doc="a.22-1881.raw">
+                            <title level="wrk">The House of Life</title>
+                        </xref>&#8221; in this volume, rather than in the companion volume of
+                            <hi rend="i">
+                     <xref doc="a.1-1881.raw">
+                            <title level="doc">Poems. A New Edition</title>
+                        </xref>
+                  </hi>, where he had at first intended to place the sequence. </p>
+                    <p>The idea for the title came late, in April 1881 (see <bibl>Fredeman, <title level="doc">
+                                <hi rend="i">Correspondence</hi>
+                            </title> 81.155)</bibl>.</p>
+                </section>
+                <section type="texthistrev">
+                    <head>Textual History: Revision</head>
+                    <p>As usual with DGR, most of the revision process took place at the proof
+                        stage, which commenced for the <hi rend="i">
+                            <title level="doc">Ballads and Sonnets</title>
+                        </hi> in early April 1881 and continued into August. The cancels were made
+                        in late July and early August (see <bibl>Fredeman, <title level="doc">
+                                <hi rend="i">Correspondence</hi>
+                            </title> 81.305, 306, 342, 351</bibl>).</p>
+                </section>
+                <section type="printhist">
+                    <head>Printing History</head>
+                    <p>Of first importance here is the identity of the printer: Charles Whittingham,
+                        and the Chiswick Press. In making this choice DGR was returning to the
+                        printer he used for his first book, <hi rend="i">
+                            <xref doc="a.1-1861.raw">
+                                <title level="doc">The Early Italian Poets</title>
+                            </xref>
+                        </hi>, and to a printer whose reputation for careful work was very high. The
+                        companion volume of 1881, the new <hi rend="i">
+                            <xref doc="a.1-1881.raw">
+                                <title level="doc">Poems</title>
+                            </xref>
+                        </hi>, was being printed by Strangeways, who was the printer for the 1870
+                        volume. In thus dividing the work, Ellis and DGR clearly hoped to expedite
+                        the printing process. Events conspired against their plans, however.</p>
+                    <p>As with all of his books, DGR was much concerned with every aspect of the
+                        physical appearance of the book. An interesting letter to Ellis (see
+                            <bibl>Fredeman, <title level="doc">
+                                <hi rend="i">Correspondence</hi>
+                            </title> 81.126</bibl>) refers to Swinburne's two recent (1880) volumes,
+                            <hi rend="i">
+                            <xref doc="a.">
+                                <title level="doc">Studies in Song</title>
+                            </xref>
+                        </hi> and <hi rend="i">
+                            <xref doc="a.">
+                                <title level="doc">Songs of the Springtides</title>
+                            </xref>
+                        </hi>, whose page format designs DGR wanted to follow. The typographical
+                        character of the <hi rend="i">
+                            <title level="doc">Ballads and Sonnets</title>
+                        </hi> volume as it finally appeared is unusual. Most significant, the two
+                        broad parts of the book &#8212; the ballads on one hand, and the
+                        sonnets on the other &#8212; are treated very differently. The page for
+                        the ballads permits only 17 lines of text, whereas the page for the sonnets
+                        reverts to the format of the 1870 <hi rend="i">
+                            <xref doc="a.1-1870.raw">
+                                <title level="doc">Poems</title>
+                            </xref>
+                        </hi> and carries 24 lines of text. As it turns out, this typographical
+                        double-mindedness results in a rather awkward appearance in the book as a
+                        whole &#8212; in sharp contrast to both the 1870 and the 1881 <hi rend="i">
+                            <xref doc="a.1-1881.raw">
+                                <title level="doc">Poems</title>
+                            </xref>
+                        </hi> volumes, which are strikingly beautiful and coherent as physical objects.</p>
+                    <p>As to the actual printing process, DGR's arrangement with his publisher called for at least three and sometimes four sets of initial proofs for each signature.  One or sometimes two were kept in house and at least two were sent to DGR, who would send a corrected set back to the printer, keeping a corrected set with himself.  Two copies of revise proofs would then be sent back to DGR with one set kept in house, and the revision process would proceed in that way through further revises until DGR was satisfied with the state of the text.  The printing process began on 5 April and was not finally complete until 7 June.</p>
+               <p>DGR's brother William Michael was much involved with the revision of the book.  DGR regularly sent copies of his first author's proofs to his brother for comments and suggestions.  In addition, on 17 May DGR told his publisher to print off a complete proof copy of the book and send it to his brother for further inspection, and on 21 May he made the same request that a copy be sent to Theodore Watts.</p>
+                    <p>The most intense set of revisions came at two periods.  The first was between 25 April and 3 May, when the initial signatures for &#8220;<xref doc="a.22-1881.raw">
+                     <title level="doc">The House of Life</title>
+                  </xref>&#8221; arrived to DGR (signatures M and N).  These revisions involved a major redesign of the page plus some of DGR's characteristic moves to shift the position of different sonnets.  The second period dealt with late alterations to &#8220;<xref doc="a.5-1881.raw">
+                     <title level="doc">The King's Tragedy</title>
+                  </xref>&#8221; (signatures K and L), for which revises were pulled intermittently between 15 May and 7 June.  These changes came about largely because of questions Watts raised about the poem around 20 May.  DGR responded to these over the next few days by writing new material for the poem and revising various passages. </p>
+                    <p>The printing schedule (by signature) was as follows: <hi rend="i">Signatures B - G</hi>: first proofs, 5-6 April; first revises, 13-14 April; second revises, 22 April; <hi rend="i">Signatures H - L</hi>: First proofs, 14 April;  <hi rend="i">Signatures M - N</hi>: First proofs, 25 April; 28 April ? 3  May, first and second revises; <hi rend="i">Signatures O - Q</hi>: first proofs, 3-4 May; first revises, 10 May; final proof, 17 May; <hi rend="i">Signatures R - Y</hi>: first proofs, 5-7 May; first revises, 10 May; final proof, 17 May; <hi rend="i">Signature A</hi>: first proofs, 19 May; first, second revises, 21-23 May; last revise, 7 June; <hi rend="i">Signature Z</hi> (not in the BL proofs). This last was sent to DGR on 7 May with the final batch of signatures.  It disappeared from the book when DGR removed two sonnets from signature Y (&#8220;<xref doc="a.16-1849.raw">
+                        <title level="doc">On a Handful of French Money</title>
+                  </xref>&#8221; and &#8220;<xref doc="a.14-1849.raw">
+                     <title level="doc">The Staircase of Notre Dame</title>
+                  </xref>&#8221;).  One copy of this signature is preserved at Delaware.  Signature Z returned to the volume in the second edition when two pages were added after page 160 to accommodate a half-title for &#8220;<xref doc="a.22-1881.raw">
+                            <title level="wrk">The House of Life</title>
+                        </xref>&#8221; sequence; <hi rend="i">Cancel leaf</hi>, pages 185-186: DGR called for this in a letter to Ellis of 5 August.</p>
+                    
+                    <p>The book sold very well after its publication on 17 October (the price was
+                        12s.). By 25 October 1000 copies had been sold (but see <bibl>Fredeman,
+                                <title level="doc">
+                                <hi rend="i">Correspondence</hi>
+                            </title> 81.449</bibl> where the number is put at 1250). Ellis ordered
+                        another 1000 copies which were printed in November, 500 issued as the second
+                        edition (dated 1881), 500 as the third (dated 1882). From this print run
+                        sheets for 250 copies were sent to the American publisher Roberts Brothers
+                        (who issued a second edition of 1000 copies of their own in 1882). In March
+                        1882 Ellis was preparing another (the fourth) edition, which was published
+                        sometime after 10 March.</p>
+                    <p>The volume has cancels for the following pages: Dedication; <title level="doc">
+                            <hi rend="i">The House of Life</hi>
+                        </title> title page; 185-86.</p>
+                     <p>Twenty-five large paper copies (22.6 x 14cm, demy octavo) of <hi rend="i">
+                            <title level="doc">Ballads and Sonnets</title>
+                        </hi> were printed
+                            on Whatman's rag paper. These large paper copies are bound in blue-grey boards, with a
+                            white backstrip and no decorated endpapers. On A2 appears the
+                            following note: &#8216;[Twenty-five Copies printed on large paper
+                            for / Subscribers only.]&#8217; </p>
+                            <p/>
+                    
+                   
+                </section>
+                <section type="recepthist">
+                    <head>Reception History</head>
+                    <p>The initial sales of the book, as well as the early reviews, testify to its
+                        contemporary success (see <bibl>Ghose, <xref doc="a.pr5247.g5.rad" link="dead">
+                                <title level="doc">
+                                    <hi rend="i">DGR and Contemporary Criticism (1849-1882)</hi>
+                                </title>
+                            </xref>
+                        </bibl>).</p>
+                    <p>There is a sharp division of opinion about the quality of the new (long)
+                        ballads, and this difference fairly epitomizes a difference between
+                        contemporary and later views of the poet's work in general.
+                        Twentieth-century readers tend to see these later ballads as a falling off
+                        from DGR's earlier work, whereas most of his contemporaries received them
+                        with great favor.</p>
+                </section>
+                <section type="historical">
+                    <head>Historical</head>
+                    <p/>
+                </section>
+                <section type="literary">
+                    <head>Literary</head>
+                    <p>This culminant work of his literary career is appropriately dominated by
+                        DGR's two favorite generic forms, the ballad and the sonnet. It also
+                        contains the latest version of his masterwork &#8220;<xref doc="a.22-1881.raw">
+                            <title level="wrk">The House of Life</title>
+                        </xref>&#8221; that he authorized. As with the 1870 volume, DGR looked
+                        upon his poetry as artistic work unprostituted by those commercial concerns
+                        that he saw dominating his work as a painter.</p>
+                    <p>DGR's sister was especially pleased by the ballad form because it avoided the
+                        painful aspects of her brother's more personal work. So she urged him to
+                        write more of them. <bibl>(WMR, <hi rend="i">Family Letters</hi>,
+                        <pages>89</pages>)</bibl> And so he did, partly out of admiration for
+                        Tennyson's new volume, <hi rend="i">
+                            <xref doc="a.tennyson011.rad" link="dead">
+                                <title level="bk">Ballads and Other Poems</title>
+                            </xref>
+                        </hi>, and partly out of a desire to make a broader appeal.</p>
+                </section>
+                <section type="translation">
+                    <head>Translation</head>
+                    <p/>
+                </section>
+                <section type="autobio">
+                    <head>Autobiographical</head>
+                    <p>The book concentrates its explicit autobiographical focus in
+                            &#8220;<xref doc="a.22-1881.raw">
+                            <title level="wrk">The House of Life</title>
+                        </xref>&#8221; sequence, and in doing so it emphasizes the strongly
+                        disjunctive character of the volume. It is as if DGR's work, which is
+                        nothing if it isn't all of a piece (even obsessively so), were here being
+                        arbitrarily compartmentalized. The effort to de-personalize the appearance
+                        of his work is carried to an extreme, even to the presentation of
+                            &#8220;<xref doc="a.22-1881.raw">
+                            <title level="wrk">The House of Life</title>
+                        </xref>&#8221; sequence. The story of that effort is epitomized in the
+                        story of the delay of the book's publication. DGR himself was worried about
+                        his sonnets <cit>&#8220;<quote>attacked as <hi rend="i">being personal</hi>
+                            </quote>&#8221; (<bibl>Doughty and Wahl, <hi rend="i">Letters</hi>,
+                                    <pages>IV 2507</pages>)</bibl>
+                        </cit>, and he sought Jane Morris's view of the matter, since she figured so
+                        intimately in that work. As William Fredeman has observed, there can be no
+                        doubt that by early July Jane Morris had conveyed to DGR <cit>
+                            <quote>&#8220;some anxious response. . .to the proofs&#8221;</quote> 
+                            <bibl> (Lewis, <pages>211</pages>)</bibl>
+                        </cit> of the book she had read. As a result, DGR removed the final sentence
+                        from the introductory prose advertisement for &#8220;<xref doc="a.22-1881.raw">
+                            <title level="wrk">The House of Life</title>
+                        </xref>&#8221; sequence. The sentence had left it open whether a reader
+                        should take the story told in the sonnets as <cit>
+                            <quote>&#8220;fact or thought&#8221;</quote>
+                        </cit> of the poet's.</p>
+                    <p>So by a kind of paradox, this volume and its companion <hi rend="i">
+                            <xref doc="a.1-1881.raw">
+                                <title level="doc">Poems. A New Edition</title>
+                            </xref>
+                        </hi> achieve a strange autobiographical force precisely by the poet's
+                        efforts to remove the personal elements from his latest work. This book in
+                        particular seems marked by various kinds of <hi rend="i">dis</hi>harmonies,
+                        displacements, and disjunctions at every level. As such, the poet's
+                        fractured psychic state seems well represented by his book.</p>
+                </section>
+                <section type="biblio">
+                    <head>Bibliographic</head>
+                    <p>
+                        <bibl>
+                            <author>Gregory</author>, &#8220;<title level="doc">
+                        <xref doc="gregory.vol1.rad gregory.vol2.rad" link="dead" from="91" to="92">Life and Works of DGR</xref>
+                     </title>&#8221;, 
+                            <pages>91-92</pages>.
+                        </bibl>
+                        <bibl>
+                            <author>Wise</author>, <title level="doc">
+                        <xref doc="" link="dead">
+                                <hi rend="i">Ashley Library</hi>
+                        </xref>
+                     </title>, <pages>IV</pages>.
+                        </bibl>
+                        <bibl>
+                            <author>Lewis</author>, &#8220;<title level="es">Rossetti's <hi rend="i">
+                                    <title level="doc">Ballads and Sonnets</title>
+                                </hi> and <hi rend="i">
+                                    <title level="doc">Poems</title>
+                                </hi> (1881)</title>&#8221;, <pages>199-216</pages>.
+                        </bibl>
+                    </p>
+                </section>
+            </commentaries>
+        </profiledesc>
+        <revisiondesc/>
+    </ramheader>
+    <text>
+        <front>
+            <epage/>
+            <page n="[cover]" image="a.2-1881.1ed.cover.tif"/>
+            
+            <epage/>
+            <page n="[spine]" image="a.2-1881.1ed.spine.tif"/>
+            
+            <epage/>
+            <page n="[foreedge]" image="a.2-1881.1ed.edge.tif"/>
+            
+            <epage/>
+            <page n="[head]" image="a.2-1881.1ed.head.tif"/>
+            
+            <epage/>
+            <page n="[tail]" image="a.2-1881.1ed.tail.tif"/>
+            
+            <epage/>
+            <page n="[front paste]" image="a.2-1881.1ed.000.tif"/>
+            
+            <epage/>
+            <page n="[001]" image="a.2-1881.1ed.001.tif"/>
+            
+            <epage/>
+            <page n="[002]" image="a.2-1881.1ed.002.tif"/>
+            
+            
+            <page n="[003]" image="a.2-1881.1ed.003.tif"/>
+            <div0 anchor="front.1" workcode="2-1881" type="half title" n="1">
+                <p>
+                    <hi rend="c">BALLADS AND SONNETS</hi>.</p>
+            </div0>
+            <epage/>
+            <page n="[004]" image="a.2-1881.1ed.004.tif"/>
+            <pageheader>
+                <note>blank page</note>
+            </pageheader>
+            <epage/>
+            <page n="[i]" image="a.2-1881.1ed.i.tif"/>
+            <titlepage>
+                <doctitle>
+                    <titlepart type="main">
+                        <hi rend="c">BALLADS AND SONNETS</hi>
+                    </titlepart>
+                </doctitle>
+                <byline>
+                    <hi rend="sc">by</hi>
+                </byline>
+                <docauthor>
+                    <hi rend="c">DANTE GABRIEL ROSSETTI.</hi>
+                </docauthor>
+                <docimprint>
+                    <hi rend="c">LONDON:</hi>
+                    <lb/>
+                    <hi rend="c">ELLIS AND WHITE,</hi>
+                    <lb/>29, <hi rend="sc">New Bond Street, W.</hi>
+                </docimprint>
+                <docdate>1881.</docdate>
+            </titlepage>
+            <epage/>
+            <page n="[ii]" image="a.2-1881.1ed.ii.tif"/>
+            <div0 anchor="front.2" type="colophon" n="2">
+                <p rend="ni">
+                    <lb rend="center"/>
+                    <hi rend="c">CHISWICK PRESS:&#8212;CHARLES WHITTINGHAM AND CO</hi>.,<lb rend="center"/>
+                    <hi rend="c">TOOKS COURT, CHANCERY LANE</hi>.</p>
+            </div0>
+            <epage/>
+            <page n="[iii]" image="a.2-1881.1ed.iii.tif"/>
+            <div0 anchor="front.3" type="dedication" n="3">
+                <p rend="ni">
+                    <lb rend="center"/>
+                    <hi rend="c">TO</hi>
+                    <lb rend="center"/>
+                    <hi rend="c">THEODORE WATTS</hi>,<lb rend="center"/>
+                    <hi rend="c">THE FRIEND WHOM MY VERSE WON FOR ME</hi>,<lb rend="center"/>
+                    <hi rend="c">THESE FEW MORE PAGES</hi>
+                    <lb rend="center"/>
+                    <hi rend="c">ARE AFFECTIONATELY INSCRIBED</hi>.</p>
+            </div0>
+            <epage/>
+            <page n="[iv]" image="a.2-1881.1ed.iv.tif"/>
+            <pageheader>
+                <note>blank page</note>
+            </pageheader>
+            <epage/>
+            <page n="[v]" image="a.2-1881.1ed.v.tif"/>
+            
+            <epage/>
+        </front>
+        <body>
+            <page n="[1]" image="a.2-1881.1ed.1.tif"/>
+            <pageheader>
+                <bibliosig>B</bibliosig>
+            </pageheader>
+            <div0 anchor="0.1" type="section" n="1" title="Ballads." id="a.19-1881.i1"
+               workcode="19-1881">
+                
+ 
+                <page n="323" image="a.2-1881.1ed.323.tif"/>
+                <div1 anchor="0.4.9" type="sonnet" n="9" title="Spring." id="a.10-1873.i153"
+                  workcode="10-1873">
+                    <divheader>
+                        <title id="A.R.127">
+                            <hi rend="c">SPRING</hi>.</title>
+                    </divheader>
+                    <lg n="1" type="octave">
+                        <l n="1">
+                            <hi rend="sc">Soft-littered</hi> is the new-year's lambing-fold,</l>
+                        <l n="2" indent="1"> And in the hollowed haystack at its side</l>
+                        <l n="3" indent="1"> The shepherd lies o'nights now, wakeful-eyed</l>
+                        <l n="4">At the ewes' travailing call through the dark cold.</l>
+                        <l n="5">The young rooks cheep 'mid the thick caw o'the old:</l>
+                        <l n="6" indent="1"> And near unpeopled stream-sides, on the ground,</l>
+                        <l n="7" indent="1"> By her spring-cry the moorhen's nest is found,</l>
+                        <l n="8">Where the drained flood-lands flaunt their marigold.</l>
+                    </lg>
+                    <lg n="2" type="sestet">
+                        <l n="9">Chill are the gusts to which the pastures cower,</l>
+                        <l n="10" indent="1"> And chill the current where the young reeds stand</l>
+                        <l n="11" indent="1"> As green and close as the young wheat on land:</l>
+                        <l n="12">Yet here the cuckoo and the cuckoo-flower</l>
+                        <l n="13">Plight to the heart Spring's perfect imminent hour</l>
+                        <l n="14" indent="1" part="i"> Whose breath shall soothe you like your dear</l>
+                        <l n="14" indent="2" part="f"> one's hand.</l>
+                    </lg>
+                </div1>
+                <epage/>
+            </div0>
+            <epage/>
+        </body>
+        <back>
+            <page n="[336]" image="a.2-1881.1ed.336.tif"/>
+            <div0 anchor="back.1" type="colophon" n="1">
+                <p rend="ni">
+                    <lb rend="center"/>
+                    <hi rend="c">CHISWICK PRESS:&#8212;CHARLES WHITTINGHAM AND CO.,</hi>
+                    <lb rend="center"/>
+                    <hi rend="sc">Tooks Court, Chancery Lane.</hi>
+                </p>
+            </div0>
+            <epage/>
+            <page n="[337]" image="a.2-1881.1ed.337.tif"/>
+            <div0 anchor="back.2" type="advertisement" n="2">
+                <pageheader>
+                    <note>justified, centered.</note>
+                </pageheader>
+                <p rend="ni">
+                    <lb rend="center"/>
+                    <hi rend="b">Will be published immediately.</hi>
+                    <lb rend="center"/>
+                    <hi rend="i">
+                        <hi rend="sc">A New Edition, with Additions</hi>
+                    </hi>
+                    <lb rend="center"/>
+                    <hi rend="b">
+                        <hi rend="c">POEMS,</hi>
+                    </hi>
+                    <lb rend="center"/>
+                    <hi rend="c">BY DANTE GABRIEL ROSSETTI.</hi>
+                    <lb rend="center"/>
+                    <hi rend="i">Crown 8vo, bound from the author's design.</hi>
+                    <lb rend="center"/>
+                    <hi rend="sc">Price</hi>
+                    <hi rend="b">12</hi>
+                    <hi rend="i">s.</hi>
+                </p>
+                <ornlb>---------------------</ornlb>
+                <p rend="ni">
+                    <lb rend="center"/>
+                    <hi rend="i">Revised and Re-arranged Edition, crown 8vo, price <hi rend="b">14</hi>s.</hi>
+                    <lb rend="center"/>
+                    <hi rend="c">DANTE AND HIS CIRCLE;</hi>
+                    <lb rend="center"/>
+                    <hi rend="c">WITH THE ITALIAN POETS PRECEDING HIM</hi>
+                    <lb rend="center"/>(1100-1200-1300). <lb rend="center"/>A Collection of Lyrics,
+                    Edited and Translated in the <lb rend="center"/>Original Metres, <lb rend="center"/>
+                    <hi rend="c">BY D. G. ROSSETTI.</hi>
+                    <lb rend="center"/>
+                    <hi rend="i">This work includes a translation of</hi>
+                    <lb rend="center"/>
+                    <hi rend="c">THE VITA NUOVA OF DANTE.</hi>
+                </p>
+            </div0>
+            <epage/>
+            <page n="[338]" image="a.2-1881.1ed.338.tif"/>
+            <pageheader>
+                <note>blank page</note>
+            </pageheader>
+            
+            <epage/>
+            <page n="[unpaginated]" image="a.2-1881.1ed.339.tif"/>
+            
+            <epage/>
+            <page n="[unpaginated]" image="a.2-1881.1ed.340.tif"/>
+            
+            <epage/>
+            <page n="[unpaginated]" image="a.2-1881.1ed.341.tif"/>
+            
+            <epage/>
+            <page n="[unpaginated]" image="a.2-1881.1ed.back.tif"/>
+        </back>
+    </text>
+</ram>

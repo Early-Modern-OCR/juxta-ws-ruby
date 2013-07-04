@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<ram xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:noNamespaceSchemaLocation="http://www.rossettiarchive.org/ram.xsd"
+     image="a.8-1853.troxms.contents.tif"
+     archivetype="rad"
+     type="ms.collection"
+     id="a.greenbook.prinms"
+     metatype="web.manuscript"
+     workcode="misc">
+    
+    
+    
+	
+    
+    <ramheader>
+        <filedesc>
+            <titlestmt>
+                <title>Sonnets (Princeton/Troxell bound manuscript volume)</title>
+                <author>Dante Gabriel Rossetti</author>
+                
+                
+            </titlestmt>
+            <editionstmt>
+                <edition>1</edition>
+                <copyright>Princeton University Library, Department of Rare Books and Special Collections</copyright>
+            </editionstmt>
+            <extent/>
+            
+            
+            <notesstmt/>
+            <sourcedesc>
+                <citnstruct>
+                    <title>D. G. ROSSETTI <lb/> SONNETS &amp; FRAGMENTS<lb/>
+                    </title>
+                    <author>Dante Gabriel Rossetti</author>
+                    <msprod>
+                        <date compdate="1848,1881">1848-1881</date>
+                        <type/>
+                        <assign/>
+                        <collation>cover sheet, 1-11</collation>
+                        <note>The manuscripts were posthumously gathered and bound in this volume;
+                            they date from various periods. The manuscripts are pasted down on the
+                            leaves of the book.</note>
+                    </msprod>
+                    <scribe>DGR</scribe>
+                    <corrector>DGR</corrector>
+                    <provenance>
+                        <location>Princeton University Library</location>
+                        <recnum>23290</recnum>
+                        <note>The book was bound by Charles Fairfax Murray.</note>
+                    </provenance>
+                    <physicaldesc>
+                        <binding>
+                            <cover>gold stamped green leather</cover>
+                            <endpapers/>
+                        </binding>
+                        <typography>
+                            <typeface>
+                                <point/>
+                                <font/>
+                            </typeface>
+                            <pagelines>
+                                <number/>
+                                <length/>
+                            </pagelines>
+                            <columns/>
+                            <margin type="top"/>
+                            <margin type="bottom"/>
+                            <margin type="right"/>
+                            <margin type="left"/>
+                            <note/>
+                        </typography>
+                        <paper/>
+                        <watermark/>
+                        <size/>
+                        <note/>
+                    </physicaldesc>
+                </citnstruct>
+            </sourcedesc>
+        </filedesc>
+        <encodingdesc/>
+        <profiledesc>
+            <commentaries>
+                <head>Commentary</head>
+                <section type="intro">
+                    <head>Introduction</head>
+                    <p>This volume is a heterogeneous collection of poetical and prose materials
+                        bound together after DGR's death.
+                        
+                    </p>
+                </section>
+                <section type="texthistcomp">
+                    <head>Textual History: Composition</head>
+                    <p/>
+                </section>
+                <section type="texthistrev">
+                    <head>Textual History: Revision</head>
+                    <p/>
+                </section>
+                <section type="prodhist">
+                    <head>Production History</head>
+                    <p/>
+                </section>
+                <section type="recepthist">
+                    <head>Reception History</head>
+                    <p/>
+                </section>
+                <section type="icon">
+                    <head>Iconographic</head>
+                    <p/>
+                </section>
+                <section type="printhist">
+                    <head>Printing History</head>
+                    <p/>
+                </section>
+                <section type="pictorial">
+                    <head>Pictorial</head>
+                    <p/>
+                </section>
+                <section type="historical">
+                    <head>Historical</head>
+                    <p/>
+                </section>
+                <section type="literary">
+                    <head>Literary</head>
+                    <p/>
+                </section>
+                <section type="translation">
+                    <head>Translation</head>
+                    <p/>
+                </section>
+                <section type="autobio">
+                    <head>Autobiographical</head>
+                    <p/>
+                </section>
+                <section type="biblio">
+                    <head>Bibliographic</head>
+                    <p/>
+                </section>
+            </commentaries>
+        </profiledesc>
+        <revisiondesc/>
+    </ramheader>
+    <text>
+        <front>
+            <page n="endpapers" image="a.8-1853.troxms.contents.tif"/>
+            <pageheader>
+                <note>Janet Camp Troxell's bookplate pasted down on inside front cover</note>
+            </pageheader>
+            <epage/>
+            <page n="[i]" image="a.8-1853.troxms.contents.tif"/>
+            <pageheader>
+                <note>Typed list of contents, each numbered by hand to the left.</note>
+            </pageheader>
+            <div0 anchor="front.1" type="table of contents" n="1">
+                <divheader>
+                    <title>Green Book</title>
+                </divheader>
+                <p>1 Words on the Window Pane<lb/>2 The last five from Trafalgar<lb/>3 During
+                    Music<lb/>4 To P B Marston<lb/>5 For the Holy Family<lb/>6
+                    Cassandra<lb/>7 Sudden Light<lb/>8 Spring ���See also�� Purple Book p. 2<lb/>9
+                    The Church Porch<lb/>10 The Portrait<lb/>11 To Death�� of his Lady</p>
+            </div0>
+            <epage/>
+            <page n="coversheet" image="a.8-1853.troxms.1.tif"/>
+            <pageheader>
+                <note/>
+            </pageheader>
+            <msadds type="note">
+                <trans>Eleven Original Manuscript Sonnets by<lb/> Dante Gabriel Rossetti.</trans>
+                <desc>Charles Fairfax Murray's notation</desc>
+            </msadds>
+            <msadds type="note">
+                <trans>and ALS 1876 to Mrs. Summers<lb/>and 1 page &#8220;The Philosophy of Handwriting&#8221;<lb/>with DGR's pencil notes</trans>
+                <desc>Notation in unknown hand; the letter is not among the bound materials in the volume.</desc>
+            </msadds>
+            <epage/>
+        </front>
+        <body>
+            <page n="[1]" image="a.8-1853.troxms.1.tif"/>
+            <pageheader>
+                <size>
+                    <actual>18 x 22 inches</actual>
+                    <original/>
+                </size>
+                <paper>
+                    <lineation>ruled</lineation>
+                    <stock>white</stock>
+                </paper>
+                
+                <condition/>
+            </pageheader>
+            
+            <div0 anchor="0.1" type="sonnet" n="1" title="Words on the Window-pane."
+               workcode="8-1853"
+               id="a.8-1853.troxms.1">
+                <divheader>
+                    <title>
+                    	<add>Words on the Window-pane</add>
+                  <lb/>
+                        <del>On an unfinished inscription<lb/>
+                        	scratched on a window-pane<lb/>
+                        	Words on the window-pane.</del>
+                        
+                    </title>
+                </divheader>
+                <lg n="1" type="octave">
+                    <l n="1">Did she in summer write it, or in spring,</l>
+                    <l n="2" indent="1"> Or with this wail of autumn at her ears,</l>
+                    <l n="3" indent="1"> Or in some winter left among old years</l>
+                    <l n="4">Scratched it through tettered cark? A certain thing</l>
+                    <l n="5">That round her heart the frost was hardening</l>
+                    <l n="6" indent="1"> Not to be thawed of tears, which on this pane</l>
+                    <l n="7" indent="1"> Channelled the rime, perchance, in fevered rain,</l>
+                    <l n="8">For false man's sake and love's most bitter sting.</l>
+                </lg>
+                <lg n="2" type="sestet">
+                    <l n="9">Howbeit, between this last word &amp; the next</l>
+                    <l n="10">Unwritten, subtly seasoned was the smart,</l>
+                    <l n="11" indent="1"> And here at least the grace to weep: if she,</l>
+                    <l n="12">Rather, midway in her disconsolate text,</l>
+                    <l n="13">Rebelled not, loathing from the trodden heart</l>
+                    <l n="14" indent="1"> That thing which she had found man's love to be.</l>
+                </lg>
+                <ornlb>------------</ornlb>
+            </div0>
+            <page n="[1v]" image="a.4-1878.troxms.tif"/>
+            <pageheader>
+                <note>blank page</note>
+            </pageheader>
+            
+            <epage/>
+            <page n="[2]" image="a.4-1878.troxms.tif"/>
+            <pageheader>
+                <size>
+                    <actual>18 x 11 cm</actual>
+                    <original/>
+                </size>
+                <paper>
+                    <lineation>ruled</lineation>
+                    <stock>white</stock>
+                </paper>
+                
+                <condition/>
+            </pageheader>
+            
+            <div0 anchor="0.2" type="sonnet" n="2"
+               title="The Last Three from Trafalgar (At the  Anniversary Banquet, 21st October 187-"
+               workcode="4-1878"
+               id="a.4-1878.troxms">
+                <divheader>
+                    <title>The Last <del>Five</del>
+                        <add>Few</add> from Trafalgar <lb/>
+                        <add>at the Anniversary Banquet</add>
+                        <lb/> (21 Oct: <del>?</del>
+                        <add>187*</add>)</title>
+                </divheader>
+                <lg n="1" type="octave">
+                    <l n="1">In grappled ships around The Victory, </l>
+                    <l n="2" indent="1">
+                        <del>Five</del>
+                        <add>Those</add> boys did England's <del>d</del>
+                  <add>D</add>uty with stout cheer, </l>
+                    <l n="3" indent="1"> While one dread truth was kept from every ear, </l>
+                    <l n="4">More dire than deafening fire that churned the sea: </l>
+                    <l n="5">For in the flag-ship's weltering cockpit, he </l>
+                    <l n="6" indent="1"> Who was the Battle's Heart without a peer, </l>
+                    <l n="7" indent="1"> He who had seen all fearful sights save Fear, </l>
+                    <l n="8">Was passing from all life save Victory.</l>
+                </lg>
+                <lg n="2" type="sestet">
+                    <l n="9">And round the old memorial board today, </l>
+                    <l n="10" indent="1">
+                        <del>Five</del>
+                        <add>These</add> greybeards&#8212;each a warworn British
+                        Tar&#8212; </l>
+                    <l n="11" indent="1"> View through the mist of years that hour afar: </l>
+                    <l n="12">Who soon shall greet, 'mid memories of fierce fray, </l>
+                    <l n="13">The impassioned soul which on its radiant way </l>
+                    <l n="14" indent="1"> Soared through the fiery cloud of Trafalgar.</l>
+                </lg>
+                <ornlb>--------------</ornlb>
+            </div0>
+            <page n="[2v]" image="a.3-1851.troxms.1.tif"/>
+            <pageheader>
+                <note>blank page</note>
+            </pageheader>
+            
+            <epage/>
+            <page n="[3]" image="a.3-1851.troxms.1.tif"/>
+            <pageheader>
+                <size>
+                    <actual>18.1 x 22 cm</actual>
+                    <original/>
+                </size>
+                <paper>
+                    <lineation>ruled</lineation>
+                    <stock>white</stock>
+                </paper>
+                
+                <condition/>
+            </pageheader>
+            
+            <div0 anchor="0.3" type="lyric" n="3" title="During Music" id="a.3-1851.troxms"
+               workcode="3-1851">
+                <divheader>
+                    <title level="wrk">During Music</title>
+                </divheader>
+                <lg n="1" type="quatrain">
+                    <l n="1">O cool unto the sense of pain </l>
+                    <l n="2" indent="1"> That last night's sleep could not destroy!</l>
+                    <l n="3" indent="1"> O warm unto the sense of joy</l>
+                    <l n="4">That dreams its life within the brain!</l>
+                </lg>
+                <lg n="2" type="quatrain">
+                    <l n="5">What though I lean o'er thee to scan </l>
+                    <l n="6" indent="1"> The written music cramped and stiff?</l>
+                    <l n="7" indent="1"> 'Tis dark to me as hieroglyph </l>
+                    <l n="8">On those weird bulks Egyptian.</l>
+                </lg>
+                <lg n="3" type="quatrain">
+                    <l n="9">But as from those, dumb now &amp; strange, </l>
+                    <l n="10" indent="1"> A glory wanders on the earth, </l>
+                    <l n="11" indent="1"> Even so thy tones can call a birth </l>
+                    <l n="12">From these, to shake my soul with change.</l>
+                </lg>
+                <lg n="4" type="quatrain">
+                    <l n="13">O swift, as in melodious haste </l>
+                    <l n="14" indent="1"> Throb o'er the keys thy fingers small! </l>
+                    <l n="15" indent="1"> O soft as is the rise and fall </l>
+                    <l n="16">Which stirs that shade within thy breast.</l>
+                </lg>
+                <ornlb>--------------</ornlb>
+            </div0>
+            <page n="[3v]" image="a.3-1851.troxms.1v.tif"/>
+            <pageheader>
+                <note/>
+            </pageheader>
+            <msadds type="note">
+                <trans>Date wd be early say /51&#8212;MS c. /63</trans>
+                <desc>WMR's note on the date of the poem and the manuscript</desc>
+            </msadds>
+            <epage/>
+            <page n="[4]" image="a.3-1878.princems.1.tif"/>
+            
+            <pageheader>
+                <size>
+                    <actual>18.1 x 22 cm</actual>
+                    <original/>
+                </size>
+                <paper>
+                    <lineation>ruled</lineation>
+                    <stock>white</stock>
+                </paper>
+              
+                <condition/>
+            </pageheader>
+            <msadds type="note">
+                <trans>WMR notes: In Sharp's bk line 4 gives <lb/> the word sight. In MS in W's
+                    possession <lb/>word is light. Is this WM's?</trans>
+                <desc>Janet Camp Troxell's note on the manuscript.</desc>
+            </msadds>
+            <div0 anchor="0.4" type="sonnet" n="4"
+               title="To Philip Bourke Marston, inciting me  to poetic work"
+               id="a.3-1878.princms"
+               workcode="3-1878">
+                <divheader>
+                    <title level="wrk">
+                  <hi rend="center">To Philip Bourke Marston,<lb/> inciting me to poetic work:</hi>
+               </title>
+                </divheader>
+                <lg n="1" type="octave">
+                    <l n="1">Sweet Poet, thou of whom <del>these</del>
+                        <add>these</add> years that roll </l>
+                    <l n="2" indent="1"> Must one day yet the burdened birthright learn, </l>
+                    <l n="3" indent="1"> And by the darkness of thine eyes discern </l>
+                    <l n="4">How piercing was the sight within thy soul;&#8212; </l>
+                    <l n="5">Gifted apart, thou goest to the great goal, </l>
+                    <l n="6" indent="1"> A cloud-bound radiant spirit, strong to earn, </l>
+                    <l n="7" indent="1"> Light-reft, that prize for which fond myriads yearn </l>
+                    <l n="8">Vainly light-blest,&#8212;the Se�r's aureole.</l>
+                </lg>
+                <lg n="2" type="sestet">
+                    <l n="9">And doth thine ear, divinely dowered to catch </l>
+                    <l n="10" indent="1"> All spheral sounds in thy song blent so well, </l>
+                    <l n="11" indent="1"> Still hearken for my voice's slumbering spell </l>
+                    <l n="12">With wistful love? Ah! let the Muse now snatch </l>
+                    <l n="13">My wreath for thy young brows, and bend to watch </l>
+                    <l n="14" indent="1"> Thy veiled transfiguring sense's miracle.</l>
+                </lg>
+                <ornlb>--------------</ornlb>
+            </div0>
+            <page n="[4v]" image="a.3-1878.princems.1v.tif"/>
+            <pageheader>
+                <note/>
+            </pageheader>
+            <msadds type="note">
+                <trans>C. 1879 a good specimen of handwriting<lb/>from that late date</trans>
+                <desc>WMR's note along left edge of the page</desc>
+            </msadds>
+            <epage/>
+            <page n="[5]" image="a.10-1880.troxms.tif"/>
+            <pageheader>
+                <size>
+                    <actual>18.1 x 22 cm</actual>
+                    <original/>
+                </size>
+                <paper>
+                    <lineation>ruled</lineation>
+                    <stock>white</stock>
+                </paper>
+               
+                <condition/>
+            </pageheader>
+            
+            <div0 anchor="0.5" type="sonnet" n="5"
+               title="For The Holy Family, By Michelangelo. (In the National Gallery.)"
+               id="a.10-1880.troxms"
+               workcode="10-1880">
+                <divheader>
+                    <title>
+                  <hi rend="center">For <lb/> The Holy Family, <lb/> by Michael Angelo, <lb/>in the National Gallery.*</hi>
+               </title>
+                </divheader>
+                <ornlb>------------</ornlb>
+                <lg n="1" type="octave">
+                    <l n="1">Turn not the prophet's page, O Son! He knew</l>
+                    <l n="2" indent="1"> All that thou hast to suffer, and hath writ.</l>
+                    <l n="3" indent="1"> Not yet thine hour of knowledge. Infinite</l>
+                    <l n="4">The sorrows that thy manhood's <del>fate</del>
+                        <add>lot</add> must rue</l>
+                    <l n="5">And dire acquaintance of thy grief. That clue</l>
+                    <l n="6" indent="1">
+                        <del>Thy</del>
+                        <add>The</add> spirits of <del>most</del>
+                        <add>thy</add> mournful ministerings</l>
+                    <l n="7" indent="1"> Seek through <del>yon</del> 
+                  <add>
+                     <del>the</del>
+                  </add> scroll in silence. For these things</l>
+                    <l n="8">The angels have desired to look into.</l>
+                </lg>
+                <lg n="2" type="sestet">
+                    <l n="9">Still before Eden waves the fiery sword,&#8212;</l>
+                    <l n="10" indent="1"> Her Tree of Life unransomed: whose sad Tree</l>
+                    <l n="11" indent="1"> Of Knowledge yet to growth of Calvary</l>
+                    <l n="12" indent="2"> Must yield its Tempter,&#8212;Hell the earliest dead</l>
+                    <l n="13">Of Earth resign,&#8212;and yet, O Son and Lord,</l>
+                    <l n="14" indent="2"> The Seed o' the Woman bruise the serpent's head.</l>
+                </lg>
+                <ornlb>-----------</ornlb>
+            	<p>&#8224; In this picture, the Virgin Mother is seen withholding from the <lb/>
+                    Child Saviour the prophetic writings in which his sufferings <lb/> are foretold.
+                    Angelic figures beside them examine a scroll.</p>
+            </div0>
+            <epage/>
+            <page n="[5v]" image="a."/>
+            <pageheader>
+                <note>blank page</note>
+            </pageheader>
+            
+            <epage/>
+            <page n="[6]" image="a.27a-1869.troxms.tif"/>
+            <pageheader>
+                <size>
+                    <actual>18.1 x 22 cm</actual>
+                    <original/>
+                </size>
+                <paper>
+                    <lineation>ruled</lineation>
+                    <stock>white</stock>
+                </paper>
+              
+                <condition/>
+            </pageheader>
+            
+            <div0 anchor="0.6" type="sonnet" n="6" title="Cassandra. (For a Drawing.) I."
+               id="a.27a-1869.troxms"
+               workcode="27-1869.s127"
+               subset="a"
+               dblwork="27-1869.s127">
+                <divheader>
+                    <title level="wrk">
+                  <hi rend="center">Cassandra. <lb/> (<hi rend="u">Two Sonnets for a Design</hi>)
+                        <lb/> 1</hi>
+               </title>
+                </divheader>
+                
+                <lg n="1" type="octave">
+                    <l n="1">Rend, rend thine hair, Cassandra: he will go.</l>
+                    <l n="2" indent="1"> Yea, rend thy garments, wring thine <del>arms</del>
+                        <add>hands</add>, and cry</l>
+                    <l n="3" indent="1"> From Troy still towered to the unreddened sky.</l>
+                    <l n="4"> See, all but she that bore thee mock thy woe:&#8212;</l>
+                    <l n="5"> He most whom that fair woman arms, with show</l>
+                    <l n="6" indent="1"> Of wrath on her bent brows; for in this place</l>
+                    <l n="7" indent="1"> This hour thou bad'st all men in Helen's face</l>
+                    <l n="8"> The ravished ravishing prize of Death to know.</l>
+                </lg>
+                <lg n="2" type="sestet">
+                    <l n="9"> What eyes, what ears hath sweet Andromache,</l>
+                    <l n="10" indent="1"> Save for her Hector's form and step; as tear</l>
+                    <l n="11" indent="2"> On tear make salt the warm last kiss he gave?</l>
+                    <l n="12"> He goes. Cassandra's words beat heavily</l>
+                    <l n="13" indent="1"> Like crows above his crest, and at his ear</l>
+                    <l n="14" indent="2"> Ring hollow in the shield that shall not save.</l>
+                </lg>
+                <ornlb>---------------</ornlb>
+            	<p>* The subject shows Cassandra prophesying among her kindred, as Hector
+                    leaves<lb/>them for his last battle. <del>?</del>
+                    <add>They are</add> on the platform of a fortress, from which the
+                    Trojan<lb/>troops are marching out. Helen is arming Paris; Priam soothes Hecuba;
+                    <lb/> and Andromache holds the child <del>in her arms</del>
+                    <add>to her bosom</add>.</p>
+            </div0>
+            <page n="[6v]" image="a.6-1854.princems.tif"/>
+            <pageheader>
+                <note>blank page</note>
+            </pageheader>
+            
+            <epage/>
+            <page n="[7]" image="a.6-1854.princems.tif"/>
+            <pageheader>
+                <size>
+                    <actual>17.5 x 21 cm</actual>
+                    <original/>
+                </size>
+                <paper>
+                    <lineation>ruled</lineation>
+                    <stock>white</stock>
+                </paper>
+                <watermark>
+                    <actual>J ALLEN &amp; SONS <lb/> SUPER FINE</actual>
+                    <original/>
+                </watermark>
+                <condition/>
+            </pageheader>
+            
+            <div0 anchor="0.7" type="song" n="7" title="Sudden Light." id="a.6-1854.troxms"
+               workcode="6-1854">
+                <divheader>
+                    <title level="wrk">
+                  <hi rend="center">Sudden Light</hi>
+               </title>
+                </divheader>
+                <ornlb>-------------</ornlb>
+                <lg n="1" type="quintain">
+                    <l n="1" indent="1">
+                        <del>We</del>
+                        <add>I</add> have been here before,</l>
+                    <l n="2" indent="2"> But when or how I cannot tell:</l>
+                    <l n="3" indent="1"> I know the grass beyond the door,</l>
+                    <l n="4" indent="2"> The sweet <del>fresh</del>
+                        <add>keen</add> smell,</l>
+                    <l n="5"> The sighing sound, the lights around the shore.</l>
+                </lg>
+                <lg n="2" type="quintain">
+                    <l n="6" indent="1"> You have been mine before,&#8212;</l>
+                    <l n="7" indent="2"> How long ago I <del>do</del>
+                        <add>may</add> not know:</l>
+                    <l n="8" indent="1"> But just when at that swallow's soar</l>
+                    <l n="9" indent="2"> Your <del>head</del>
+                        <add>neck</add> turned so,</l>
+                    <l n="10"> Some veil did fall,&#8212;I knew it all of yore.</l>
+                </lg>
+                <lg n="3" type="quintain">
+                    <l n="11" indent="1">
+                        <del>Before may be again!</del>
+                        <add>Then, now:&#8212;perchance again!</add>
+                    </l>
+                    <l n="12" indent="2">
+                        <del>O press mine eyes into your neck!</del>
+                        <add>O round mine eyes your tresses shake!</add>
+                    </l>
+                    <l n="13" indent="1"> Shall we not lie as we have lain</l>
+                    <l n="14" indent="2"> Thus for Love's sake,</l>
+                    <l n="15"> And sleep, and wake, yet never break the chain?</l>
+                </lg>
+                <ornlb>-------------</ornlb>
+            </div0>
+            <page n="[7v]" image="a.10-1873.troxms.1.tif"/>
+            <pageheader>
+                <note>blank page</note>
+            </pageheader>
+            
+            <epage/>
+            <page n="[8]" image="a.10-1873.troxms.1.tif"/>
+            <pageheader>
+                <size>
+                    <actual> 16 x 21 cm</actual>
+                    <original/>
+                </size>
+                <paper>
+                    <lineation>unruled</lineation>
+                    <stock>white</stock>
+                </paper>
+                <watermark>
+                    <actual>JOY[YNSON] 18[ ]</actual>
+                    <original/>
+                </watermark>
+                <condition/>
+                <note>The line of text at the bottom of the page is part of the letter in which this
+                    text of the poem was originally enclosed; a letter to DGR's mother of 20 May 1873.</note>
+            </pageheader>
+            
+            <div0 anchor="0.8" type="sonnet" n="8" title="Spring" id="a.10-1873.troxms"
+               workcode="10-1873">
+                <divheader>
+                    <title level="wrk">
+                  <hi rend="center">Spring</hi>
+               </title>
+                </divheader>
+                <ornlb>----------------</ornlb>
+                <lg n="1" type="octave">
+                    <l n="1">Soft-littered is the new-year's lambing-fold, </l>
+                    <l n="2" indent="1"> And in the hollowed haystack at its side </l>
+                    <l n="3" indent="1"> The shepherd lies o' nights now, wakeful-eyed </l>
+                    <l n="4">At the ewes' travailing call through the dark cold. </l>
+                    <l n="5">The young rooks cheep 'mid the thick caw o' the old: </l>
+                    <l n="6" indent="1"> And near unpeopled streamsides, on the ground, </l>
+                    <l n="7" indent="1"> By her spring-cry the moorhen's nest is found, </l>
+                    <l n="8">Where the drained flood-lands flaunt their marigold.</l>
+                </lg>
+                <lg n="2" type="sestet">
+                    <l n="9">Chill are the gusts to which the pastures cower, </l>
+                    <l n="10" indent="1"> And chill the current where the young reeds stand </l>
+                    <l n="11" indent="1"> As green and close as the young wheat on land: </l>
+                    <l n="12">Yet here the cuckoo and the cuckoo-flower </l>
+                    <l n="13">Pledge to the heart Spring's perfect imminent hour </l>
+                    <l n="14" indent="1"> Whose breath shall soothe you like your dear one's hand.</l>
+                </lg>
+                <p>I'll put some cuckoo-flowers <lb/> in,&#8212;light purple white</p>
+            </div0>
+         <msadds type="note">
+                <trans>over<lb/>WMR's note on verso</trans>
+                <desc>Janet Camp Troxell's note</desc>
+            </msadds>
+            <page n="[8v]" image="a.10-1873.troxms.1v.tif"/>
+            <pageheader>
+                <note/>
+            </pageheader>
+            <msadds type="note">
+                <trans>As printed&#8212;this must be the copy of the sonnet sent to R's
+                    <lb/>mother (Family Letters p.291) on 20/5/73&#8212; Hence the note at <lb/>close of
+                    MS <lb/> 2.5</trans>
+                <desc>Charles Fairfax Murray's note</desc>
+            </msadds>
+            <epage/>
+            <page n="[9]" image="a.16-1853.troxms.tif"/>
+            <pageheader>
+                <size>
+                    <actual> 16 x 21 cm</actual>
+                    <original/>
+                </size>
+                <paper>
+                    <lineation>ruled</lineation>
+                    <stock>white</stock>
+                </paper>
+               
+                <condition/>
+                <note/>
+            </pageheader>
+            
+            <div0 anchor="0.9" type="sonnet" n="9" title="The Church-Porches I (to M.F.R)"
+               id="a.16a-1853.troxms"
+               workcode="16-1853"
+               subset="a">
+                <divheader>
+                    <title level="wrk">
+                  <hi rend="center">The Church Porch</hi>
+               </title>
+                </divheader>
+                <lg n="1" type="octave">
+                    <l n="1">Sister, first shake we off the dust we have </l>
+                    <l n="2" indent="1"> Upon our feet, lest it defile the stones </l>
+                    <l n="3" indent="1"> Inscriptured, covering their sacred bones </l>
+                    <l n="4">Who lie i' the aisles which keep the names they gave, </l>
+                    <l n="5">Their trust abiding round them in the grave; </l>
+                    <l n="6" indent="1"> Whom painters paint for <del>silent</del>
+                        <add>visible</add> orisons</l>
+                    <l n="7" indent="1"> And to whom sculptors pray in stone &amp; bronze; </l>
+                    <l n="8">Their voices echo still like a spent wave.</l>
+                </lg>
+                <lg n="2" type="sestet">
+                    <l n="9">Without here, the church-bells are but a tune, </l>
+                    <l n="10">And on the carven church-door this hot noon </l>
+                    <l n="11" indent="1"> Lays all its heavy sunshine here without: </l>
+                    <l n="12">But having entered in, we shall find there </l>
+                    <l n="13">Silence, and <del>lighted candles</del>
+                        <add>sudden dimness</add>, and deep prayer, </l>
+                    <l n="14" indent="1"> And faces of crowned angels all about.</l>
+                </lg>
+            </div0>
+            <page n="[9v]" image="a.1-1868.troxms.tif"/>
+            <pageheader>
+                <note>blank page</note>
+            </pageheader>
+          
+            <epage/>
+            <page n="[10]" image="a.1-1868.troxms.tif"/>
+            <pageheader>
+                <size>
+                    <actual> 18.1 x 22.1 cm</actual>
+                    <original/>
+                </size>
+                <paper>
+                    <lineation>ruled</lineation>
+                    <stock>white</stock>
+                </paper>
+               
+                <condition/>
+                <note/>
+            </pageheader>
+          
+            <div0 anchor="0.10" type="sonnet" n="10" title="The Portrait." id="a.1-1868.troxms"
+               workcode="1-1868.s212"
+               dblwork="1-1868.s212">
+                <divheader>
+                    <title level="wrk">
+                  <hi rend="center">The Portrait.</hi>
+               </title>
+                </divheader>
+                <ornlb>---------------</ornlb>
+                <lg n="1" type="octave">
+                    <l n="1">O Lord of all compassionate control,</l>
+                    <l n="2" indent="1"> O Love! let this my lady's picture glow</l>
+                    <l n="3" indent="1"> Under my hand to praise her name, and show</l>
+                    <l n="4">Even of her inner self the perfect whole:</l>
+                    <l n="5">That he who seeks her beauty's furthest goal,</l>
+                    <l n="6" indent="1"> Beyond the light that the sweet glances throw</l>
+                    <l n="7" indent="1"> And refluent wave of the sweet smile, may know</l>
+                    <l n="8">The very sky and sea-line of her soul.</l>
+                </lg>
+                <lg n="2" type="sestet">
+                    <l n="9">Lo! it is done. Above the long lithe throat</l>
+                    <l n="10" indent="1"> The mouth's mould testifies of voice and kiss,</l>
+                    <l n="11" indent="2"> The shadowed eyes remember and foresee.</l>
+                    <l n="12">Her face is made her shrine. Let all men note</l>
+                    <l n="13" indent="1"> That in all years (O Love, thy gift is this!)</l>
+                    <l n="14" indent="2"> They that would look on her must come to me.</l>
+                </lg>
+            </div0>
+            <ornlb>---------------</ornlb>
+            <page n="[10v]" image="a.39-1869.troxms.tif"/>
+            <pageheader>
+                <note>blank page</note>
+            </pageheader>
+           
+            <epage/>
+            <page n="[11]" image="a.39-1869.troxms.tif"/>
+            <pageheader>
+                <size>
+                    <actual>9 x 21 cm</actual>
+                    <original/>
+                </size>
+                <paper>
+                    <lineation>unruled</lineation>
+                    <stock>white</stock>
+                </paper>
+             
+                <condition/>
+                <note/>
+            </pageheader>
+           
+            <div0 anchor="0.11" type="translation" n="11"
+               title="To Death, Of His Lady. Francois Villon"
+               id="a.39-1869.troxms"
+               workcode="39-1869">
+                <divheader>
+                    <title level="wrk">
+                  <hi rend="center">To Death, of his Lady.<lb/> (Francois Villon, 1450)</hi>
+               </title>
+                </divheader>
+                <ornlb>---------------</ornlb>
+                <lg n="1" type="septet">
+                    <l n="1"> Death, of thee do I make my moan, </l>
+                    <l n="2" indent="1"> Who hadst my lady away from me, </l>
+                    <l n="3" indent="1"> Nor wilt assuage thine enmity </l>
+                    <l n="4"> Till with her life thou hast mine own,</l>
+                    <l n="5"> For since that hour my strength has flown. </l>
+                    <l n="6" indent="1"> Lo! what wrong was her life to thee, </l>
+                    <l n="7" indent="2"> Death?</l>
+                </lg>
+                <lg n="2" type="quintain">
+                    <l n="8"> Two we were, and the heart was one; </l>
+                    <l n="9" indent="1"> Which now being dead, dead I must be, </l>
+                    <l n="10" indent="1"> Or seem alive as lifelessly </l>
+                    <l n="11"> As in the choir the painted stone, </l>
+                    <l n="12" indent="2"> Death!</l>
+                </lg>
+                <ornlb>---------------</ornlb>
+            </div0>
+        </body>
+    </text>
+</ram>

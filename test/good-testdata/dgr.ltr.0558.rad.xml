@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<ram xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:noNamespaceSchemaLocation="http://www.rossettiarchive.org/ram.xsd"
+     archivetype="rad"
+     id="a.dgr.ltr.0558"
+     metatype="web.manuscript, web.correspondence"
+     type="letter"
+     subset="0558"
+     workcode="dgr.ltr"
+     rltdobject="10-1873">
+    <ramheader>
+        <filedesc>
+            
+            
+            
+
+            <titlestmt>
+                <title>Letter to William Bell Scott, 22 May 1873</title>
+                <author>DGR</author>
+                
+                
+            </titlestmt>
+            <editionstmt>
+                <edition>1</edition>
+                <copyright>Princeton University Library, Department of Rare Books and Special
+                    Collections</copyright>
+            </editionstmt>
+            <extent/>
+            
+            
+            <notesstmt/>
+            <sourcedesc>
+                <citnstruct>
+                    <title>Letter to William Bell Scott, 22 May 1873</title>
+                    <author>DGR</author>
+                    <msprod>
+                        <date compdate="1873">1873 May 22</date>
+                        <type/>
+                        <assign/>
+                        <collation>8 pages</collation>
+                        <note/>
+                    </msprod>
+                    <scribe>DGR</scribe>
+                    <corrector>DGR</corrector>
+                    <provenance>
+                        <location>Princeton University Library</location>
+                        <recnum/>
+                        <note>The letter is in the Troxell papers.</note>
+                    </provenance>
+                    <physicaldesc>
+                        <binding>
+                            <cover/>
+                            <endpapers/>
+                        </binding>
+                        <typography>
+                            <typeface>
+                                <point/>
+                                <font/>
+                            </typeface>
+                            <pagelines>
+                                <number/>
+                                <length/>
+                            </pagelines>
+                            <columns/>
+                            <margin type="top"/>
+                            <margin type="bottom"/>
+                            <margin type="right"/>
+                            <margin type="left"/>
+                            <note/>
+                        </typography>
+                        <paper/>
+                        <watermark/>
+                        <size>22.4 x 18 cm</size>
+                        <note/>
+                    </physicaldesc>
+                </citnstruct>
+            </sourcedesc>
+        </filedesc>
+        <encodingdesc/>
+        <profiledesc>
+            <commentaries>
+                <head>Commentary</head>
+                <section type="intro">
+                    <head>Introduction</head>
+                    <p>This letter includes a fair copy of the poem <xref doc="a.10-1873.raw">&#8220;Spring&#8221;</xref> that DGR had written about ten
+                        days earlier.</p>
+                </section>
+                <section type="texthistcomp">
+                    <head>Textual History: Composition</head>
+                    <p/>
+                </section>
+                <section type="texthistrev">
+                    <head>Textual History: Revision</head>
+                    <p/>
+                </section>
+                <section type="prodhist">
+                    <head>Production History</head>
+                    <p/>
+                </section>
+                <section type="recepthist">
+                    <head>Reception History</head>
+                    <p/>
+                </section>
+                <section type="icon">
+                    <head>Iconographic</head>
+                    <p/>
+                </section>
+                <section type="printhist">
+                    <head>Printing History</head>
+                    <p/>
+                </section>
+                <section type="pictorial">
+                    <head>Pictorial</head>
+                    <p/>
+                </section>
+                <section type="historical">
+                    <head>Historical</head>
+                    <p/>
+                </section>
+                <section type="literary">
+                    <head>Literary</head>
+                    <p/>
+                </section>
+                <section type="translation">
+                    <head>Translation</head>
+                    <p/>
+                </section>
+                <section type="autobio">
+                    <head>Autobiographical</head>
+                    <p/>
+                </section>
+                <section type="biblio">
+                    <head>Bibliographic</head>
+                    <p/>
+                </section>
+            </commentaries>
+        </profiledesc>
+        <revisiondesc/>
+    </ramheader>
+    <text>
+        <body>
+            <div0 anchor="0.1" type="letter" n="1"
+               title="Letter to William Bell Scott, 22 May 1873"
+               workcode="dgr.ltr"
+               subset="0558">
+                <page n="[1]" image="a.dgr.ltr.0558.1-4.tif"/>
+                <msadds type="note">
+                    <trans>Poetry. Marzials. Morris's 1st book.<lb/>a sonnet. AB's Taliessin.</trans>
+                    <desc>A note, probably Scott's, giving the contents of the letter. "AB" is Alice Boyd.</desc>
+                </msadds>
+                <opener>
+               <date>22 May <lb/> 1873</date>.<lb/> 
+               <salute>Dear Scotus</salute>
+            </opener>
+                <p>I have such a nice letter from Marzials (detained in London it seems for ever so
+                    long) that I send it you on. Never mind returning it till you are back again.</p>
+                <p>By the bye, you know very well that I despise the "fly in the foreground" &amp;
+                    never put him there in my life myself. What I spoke of was <epage/>
+                    <page n="[2]" image="a.dgr.ltr.0558.2-3.tif"/> good taste &amp; good workmanship. Keats (whom you seem
+                    to quote as a defaulter proving your case) had both supremely &#8212; no faults at all
+                    later than <title level="wrk">Endymion</title>, &amp; those not monstrous. <add>Coleridge was perfect &amp; the real
+                    model.</add> Shelley was ungrammatical now &amp; then, <add>through carelessness</add> but never
+                    <hi rend="u">wrong</hi> prepensely <add>after Alastor</add>. As for the second &amp; third-rate high-finishers
+                    you speak of, I wot not of them. Nothing was ever finished to me that had <epage/>
+                    <page n="[3]" image="a.dgr.ltr.0558.2-3.tif"/> not backbone &amp; sinew to work on.</p>
+                <p>The representative <hi rend="u">young</hi> book of our time is Morris's first &#8212;
+                    his best yet for stirring qualities &amp; certainly this of Marzials (good as much
+                    in it is) cannot stand by that or even very near it. The faults in Morris's are
+                    only surface work. </p>
+                <p> I shall hope very much to meet Marzials who must be a brick. <epage/>
+                    <page n="[4]" image="a.dgr.ltr.0558.1-4.tif"/> I suppose you know that John Marshall has got in as
+                    Professor of Anatomy at the R.A. What you tell me of old Hart is much what I
+                    supposed. I shall always feel kindly towards him, for I believe he wrote a very
+                    encouraging notice of my first picture in <title level="per">Athen�um</title> long &amp; long ago. </p>
+                <p>I'll copy you a Spring sonnet. By the bye, your old <hi rend="u">favorite</hi>
+                    called <epage/>
+                    <page n="[5]" image="a.dgr.ltr.0558.5-8.tif"/> "<xref doc="a.33-1871.raw">
+                  <title level="wrk">Sunset Wings</title>
+               </xref>" will be in <xref doc="a.ap4.a85.raw">
+                  <title level="per">Athen�um</title>
+               </xref> next Saturday.
+                    They wrote asking for something &amp; I didn't like to say no though I have come
+                    to the conclusion that little things printed here &amp; there deflower one's
+                    collected work to little purpose.</p>
+                <closer>Bon Voyage � pr�sent!<lb/> Ever yours,<lb/> 
+               <signed>D. G. R.</signed>
+            </closer>
+                <p>
+               <add>I should have thought Lucy would prove a pleasant addition, as there are two men
+                    to take care of ladies.</add> 
+            </p>
+                <epage/>
+                <page n="[6]" image="a.dgr.ltr.0558.6-7.tif"/>
+                <p>P.S. I almost think I have forgotten to say what a shame I think it (but then you
+                    know I must) that Miss Boyd's best picture &#8212; a phoenix <del>among</del> in female art &#8212; should
+                    have been rejected. Never mind, she has done a good thing.</p>
+                <epage/>
+                <page n="[7]" image="a.dgr.ltr.0558.6-7.tif"/>
+                <div1 anchor="0.1.1" type="sonnet" n="1" title="Spring" workcode="10-1873">
+                    <divheader>
+                        <title level="wrk">Spring</title>
+                    </divheader>
+                    <lg n="1" type="octave">
+                        <l n="1">Soft-littered is the new-year's lambing-fold:</l>
+                        <l n="2" indent="1">And in the hollowed haystack at its side</l>
+                        <l n="3" indent="1">The shepherd lies o' nights now, wakeful-eyed</l>
+                        <l n="4">At the ewes' travailing call through the dark cold.</l>
+                        <l n="5">The young rooks cheep 'mid the thick caw o' the old:</l>
+                        <l n="6" indent="1">And near unpeopled streamsides, on the ground,</l>
+                        <l n="7" indent="1">By her spring-cry the moorhen's nest is found,</l>
+                        <l n="8">Where the drained flood-lands flaunt their marigold.</l>
+                    </lg>
+                    <lg n="2" type="sestet">
+                        <l n="9">Chill are the gusts to which the pastures cower,</l>
+                        <l n="10" indent="1">And chill the current where the young reeds stand</l>
+                        <l n="11" indent="1">As green &amp; close as the young wheat on land:</l>
+                        <l n="12">Yet here the cuckoo &amp; the cuckoo-flower</l>
+                        <l n="13">Pledge to the heart Spring's perfect gradual hour</l>
+                        <l n="14" indent="1">Whose breath shall soothe you like your dear one's
+                            hand.</l>
+                    </lg>
+                </div1>
+                <epage/>
+                <page n="[8]" image="a.dgr.ltr.0558.5-8.tif"/>
+                <note>blank page; verso of page 7.</note>
+            </div0>
+        </body>
+    </text>
+</ram>

@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<ram xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:noNamespaceSchemaLocation="http://www.rossettiarchive.org/ram.xsd"
+     image="a.ap4.a85.1874a.730.tif"
+     archivetype="rad"
+     type="serial"
+     id="a.ap4.a85.1874a"
+     metatype="web.serial"
+     workcode="ap4.a85"
+     subset="1874a">
+ 
+ 
+ 
+ 
+   <ramheader>
+      <filedesc>
+         <titlestmt>
+            <title>The Athenaeum, 1874, Part I</title>
+            <author>John Francis (publisher)</author>
+    
+    
+         </titlestmt>
+         <editionstmt>
+            <edition>1</edition>
+         </editionstmt>
+         <extent/>
+   
+   
+         <notesstmt>In this electronic edition, we have omitted the pages of all issues that do not
+    contain material by or related to DGR. Unpaginated front and back matter from these issues has
+    also been omitted. The structure of this electronic document allows for the future addition of
+    the omitted material. </notesstmt>
+         <sourcedesc>
+            <citnstruct>
+               <title>The Athenaeum</title>
+               <author/>
+               <imprint>
+                  <publisher>John Francis</publisher>
+                  <printer>Edward J. Francis</printer>
+                  <city>London</city>
+                  <date compdate="1874-01,1874-06">1874 January - 1874 June</date>
+                  <edition/>
+                  <pagination/>
+                  <issue>2378</issue>
+                  <volume>1874, Part I</volume>
+                  <authorization/>
+                  <collation/>
+                  <note/>
+               </imprint>
+               <scribe/>
+               <corrector/>
+               <provenance>
+                  <location/>
+                  <recnum>ap4.a85</recnum>
+                  <note/>
+               </provenance>
+               <physicaldesc>
+                  <binding>
+                     <cover/>
+                     <endpapers/>
+                  </binding>
+                  <typography>
+                     <typeface>
+                        <point/>
+                        <font/>
+                     </typeface>
+                     <pagelines>
+                        <number/>
+                        <length/>
+                     </pagelines>
+                     <columns>3</columns>
+                     <margin type="top"/>
+                     <margin type="bottom"/>
+                     <margin type="right"/>
+                     <margin type="left"/>
+                     <note/>
+                  </typography>
+                  <paper/>
+                  <watermark/>
+                  <size/>
+                  <note/>
+               </physicaldesc>
+            </citnstruct>
+         </sourcedesc>
+      </filedesc>
+      <encodingdesc/>
+      <profiledesc>
+         <commentaries>
+            <head>Commentary</head>
+            <section type="intro">
+               <head>Introduction</head>
+               <p>DGR's work, the <xref doc="a.12-1873.raw">
+                     <title level="wrk">&#8220;Thames Valley Sonnets&#8221;</title>
+                  </xref>, appeared in issue number 2378 in this volume (30 May, page 730).</p>
+            </section>
+            <section type="texthistcomp">
+               <head>Textual History: Composition</head>
+               <p/>
+            </section>
+            <section type="texthistrev">
+               <head>Textual History: Revision</head>
+               <p/>
+            </section>
+            <section type="printhist">
+               <head>Printing History</head>
+               <p/>
+            </section>
+            <section type="pictorial">
+               <head>Pictorial</head>
+               <p/>
+            </section>
+            <section type="historical">
+               <head>Historical</head>
+               <p/>
+            </section>
+            <section type="literary">
+               <head>Literary</head>
+               <p/>
+            </section>
+            <section type="translation">
+               <head>Translation</head>
+               <p/>
+            </section>
+            <section type="autobio">
+               <head>Autobiographical</head>
+               <p/>
+            </section>
+            <section type="biblio">
+               <head>Bibliographic</head>
+               <p/>
+            </section>
+         </commentaries>
+      </profiledesc>
+      <revisiondesc/>
+   </ramheader>
+   <text>
+  
+  
+  
+      <group>
+         <text>
+            <omit extent="pages 1-716" reason="not by DGR"/>
+    
+    
+    
+    
+            <body>
+     
+               <omit extent="pages 717-729" reason="not by DGR"/>
+     
+               <page n="730" image="a.ap4.a85.1874a.730.tif" width="795" height="1024"/>
+               <pageheader>
+                  <note>All pages containing "Thames Valley Sonnets" are formatted in three columns.</note>
+               </pageheader>
+               <omit extent="first two columns and text above first line ornament in third column"
+                     reason="not by DGR"/>
+               <div0 anchor="0.1" n="0" type="section" workcode="ap4.a85"/>
+               <div0 anchor="0.2" type="poem group" n="1" title="Thames Valley Sonnets"
+                     id="a.12-1873.i1"
+                     workcode="12-1873">
+                  <divheader>
+                     <title>
+                        <hi rend="c">THAMES VALLEY SONNETS.</hi>
+                     </title>
+                  </divheader>
+                  <div1 anchor="0.2.1" type="sonnet" n="1" title="Thames Valley Sonnets: Winter"
+                        id="a.9-1873.i2"
+                        workcode="9-1873">
+                     <divheader>
+                        <title>
+                           <hi rend="c">I.&#8212;WINTER.</hi>
+                        </title>
+                     </divheader>
+                     <lg n="1" type="octave">
+                        <l n="1">
+                           <hi rend="sc">How</hi> large that thrush looks on the bare thorn-tree!</l>
+                        <l n="2" indent="1">A swarm of such, three little months ago,</l>
+                        <l n="3" indent="1">Had hidden in the leaves and let none know</l>
+                        <l n="4">Save by the outburst of their minstrelsy.</l>
+                        <l n="5">A white flake here and there&#8212;a snow-lily</l>
+                        <l n="6" indent="1">Of last night's frost&#8212;our naked flower-beds hold;</l>
+                        <l n="7" indent="1">And for a rose-flower on the darkling mould</l>
+                        <l n="8">The hungry redbreast gleams. No bloom, no bee.</l>
+                     </lg>
+                     <lg n="2" type="sestet">
+                        <l n="9">The current shudders to its ice-bound sedge:</l>
+                        <l n="10" indent="1">Nipped in their bath, the stark reeds one by one</l>
+                        <l n="11" indent="1">Flash each its clinging diamond in the sun:</l>
+                        <l n="12">'Neath winds which for this Winter's sovereign pledge</l>
+                        <l n="13">Shall curb great king-masts to the ocean's edge</l>
+                        <l n="14" indent="1">And leave memorial forest-kings o'erthrown.</l>
+                     </lg>
+                  </div1>
+                  <div1 anchor="0.2.2" type="sonnet" n="2" title="Thames Valley Sonnets: Spring"
+                        id="a.10-1873.i3"
+                        workcode="10-1873">
+                     <divheader>
+                        <title>
+                           <hi rend="c">II.&#8212;SPRING.</hi>
+                        </title>
+                     </divheader>
+                     <lg n="1" type="octave">
+                        <l n="1">Soft-littered is the new-year's lambing-fold,</l>
+                        <l n="2" indent="1">And in the hollowed haystack at its side</l>
+                        <l n="3" indent="1">The shepherd lies o' nights now, wakeful-eyed</l>
+                        <l n="4">At the ewes' travailing call through the dark cold.</l>
+                        <l n="5">The young rooks cheep 'mid the thick caw o' the old:</l>
+                        <l n="6" indent="1">And near unpeopled stream-sides, on the ground,</l>
+                        <l n="7" indent="1">By her spring-cry the moorhen's nest is found,</l>
+                        <l n="8">Where the drained flood-lands flaunt their marigold.</l>
+                     </lg>
+                     <lg n="2" type="sestet">
+                        <l n="9">Chill are the gusts to which the pastures cower,</l>
+                        <l n="10" indent="1">And chill the current where the young reeds stand</l>
+                        <l n="11" indent="1">As green and close as the young wheat on land:</l>
+                        <l n="12">Yet here the cuckoo and the cuckoo flower</l>
+                        <l n="13">Plight to the heart Spring's perfect imminent hour</l>
+                        <l n="14" indent="1" part="i">Whose breath shall soothe you like your dear one's </l>
+                        <l n="14" indent="2" part="f">hand.</l>
+                     </lg>
+                     <closer>
+                        <signed>
+                           <hi rend="sc">Dante G. Rossetti.</hi>
+                        </signed>
+                     </closer>
+                  </div1>
+               </div0>
+               <ornlb>---------</ornlb>
+               <ornlb>---------</ornlb>
+               <omit extent="remainder of page" reason="not by DGR"/>
+               <epage/>
+               <omit extent="pages 731-748" reason="not by DGR"/>
+            </body>
+    
+    
+    
+         </text>
+         <text>
+            <omit extent="pages 749-780" reason="not by DGR"/>
+    
+    
+            <body>
+               <page n="793" image="a.ap4.a85.1874a.793.tif" width="722" height="1024"/>
+               <pageheader>
+                  <note>All pages containing &#8220;Two Lyrics from Niccolo Tommaseo&#8221; are
+       formatted in three columns.</note>
+               </pageheader>
+               <omit extent="top of first column" reason="not by DGR"/>
+               <div0 anchor="1.1" type="poem group" n="2" title="Two Lyrics from Niccolo Tommaseo"
+                     id="a.11-1848.i4"
+                     workcode="11-1848">
+                  <divheader>
+                     <title>
+                        <hi rend="c">TOMMASEO'S LYRICS.</hi>
+                     </title>
+                  </divheader>
+                  <p>
+                     <hi rend="sc">In</hi> your late obituary notice (<title level="per">
+                        <xref doc="a.ap4.a85.raw">
+                           <hi rend="i">Athen�um</hi>
+                        </xref>
+                     </title>, May 16) <lb/>of Niccol� Tommaseo, a passing allusion is made
+       to<lb/>
+                     <cb/>his earlier lyrical poetry. Any countryman of his, <lb/>looking, years ago when
+       it appeared, into the <lb/>slender collection of these verses, must have been <lb/>struck by
+       their not being chiefly concerned with <lb/>public events and interests; inevitably a rare
+       ex-<lb/>ception in those dark yearning-days of the Italian <lb/>Muse. Perhaps the two
+       translated specimens <lb/>which I offer of their delicate and romantic tone <lb/>may not be
+       unacceptable to some of your readers.</p>
+                  <p indent="1">
+                     <hi rend="sc">D. G. Rossetti.</hi>
+                  </p>
+                  <div1 anchor="1.1.1" type="translation" n="3"
+                        title="Two Lyrics: from Niccolo Tommaseo. I. The Young Girl"
+                        id="a.11a-1848.i5"
+                        workcode="11-1848"
+                        subset="a">
+                     <divheader>
+                        <title>
+                           <hi rend="sc">I.&#8212;THE YOUNG GIRL.</hi>
+                        </title>
+                     </divheader>
+                     <lg n="1" type="tercet">
+                        <l n="1">
+                           <hi rend="sc">Even</hi> as a child that weeps,</l>
+                        <l n="2">Lulled by the love it keeps,</l>
+                        <l n="3">My grief lies back and sleeps.</l>
+                     </lg>
+                     <lg n="2" type="septet">
+                        <l n="4">Yes, it is Love bears up</l>
+                        <l n="5" indent="1">My soul on his spread wings,</l>
+                        <l n="6">Which the days would else chafe out</l>
+                        <l n="7" indent="1">With their infinite harassings.</l>
+                        <l n="8" indent="1">To quicken it, he brings</l>
+                        <l n="9">The inward look and mild</l>
+                        <l n="10">That thy face wears, my child.</l>
+                     </lg>
+                     <lg n="3" type="septet">
+                        <l n="11">As in a gilded room</l>
+                        <l n="12" indent="1">Shines 'mid the braveries</l>
+                        <l n="13">Some wild-flower, by the bloom</l>
+                        <l n="14" indent="1">Of its delicate quietness</l>
+                        <l n="15" indent="1">Recalling the forest-trees</l>
+                        <l n="16">In whose shadow it was,</l>
+                        <l n="17">And the water and the green grass:&#8212;</l>
+                     </lg>
+                     <lg n="4" type="septet">
+                        <l n="18">Even so, 'mid the stale loves</l>
+                        <l n="19" indent="1">The city prisoneth,</l>
+                        <l n="20">Thou touchest me gratefully,</l>
+                        <l n="21" indent="1">Like nature's wholesome breath:</l>
+                        <l n="22" indent="1">Thy heart nor hardeneth</l>
+                        <l n="23">In pride, nor putteth on</l>
+                        <l n="24">Obeisance not its own.</l>
+                     </lg>
+                     <lg n="5" type="septet">
+                        <l n="25">Not thine the skill to shut</l>
+                        <l n="26" indent="1">The love up in thine heart,</l>
+                        <l n="27">Neither to seem more tender,</l>
+                        <l n="28" indent="1">Less tender than thou art.</l>
+                        <l n="29" indent="1">Thou dost not hold apart</l>
+                        <l n="30">In silence when thy joys</l>
+                        <l n="31">Most long to find a voice.</l>
+                     </lg>
+                     <lg n="6" type="septet">
+                        <l n="32">Let the proud river-course,</l>
+                        <l n="33" indent="1">That shakes its mane and champs,</l>
+                        <l n="34">Run between marble shores</l>
+                        <l n="35" indent="1">By the light of many lamps,</l>
+                        <l n="36" indent="1">While all the ooze and the damps</l>
+                        <l n="37">Of the city's choked-up ways</l>
+                        <l n="38">Make it their draining-place.</l>
+                     </lg>
+                     <lg n="7" type="septet">
+                        <l n="39">Rather the little stream</l>
+                        <l n="40" indent="1">For me; which, hardly heard,</l>
+                        <l n="41">Unto the flower, its friend,</l>
+                        <l n="42" indent="1">Whispers as with a word.</l>
+                        <l n="43" indent="1">The timid journeying bird</l>
+                        <l n="44">Of the pure drink that flows</l>
+                        <l n="45">Takes but one drop, and goes.</l>
+                     </lg>
+                  </div1>
+                  <div1 anchor="1.1.2" type="translation" n="4"
+                        title="Two Lyrics: from Niccolo Tommaseo. II. A Farewell."
+                        id="a.11b-1848.i6"
+                        workcode="11-1848"
+                        subset="b">
+                     <divheader>
+                        <title>
+                           <hi rend="sc">II.&#8212;A FAREWELL.</hi>
+                        </title>
+                     </divheader>
+                     <lg n="1" type="quatrain">
+                        <l n="1">
+                           <hi rend="sc">I soothed</hi> and pitied thee: and for thy lips,&#8212;</l>
+                        <l n="2" indent="2">A smile, a word (sure guide</l>
+                        <l n="3" indent="2">To love that's ill to hide!)</l>
+                        <l n="4" indent="3">Was all I had thereof.</l>
+                     </lg>
+                     <lg n="2" type="stanza">
+                        <l n="5">Even as an orphan boy, whom, sore distress'd,</l>
+                        <l n="6" indent="1">A gentle woman meets beside the road</l>
+                        <l n="7">And takes him home with her,&#8212;so to thy breast</l>
+                        <l n="8" indent="1">Thou did'st take home my image: pure abode!</l>
+                        <l n="9" indent="1">'Twas but a virgin's dream. This heart bestow'd</l>
+                        <l n="10" indent="2">Respect and piety</l>
+                        <l n="11" indent="2">And friendliness on thee:</l>
+                        <l n="12" indent="3">But it is poor in love.</l>
+                     </lg>
+                     <lg n="3" type="stanza">
+                        <l n="13">No, I am not for thee. Thou art too new,</l>
+                        <l n="14" indent="1">I am too old, to the old beaten way.</l>
+                        <l n="15">The griefs are not the same which grieve us two:</l>
+                        <l n="16" indent="1">Thy thought and mine lie far apart to-day.</l>
+                        <l n="17" indent="1">Less than I wish, more than I hope, alway</l>
+                        <l n="18" indent="2">Are heart and soul in thee.</l>
+                        <l n="19" indent="2">Thou art too much for me,</l>
+                        <l n="20" indent="3">Sister, and not enough.</l>
+                     </lg>
+                     <lg n="4" type="stanza">
+                        <l n="21">A better and a fresher heart than mine</l>
+                        <l n="22" indent="1">Perchance may meet thee ere thy youth be told;</l>
+                        <l n="23">Or, cheated by the longing that is thine,</l>
+                        <l n="24" indent="1">Waiting for life perchance thou shalt wax old.</l>
+                        <l n="25" indent="1">Perchance the time may come when I may hold</l>
+                        <l n="26" indent="2">It had been best for me</l>
+                        <l n="27" indent="2">To have had thy ministry</l>
+                        <l n="28" indent="3">On the steep path and rough.</l>
+                     </lg>
+                  </div1>
+                  <ornlb>---------</ornlb>
+                  <ornlb>---------</ornlb>
+               </div0>
+               <omit extent="remainder of page" reason="not by DGR"/>
+               <epage/>
+               <omit extent="pages 794-812" reason="not by DGR"/>
+            </body>
+    
+    
+            <omit extent="pages 813-876" reason="not by DGR"/>
+         </text>
+      </group>
+  
+  
+   </text>
+</ram>
