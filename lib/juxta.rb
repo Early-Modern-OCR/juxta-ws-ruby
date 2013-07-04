@@ -1,5 +1,5 @@
-require 'lib/connection'
-require 'lib/utilities'
+require 'juxta/connection'
+require 'juxta/utilities'
 
 class Juxta
 

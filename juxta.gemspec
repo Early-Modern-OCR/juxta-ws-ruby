@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.description = "JuxtaWS Ruby bindings"
   s.authors     = ["Nick Laiacona"]
   s.email       = 'nick@performantsoftware.com'
-  s.files       = ["lib/juxta.rb"]
+  s.files       = ["lib/juxta.rb", "lib/juxta/connection.rb", "lib/juxta/utilities.rb"]
   s.add_runtime_dependency "rest-client", ["= 1.6.7"]
   s.add_runtime_dependency "json", ["= 1.7.7"]
   s.add_runtime_dependency "OptionParser", ["= 0.5.1"]
