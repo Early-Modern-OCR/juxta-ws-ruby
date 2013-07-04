@@ -6,9 +6,13 @@ class Juxta
   attr :logging
   attr_reader :connection
 
-  def initialize( url, workspace )
+  def initialize( url )
     @logging = true
-    @connection = Connection.new( url, workspace, "", "" ) 
+    @connection = Connection.new( url ) 
+  end
+
+  def select_workspace( workspace )
+    @connection.workspace = workspace
   end
 
   #
@@ -16,19 +20,25 @@ class Juxta
   #
   def list_workspaces
     log_message( "Listing workspaces..." ) unless @logging == false
-    ws_list = @connection.get( "workspace" )
+    ws_list = @connection.get( "workspace", false )
     return ws_list
   end
 
   def create_workspace( workspace_id )
     log_message( "Creating workspace #{workspace_id} ..." ) unless @logging == false
     json = { "name" => workspace_id, "description" => "the description for #{workspace_id}" }
-    workspace_id = @connection.post( "workspace", json )
+    workspace_id = @connection.post( "workspace", json, false )
     return workspace_id
   end
 
   def delete_workspace( workspace_id )
-    return delete_asset( "workspace/#{workspace_id}" )
+    log_message( "Deleting workspace #{workspace_id} ..." ) unless @logging == false
+    resp = @connection.delete( "workspace/#{workspace_id}", false )
+    if resp['status'] == 'FAILED'
+       error_message( "failed to delete asset: #{asset_id}")
+       return false
+    end
+    return true
   end
 
   #

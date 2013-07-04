@@ -5,14 +5,14 @@ require 'base64'
 class Connection
 
    attr_reader :url
-   attr_reader :workspace
+   attr :workspace
 
-   def initialize( url, workspace, username, password )
+   def initialize( url, username=nil, password=nil )
 
       @authtoken = "Basic #{Base64.encode64("#{username}:#{password}")}"
       @url = "#{url}/juxta"
-      @workspace = workspace
-
+      @workspace = "public"
+      
       @timeout = 600        # 10 minute get timeout...
       @open_timeout = 600   # 10 minute post timeout
 
@@ -32,9 +32,10 @@ class Connection
       return json['version']
    end
 
-   def get( request )
+   def get( request, in_workspace=true )
       start_time = Time.now.to_f
-      resp = @rest_client[ make_url( request ) ].get :content_type => "application/json", :accept=>'application/json', :authorization => @authtoken
+      url = in_workspace ? make_url( request ) : request 
+      resp = @rest_client[ url ].get :content_type => "application/json", :accept=>'application/json', :authorization => @authtoken
       dump_time( "get", start_time )
       JSON.parse(resp)
    end
@@ -53,12 +54,13 @@ class Connection
       return resp
    end
 
-   def post( request, payload )
+   def post( request, payload, in_workspace=true )
       start_time = Time.now.to_f
+      url = in_workspace ? make_url( request ) : request   
       if payload.nil? == true
-         resp = @rest_client[ make_url( request ) ].post "", :authorization => @authtoken
+         resp = @rest_client[ url ].post "", :authorization => @authtoken
       else
-         resp = @rest_client[ make_url( request ) ].post payload.to_json, :authorization => @authtoken, :content_type => "application/json"
+         resp = @rest_client[ url ].post payload.to_json, :authorization => @authtoken, :content_type => "application/json"
       end
       dump_time( "post", start_time )
       return resp
@@ -85,9 +87,10 @@ class Connection
       return resp
    end
 
-   def delete( request )
+   def delete( request, in_workspace=true )
       start_time = Time.now.to_f
-      resp =  @rest_client[ make_url( request ) ].delete :authorization => @authtoken
+      url = in_workspace ? make_url( request ) : request   
+      resp =  @rest_client[ url ].delete :authorization => @authtoken
       dump_time( "delete", start_time )
       return resp
    end
