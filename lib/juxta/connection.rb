@@ -5,7 +5,7 @@ require 'base64'
 class Connection
 
    attr_reader :url
-   attr :workspace
+   attr_accessor :workspace
 
    def initialize( url, username=nil, password=nil )
 
@@ -96,12 +96,7 @@ class Connection
    end
 
    def make_url( request )
-     if @workspace.length != 0
-       url = "#{@workspace}/#{request}"
-     else
-       url = request
-     end
-     return url
+     "#{@workspace}/#{request}"
    end
 
    def dump_time( what, start_time )

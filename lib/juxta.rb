@@ -10,9 +10,23 @@ class Juxta
     @logging = false
     @connection = Connection.new( url ) 
   end
-
-  def select_workspace( workspace )
-    @connection.workspace = workspace
+  
+  def workspace()
+    @connection.workspace
+  end
+  
+  def select_workspace(workspace_name)
+    workspaces = list_workspaces()
+    workspace_names = workspaces.map { |workspace|
+      workspace["name"]
+    }
+    
+    if workspace_names.include? workspace_name
+      @connection.workspace = workspace_name
+      return true
+    else
+      return false
+    end    
   end
 
   #

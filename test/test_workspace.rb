@@ -10,6 +10,25 @@ class TestWorkspace < Test::Unit::TestCase
   def teardown
   end
 
+  def test_select_workspace
+    # workspace should be public by default
+    assert( @juxta.workspace == "public", "workspace should be public by default" )
+
+    # create test workspace 
+    workspace = make_guid( )
+    @juxta.create_workspace( workspace )
+    
+    # select should return true if there is a workspace by that name
+    assert( @juxta.select_workspace( workspace ), "should be able to select the created workspace" )
+    
+    # delete test workspace 
+    @juxta.delete_workspace( workspace )
+    
+    # should be able to switch to public but not back to deleted workspace
+    assert( @juxta.select_workspace( "public" ), "should be able to select the public workspace" )
+    assert( !@juxta.select_workspace( workspace ), "should not be able to select deleted workspace" )  
+  end
+
   def test_good_create_workspace
     begin
         workspace = make_guid( )
