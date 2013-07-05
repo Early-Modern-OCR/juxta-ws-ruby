@@ -7,7 +7,7 @@ class Juxta
   attr_reader :connection
 
   def initialize( url )
-    @logging = true
+    @logging = false
     @connection = Connection.new( url ) 
   end
 
@@ -351,7 +351,7 @@ class Juxta
 
   def get_info( asset_id )
     log_message( "Getting info for #{asset_id}..." ) unless @logging == false
-    resp = @connection.get( "#{asset_id}/info" )
+    resp = @connection.get( "#{asset_id}/info", false )
     return resp
   end
 
