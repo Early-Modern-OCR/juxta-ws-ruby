@@ -11,6 +11,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency "json", ["= 1.7.7"]
   s.add_runtime_dependency "OptionParser", ["= 0.5.1"]
   s.add_runtime_dependency "uuidtools", ["= 2.1.3"]
+  s.required_ruby_version = '>= 1.9.2'
   s.homepage    =
     'http://rubygems.org/gems/juxta'
 end
