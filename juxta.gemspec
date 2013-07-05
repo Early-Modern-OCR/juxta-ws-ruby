@@ -1,10 +1,10 @@
 Gem::Specification.new do |s|
   s.name        = 'juxta'
   s.version     = '0.1.2'
-  s.date        = '2013-07-24'
+  s.date        = '2013-07-5'
   s.summary     = "JuxtaWS Ruby bindings"
   s.description = "JuxtaWS Ruby bindings"
-  s.authors     = ["Nick Laiacona"]
+  s.authors     = ["Lou Foster", "Dave Goldstein", "Nick Laiacona"]
   s.email       = 'nick@performantsoftware.com'
   s.files       = ["lib/juxta.rb", "lib/juxta/connection.rb", "lib/juxta/utilities.rb"]
   s.add_runtime_dependency "rest-client", ["= 1.6.7"]
