@@ -6,9 +6,9 @@ class Juxta
   attr :logging
   attr_reader :connection
 
-  def initialize( url )
+  def initialize( url, username=nil, password=nil )
     @logging = false
-    @connection = Connection.new( url ) 
+    @connection = Connection.new( url, username, password ) 
   end
   
   def workspace()
