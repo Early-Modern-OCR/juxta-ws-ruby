@@ -26,7 +26,7 @@ class TestSourceURL < Test::Unit::TestCase
 
   def test_happy_day
     begin
-       src_id = @juxta.get_source( @url )
+       src_id = @juxta.obtain_source_from_url( @url )
        assert(src_id.nil? == false, "Upload source id is nil" )
 
        status = @juxta.delete_source(src_id)

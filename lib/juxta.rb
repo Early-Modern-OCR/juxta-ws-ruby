@@ -211,7 +211,7 @@ class Juxta
      return nil
   end
   
-  def get_source( url )
+  def obtain_source_from_url( url )
     id = make_guid()
     log_message( "Downloading #{url} as #{id} ..." ) unless @logging == false
     resp = @connection.post( "source", [{name: id, type: 'url', contentType: 'xml', data: url}] )
