@@ -1,11 +1,12 @@
 require 'test/unit'
+require 'config'
 require 'juxta'
 
 class TestPrepare < Test::Unit::TestCase
 
   def setup
     # create connection to the service
-    @juxta = Juxta.new("http://127.0.0.1:8182")
+    @juxta = Juxta.new(JuxtaServicename, JuxtaUsername, JuxtaPassword)
     @filelist = get_filelist( "test/good-testdata" )
   end
 

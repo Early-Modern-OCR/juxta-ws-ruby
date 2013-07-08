@@ -464,10 +464,10 @@ class Juxta
 
   def destroy_witness_set( source_list, witness_list )
 
-    witness_list.each do |wit_id|
-      status = delete_witness( wit_id )
-      return false unless status == true
-    end
+    # witness_list.each do |wit_id|
+    #   status = delete_witness( wit_id )
+    #   return false unless status == true
+    # end
 
     source_list.each do |src_id|
       status = delete_source( src_id )
