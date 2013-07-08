@@ -210,6 +210,18 @@ class Juxta
      error_message( "failed to upload file: #{file_name}")
      return nil
   end
+  
+  def get_source( url )
+    id = make_guid()
+    log_message( "Downloading #{url} as #{id} ..." ) unless @logging == false
+    resp = @connection.post( "source", [{name: id, type: 'url', contentType: 'xml', data: url}] )
+    parsed = JSON.parse(resp) 
+    if parsed.length > 0
+      parsed[0]
+    else
+      nil
+    end
+  end
 
   #
   # transform behavior
