@@ -1,59 +1,53 @@
-juxta-ws-ruby
-=============
+## Juxta Ruby Gem 
 
-Requires ruby 1.9.2 or higher
+This gem provides a Ruby interface to the JuxtaWS REST web service.  
 
-gem install juxta
+To install:
 
+    gem install juxta
 
-# load ruby bindings
+Then:
 
-require 'juxta'
-juxta = Juxta.new( "http://ws.juxtasoftware.org" )
+    # get started
+    require 'juxta'  
+    juxta = Juxta.new( "http://ws.juxtasoftware.org" )
+    
+    # get into your workspace  
+    juxta.create_workspace("foo")  
+    juxta.select_workspace("foo")
 
-# get into your workspace
+    # upload witness  
+    src_id = juxta.upload_source( file )  
 
-juxta.create_workspace("foo")
-juxta.select_workspace("foo")
+    # transform them using default xslt  
+    wit_id = juxta.transform_source( src_id )  
 
-# upload witness
+    # create arrays for storing ids  
+    wit_ids = []  
+    wit_ids.push( wit_id )  
 
-src_id = juxta.upload_source( file )
+    # load witnesses from URL
 
-# transform them using default xslt
+    # create a custom xslt
 
-wit_id = juxta.transform_source( src_id )
+    # create a set
 
-# create arrays for storing ids
+    set_id = juxta.make_set( wit_ids )
 
-wit_ids = []
-wit_ids.push( wit_id )
+    # tokenize the set
 
-# load witnesses from URL
+    juxta.tokenize_set( set_id )
 
+    # adjust tokenization settings
 
+    # collate them
 
-# create a custom xslt
+    juxta.collate_set( set_id )
 
+    # view the result
 
-# create a set
+    # you can also perform simple searches
 
-set_id = juxta.make_set( wit_ids )
+    # and you can annotate..
 
-# tokenize the set
-
-juxta.tokenize_set( set_id )
-
-# adjust tokenization settings
-
-# collate them
-
-juxta.collate_set( set_id )
-
-# view the result
-
-# you can also perform simple searches
-
-# and you can annotate..
-
-# have fun!
+    # have fun!
