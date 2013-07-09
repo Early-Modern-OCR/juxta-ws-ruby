@@ -328,6 +328,14 @@ class Juxta
     return nil
   end
 
+  def get_heatmap_url( set_id, base_id )
+    @connection.make_full_url( "set/#{set_id}/view?mode=heatmap&base=#{base_id}" )    
+  end
+  
+  def get_side_by_side_url( set_id, witness_a, witness_b )
+    @connection.make_full_url( "set/#{set_id}/view?mode=sidebyside&docs=#{witness_a},#{witness_b}" )    
+  end
+
   def get_as_html( asset_id )
      task_id = async_get_as_html( asset_id )
      if task_id.nil? == false

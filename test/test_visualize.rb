@@ -101,7 +101,7 @@ class TestVisualize < Test::Unit::TestCase
        assert( false, "Unexpected exception")
     end
   end
-
+  
   def test_happy_day
     begin
 

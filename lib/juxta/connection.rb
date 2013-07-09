@@ -98,6 +98,10 @@ class Connection
    def make_url( request )
      "#{@workspace}/#{request}"
    end
+   
+   def make_full_url( request ) 
+    "#{@url}/#{make_url(request)}"
+   end
 
    def dump_time( what, start_time )
      #puts "#{what}: %0.2f mS" % ( ( Time.now.to_f - start_time ) * 1000 )
