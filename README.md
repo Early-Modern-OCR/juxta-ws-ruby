@@ -1,53 +1,48 @@
 ## Juxta Ruby Gem 
 
-This gem provides a Ruby interface to the JuxtaWS REST web service.  
+Juxta WS can collate two or more versions of the same textual work (“witnesses”) and generate a list of alignments as well as two different styles of visualization suitable for display on the web. The “heat map” visualization shows a base text with ranges of difference from the other witnesses highlighted. The “side by side” visualization shows two of the witnesses in synchronously scrolling columns, with 
+areas of difference highlighted.
 
-To install:
+This gem provides a Ruby interface to the JuxtaWS REST web service. It does not include the Java based Juxta WS webs service. You can download JuxtaWS here:
+
+https://github.com/performant-software/juxta-service 
+
+To install the gem:
 
     gem install juxta
 
-Then:
+Examples of use:
 
-    # get started
-    require 'juxta'  
-    juxta = Juxta.new( "http://ws.juxtasoftware.org" )
-    
-    # get into your workspace  
-    juxta.create_workspace("foo")  
-    juxta.select_workspace("foo")
+	require 'juxta'
 
-    # upload witness  
-    src_id = juxta.upload_source( file )  
+	juxta = Juxta.new("http://127.0.0.1:8182")
 
-    # transform them using default xslt  
-    wit_id = juxta.transform_source( src_id )  
+	# upload a witness from a local file
+	src_id = juxta.upload_source( "damozel.xml" )
 
-    # create arrays for storing ids  
-    wit_ids = []  
-    wit_ids.push( wit_id )  
+	# transform using default xslts
+	wit_id = juxta.transform_source( src_id )
 
-    # load witnesses from URL
+	# create an array for storing ids
+	wit_ids = []
+	wit_ids.push( wit_id )
 
-    # create a custom xslt
+	# load another witnesses from a remote URL
+	src_id = juxta.obtain_source_from_url("http://www.rossettiarchive.org/docs/1-1870.2ndedn.prin.rad.xml")
+	wit_id = juxta.transform_source( src_id )
+	wit_ids.push( wit_id )
 
-    # create a set
+	# create a comparison set
+	set_id = juxta.make_set( wit_ids )
 
-    set_id = juxta.make_set( wit_ids )
+	# tokenize the texts
+	juxta.tokenize_set( set_id )
 
-    # tokenize the set
+	# collate the texts
+	juxta.collate_set( set_id )
 
-    juxta.tokenize_set( set_id )
+	# view the result
+	viz_url = juxta.get_side_by_side_url( set_id, wit_ids[0], wit_ids[1] ) 
 
-    # adjust tokenization settings
-
-    # collate them
-
-    juxta.collate_set( set_id )
-
-    # view the result
-
-    # you can also perform simple searches
-
-    # and you can annotate..
-
-    # have fun!
+	# open web browser on Mac OS 
+	system( "open", viz_url )
