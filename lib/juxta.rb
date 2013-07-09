@@ -129,7 +129,7 @@ class Juxta
   end
 
   #
-  # alignmant behavior
+  # alignment behavior
   #
 
   def create_alignment( set_id, json )
@@ -210,7 +210,13 @@ class Juxta
      error_message( "failed to upload file: #{file_name}")
      return nil
   end
-  
+
+  def create_sources( source_array )
+    log_message( "Creating sources from JSON data..." ) unless @logging == false
+    resp = @connection.post( "source", source_array )
+    JSON.parse(resp) 
+  end
+    
   def obtain_source_from_url( url )
     id = make_guid()
     log_message( "Downloading #{url} as #{id} ..." ) unless @logging == false
