@@ -1,10 +1,11 @@
 require 'test/unit'
+require 'config'
 require 'juxta'
 
 class TestWitness < Test::Unit::TestCase
 
   def setup
-    @juxta = Juxta.new("http://127.0.0.1:8182")
+    @juxta = Juxta.new(JuxtaServicename, JuxtaUsername, JuxtaPassword)
     filename = "test/good-testdata/dgr.ltr.0558.rad.xml"
     @src_id = @juxta.upload_source( filename )
     @wit_id = @juxta.transform_source( @src_id )

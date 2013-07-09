@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = 'juxta'
   s.version     = '0.1.2'
-  s.date        = '2013-07-5'
+  s.date        = '2013-07-08'
   s.summary     = "JuxtaWS Ruby bindings"
   s.description = "JuxtaWS Ruby bindings"
   s.authors     = ["Lou Foster", "Dave Goldstein", "Nick Laiacona"]

@@ -210,6 +210,18 @@ class Juxta
      error_message( "failed to upload file: #{file_name}")
      return nil
   end
+  
+  def obtain_source_from_url( url )
+    id = make_guid()
+    log_message( "Downloading #{url} as #{id} ..." ) unless @logging == false
+    resp = @connection.post( "source", [{name: id, type: 'url', contentType: 'xml', data: url}] )
+    parsed = JSON.parse(resp) 
+    if parsed.length > 0
+      parsed[0]
+    else
+      nil
+    end
+  end
 
   #
   # transform behavior
@@ -314,6 +326,14 @@ class Juxta
       return resp.split( ' ' )[ 1 ]
     end
     return nil
+  end
+
+  def get_heatmap_url( set_id, base_id )
+    @connection.make_full_url( "set/#{set_id}/view?mode=heatmap&base=#{base_id}" )    
+  end
+  
+  def get_side_by_side_url( set_id, witness_a, witness_b )
+    @connection.make_full_url( "set/#{set_id}/view?mode=sidebyside&docs=#{witness_a},#{witness_b}" )    
   end
 
   def get_as_html( asset_id )
@@ -464,10 +484,10 @@ class Juxta
 
   def destroy_witness_set( source_list, witness_list )
 
-    witness_list.each do |wit_id|
-      status = delete_witness( wit_id )
-      return false unless status == true
-    end
+    # witness_list.each do |wit_id|
+    #   status = delete_witness( wit_id )
+    #   return false unless status == true
+    # end
 
     source_list.each do |src_id|
       status = delete_source( src_id )

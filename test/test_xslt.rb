@@ -1,9 +1,10 @@
 require 'test/unit'
+require 'config'
 require 'juxta'
 
 class TestXSLT < Test::Unit::TestCase
    def setup
-     @juxta = Juxta.new("http://127.0.0.1:8182")
+     @juxta = Juxta.new(JuxtaServicename, JuxtaUsername, JuxtaPassword)
       @dummxslt =
     '<?xml version="1.0"?><xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"><xsl:template match="/"></xsl:template></xsl:stylesheet>'
    end

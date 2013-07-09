@@ -1,10 +1,11 @@
 require 'test/unit'
+require 'config'
 require 'juxta'
 
 class TestWorkspace < Test::Unit::TestCase
 
   def setup
-    @juxta = Juxta.new("http://127.0.0.1:8182")
+    @juxta = Juxta.new(JuxtaServicename, JuxtaUsername, JuxtaPassword)
   end
 
   def teardown

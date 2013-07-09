@@ -1,11 +1,12 @@
 require 'test/unit'
+require 'config'
 require 'juxta'
 
 class TestTokenize < Test::Unit::TestCase
 
   def setup
     # create connection to the service
-    @juxta = Juxta.new("http://127.0.0.1:8182")
+    @juxta = Juxta.new(JuxtaServicename, JuxtaUsername, JuxtaPassword)
 
     # create a standardized file set...
     @file_set = standard_fileset( )

@@ -65,7 +65,7 @@ class Connection
       dump_time( "post", start_time )
       return resp
    end
-   
+      
    def upload_file( file_name, content_type, file ) 
       opts = {
          :sourceName=> file_name,
@@ -97,6 +97,10 @@ class Connection
 
    def make_url( request )
      "#{@workspace}/#{request}"
+   end
+   
+   def make_full_url( request ) 
+    "#{@url}/#{make_url(request)}"
    end
 
    def dump_time( what, start_time )

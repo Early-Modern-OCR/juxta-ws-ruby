@@ -1,11 +1,12 @@
 require 'test/unit'
+require 'config'
 require 'juxta'
 
 class TestVisualize < Test::Unit::TestCase
 
   def setup
     # create connection to the service
-    @juxta = Juxta.new("http://127.0.0.1:8182")
+    @juxta = Juxta.new(JuxtaServicename, JuxtaUsername, JuxtaPassword)
 
     # create a standardized file set...
     @file_set = standard_fileset( )
@@ -28,13 +29,14 @@ class TestVisualize < Test::Unit::TestCase
 
   def teardown
     begin
-      # delete the witness set
-      status = @juxta.delete_set( @set_id )
-      assert( status == true, "Failed to delete witness set" )
-
       # destroy witness set
       status = @juxta.destroy_witness_set( @src_ids, @wit_ids )
       assert( status == true, "Failed to destroy witness set" )
+      
+      # delete the witness set
+      status = @juxta.delete_set( @set_id )
+      assert( status == true, "Failed to delete witness set" )
+      
     rescue Exception => e
       assert( false, "Unexpected exception (#{e})")
     end
@@ -99,7 +101,7 @@ class TestVisualize < Test::Unit::TestCase
        assert( false, "Unexpected exception")
     end
   end
-
+  
   def test_happy_day
     begin
 
