@@ -56,8 +56,8 @@ class TestCollate < Test::Unit::TestCase
         assert( status == true, "Failed to delete witness set" )
 
         # destroy witness set
-        status = @juxta.destroy_witness_set( src_ids, wit_ids )
-        assert( status == true, "Failed to destroy witness set" )
+        # status = @juxta.destroy_witness_set( src_ids, wit_ids )
+        # assert( status == true, "Failed to destroy witness set" )
      rescue Exception => e
         assert( false, "Unexpected exception (#{e})")
      end

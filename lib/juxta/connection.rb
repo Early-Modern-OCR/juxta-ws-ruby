@@ -10,7 +10,7 @@ class Connection
    def initialize( url, username=nil, password=nil )
 
       @authtoken = "Basic #{Base64.encode64("#{username}:#{password}")}"
-      @url = "#{url}/juxta"
+      @url = url
       @workspace = "public"
       
       @timeout = 600        # 10 minute get timeout...

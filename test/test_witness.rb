@@ -12,8 +12,8 @@ class TestWitness < Test::Unit::TestCase
   end
 
   def teardown
-    @juxta.delete_witness( @wit_id )
-    @juxta.delete_source( @src_id )
+    # @juxta.delete_witness( @wit_id )
+    # @juxta.delete_source( @src_id )
   end
 
   def test_good_get_witness
@@ -26,7 +26,18 @@ class TestWitness < Test::Unit::TestCase
       assert( false, "Unexpected exception (#{e})")
     end
   end
-
+  
+  def test_good_get_witness_fragment
+    begin
+      fragment_length = 100
+      data = @juxta.get_witness_fragment( @wit_id, 0, fragment_length )
+      assert( data.nil? == false, "Empty witness fragment.")
+      assert( data.length == fragment_length, "Witness fragment '#{data}' should be #{fragment_length} characters, was #{data.length}.")
+    rescue Exception => e
+      assert( false, "Unexpected exception (#{e})")
+    end
+  end
+  
   def test_missing_get_witness
     begin
       @juxta.get_witness( 0 )

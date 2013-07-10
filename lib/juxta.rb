@@ -1,20 +1,41 @@
 require 'juxta/connection'
 require 'juxta/utilities'
 
+
+# Author::    Nick Laiacona  (mailto:nick@performantsoftware.com), Lou Foster, Dave Goldstein
+# Copyright:: Copyright (c) 2013
+# License::   Distributes under Apache License
+
+
+# This class provides the Ruby interface to the JuxtaWS REST web service. 
 class Juxta
 
-  attr :logging
+  # Set to true to enable logging.
+  attr_accessor :logging
+  
+  # The connection object for this Juxta instance.
   attr_reader :connection
 
+  # Initialize a Juxta interface with optional authentication. 
+  # 
+  # @param [String] URL of the JuxtaWS server to connect to.
+  # @param [String] username if server require authentication.
+  # @param [String] password if server require authentication.
+  # @return [Connection] 
   def initialize( url, username=nil, password=nil )
     @logging = false
     @connection = Connection.new( url, username, password ) 
   end
-  
+
+  # The name of the currently selected workspace, defaults to "public".
   def workspace()
     @connection.workspace
   end
   
+  # Select a workspace to operate in.
+  #
+  # @param [String] workspace_name this is the name of the workspace.
+  # @return [Boolean] true if selection suceeded, false otherwise.
   def select_workspace(workspace_name)
     workspaces = list_workspaces()
     workspace_names = workspaces.map { |workspace|
@@ -29,15 +50,19 @@ class Juxta
     end    
   end
 
+  # Lists the workspaces available on this server.
   #
-  # workspace behavior
-  #
+  # @return [Array] List of workspace names.
   def list_workspaces
     log_message( "Listing workspaces..." ) unless @logging == false
     ws_list = @connection.get( "workspace", false )
     return ws_list
   end
 
+  # Create a new workspace.
+  #
+  # @param [String] Name of the workspace to create. Must be unique to this server.  
+  # @return [String] If successful, the created workspace's id.
   def create_workspace( workspace_id )
     log_message( "Creating workspace #{workspace_id} ..." ) unless @logging == false
     json = { "name" => workspace_id, "description" => "the description for #{workspace_id}" }
@@ -45,6 +70,11 @@ class Juxta
     return workspace_id
   end
 
+
+  # Delete a new workspace and everything in it.
+  #
+  # @param [String] Name of the workspace to delete. 
+  # @return [Boolean] True if successful, false otherwise.
   def delete_workspace( workspace_id )
     log_message( "Deleting workspace #{workspace_id} ..." ) unless @logging == false
     resp = @connection.delete( "workspace/#{workspace_id}", false )
@@ -55,22 +85,42 @@ class Juxta
     return true
   end
 
+  # List the witnesses in this workspace. Witnesses are the transformed version of the sources.
   #
-  # witness behavior
-  #
-
+  # @return [Array] An array of hashes with summary information about each witness.
   def list_witnesses
     log_message( "Listing witnesses..." ) unless @logging == false
     witness_list = @connection.get( "witness" )
     return witness_list
   end
 
+  # Get full information about a given witness.
+  #
+  # @param [String,Integer] ID Identifier of the witness to retrieve. 
+  # @return [Hash] A hash with complete information about the witness, including full text.
   def get_witness( witness_id )
     log_message( "Getting witness #{witness_id}..." ) unless @logging == false
     resp = @connection.get( "witness/#{witness_id}" )
     return resp
   end
+  
+  
+  # Retrieve a text fragment from a given witness.
+  #
+  # @param [String,Integer] witness_id Identifier of the witness. 
+  # @param [String,Integer] start_point Starting offset of the fragment. 
+  # @param [String,Integer] end_point Ending offset of the fragment. 
+  # @return [String] A string containing the text fragment, if found.
+  def get_witness_fragment( witness_id, start_point, end_point )
+    log_message( "Getting witness #{witness_id}..." ) unless @logging == false
+    @connection.get_html( "witness/#{witness_id}.txt?range=#{start_point},#{end_point}" )
+  end
 
+  # Change the name of the witness.
+  #
+  # @param [String,Integer] witness_id Identifier of the witness. 
+  # @param [String,Integer] new_name The new name for the witness. 
+  # @return [Hash] 
   def rename_witness( witness_id, new_name )
     log_message( "Renaming witness #{witness_id} to #{new_name}..." ) unless @logging == false
     json = { 'name' => new_name }
@@ -78,26 +128,25 @@ class Juxta
     return resp
   end
 
+  # List the sources in this workspace.
   #
-  # source behavior
-  #
-
+  # @return [Array] An array of hashes with summary information about each source.
   def list_sources
     log_message( "Listing sources..." ) unless @logging == false
     source_list = @connection.get( "source" )
     return source_list
   end
 
-  #
-  # xslt behavior
-  #
-
+  # xslt behavior TODO
   def create_xslt( json )
      asset_id = "xslt"
      resp = @connection.post(asset_id, json)
      return resp
   end
 
+  # List the XSL stylesheets in this workspace.
+  #
+  # @return [Array] An array of hashes with summary information about each XSLT.
   def list_xslt
     log_message( "Listing xslt..." ) unless @logging == false
     xslt_list = @connection.get( "xslt" )
@@ -168,14 +217,26 @@ class Juxta
     return true
   end
 
+  # Delete the specified witness.
+  #
+  # @param [String,Integer] witness_id Identifier of the witness.
+  # @return [Boolean] True if successful, false otherwise.
   def delete_witness( witness_id )
      return delete_asset( "witness/#{witness_id}" )
   end
 
+  # Delete the specified source.
+  #
+  # @param [String,Integer] source_id Identifier of the source.
+  # @return [Boolean] True if successful, false otherwise.
   def delete_source( source_id )
     return delete_asset( "source/#{source_id}" )
   end
 
+  # Delete the specified comparison set.
+  #
+  # @param [String,Integer] set_id Identifier of the comparison set.
+  # @return [Boolean] True if successful, false otherwise.
   def delete_set( set_id )
     return delete_asset( "set/#{set_id}" )
   end
@@ -188,10 +249,10 @@ class Juxta
     return delete_asset( "set/#{set_id}/alignment/#{alignment_id}" )
   end
 
+  # Upload a file from local disk to the server.
   #
-  # upload behavior
-  #
-
+  # @param [String] file_name Local path to the file to upload.
+  # @return [String] Identifier of uploaded source if successful, otherwise nil.
   def upload_source( file_name )
 
      id = make_guid()
@@ -217,6 +278,10 @@ class Juxta
     JSON.parse(resp) 
   end
     
+  # Command the server to obtain an XML source file from the specified URL.
+  #
+  # @param [String] url URL of the XML source file to grab.
+  # @return [String] Identifier of the obtained source if successful, otherwise nil.
   def obtain_source_from_url( url )
     id = make_guid()
     log_message( "Downloading #{url} as #{id} ..." ) unless @logging == false
@@ -229,28 +294,31 @@ class Juxta
     end
   end
 
+  # Tranform the specified source into a witness using the associated XSLT.
   #
-  # transform behavior
-  #
+  # @param [String,Integer] source_id Identifier of the source.
+  # @return [String] Identifier of the resultant witness.
+  def transform_source( source_id )
 
-  def transform_source( file_id )
-
-    log_message( "Transforming #{file_id} ..." ) unless @logging == false
-    json = { 'source' => file_id, 'finalName' => make_guid() }
+    log_message( "Transforming #{source_id} ..." ) unless @logging == false
+    json = { 'source' => source_id, 'finalName' => make_guid() }
     wit_id = @connection.post( "transform", json )
     return wit_id
   end
 
+  # List the comparison sets in this workspace.
   #
-  # witness set behavior
-  #
-
+  # @return [Array] An array of hashes with summary information about each comparison set.
   def list_sets
     log_message( "Listing sets..." ) unless @logging == false
     set_list = @connection.get( "set" )
     return set_list
   end
 
+  # Group the specified witnesses into a new comparison set.
+  #
+  # @param [Array] witness_ids An array of witness identifiers.
+  # @return [String] Identifier of the resultant comparison set.
   def make_set( witness_ids )
     log_message( "Creating witness set ..." ) unless @logging == false
     set = { 'name' => make_guid(), 'witnesses' => witness_ids }
@@ -489,11 +557,6 @@ class Juxta
   end
 
   def destroy_witness_set( source_list, witness_list )
-
-    # witness_list.each do |wit_id|
-    #   status = delete_witness( wit_id )
-    #   return false unless status == true
-    # end
 
     source_list.each do |src_id|
       status = delete_source( src_id )

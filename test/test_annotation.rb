@@ -29,8 +29,8 @@ class TestAnnotation < Test::Unit::TestCase
          assert( status == true, "Failed to delete witness set" )
          
          # destroy witness set
-         status = @juxta.destroy_witness_set(  @src_ids, @wit_ids )
-         assert( status == true, "Failed to destroy witness set" )
+         # status = @juxta.destroy_witness_set(  @src_ids, @wit_ids )
+         # assert( status == true, "Failed to destroy witness set" )
          
       rescue Exception => e
          assert( false, "Unexpected exception (#{e})")
@@ -140,6 +140,7 @@ class TestAnnotation < Test::Unit::TestCase
          # delete the first and last one...
          status = @juxta.delete_annotation(  @set_id, @wit_ids[ 0 ], annotation_list[ 0 ]['id'] )
          assert( status == true, "Failed to delete annotation" )
+                  
          status = @juxta.delete_annotation(  @set_id, @wit_ids[ 0 ], annotation_list[ annotation_list.length - 1 ]['id'] )
          assert( status == true, "Failed to delete annotation" )
 
