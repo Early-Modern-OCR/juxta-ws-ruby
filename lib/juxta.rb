@@ -528,47 +528,6 @@ class Juxta
     return resp
   end
 
-  # Edition starter
-  def edition( set_id, title, line_freq, base_id, wit_siglum_map )
-     data = {}
-     data['title'] = title
-     data['lineFrequency'] = line_freq
-     data['numberBlankLines'] = false
-     witnesses = []
-     wit_siglum_map.each do |id, siglum|
-        wit = {"id"=> id, "include"=>true, "base"=>(id == base_id), "siglum"=>siglum}
-        witnesses << wit
-     end
-     data['witnesses'] = witnesses
-
-     log_message( "Exporting edition for set #{set_id}..." ) unless @logging == false   
-     resp = @connection.post("set/#{set_id}/edition", data)
-
-     # wait for task to complete
-     parsed = JSON.parse(resp)
-     token = parsed['token']
-     task = parsed['taskId']
-
-     while true do
-      sleep(2.0)
-      resp = get_status( task )
-      puts resp
-      case resp
-        when 'COMPLETE'
-          break
-
-        when 'FAILED'
-          error_message( "failed to tokenize set: #{set_id}")
-          return false
-      end
-    end
-
-    # now request the HTML edition and pass along the token
-    html = @connection.get_html("set/#{set_id}/edition?token=#{token}&format=html")
-    return html
-
-  end
-
   # Create an uncollated comparison set from an array of local files.
   # 
   # @param [Array] file_list An array of paths to local files to upload. 
