@@ -36,17 +36,24 @@ def standard_fileset( )
 
 end
 
-def wikipedia( title, revisions=5, lang="en" )
-  queryResult = JSON.parse(RestClient.get("http://#{lang}.wikipedia.org/w/api.php", :params => {
+def wikipediaQueryRevisions( lang, params )
+  return JSON.parse(RestClient.get("http://#{lang}.wikipedia.org/w/api.php", :params => {
     :format => "json",
-    :action => "query",
+    :action => "query"
+  }.merge(params))).fetch("query", {}).fetch("pages", {}).values.map { |page| page.fetch("revisions", []) }.flatten
+end
+
+def wikipedia( title, limit=5, lang="en" )
+  revision_ids = wikipediaQueryRevisions(lang, {
     :titles => title,
     :prop => "revisions",
-    :rvlimit => revisions,
-    :rvprop => "content"
-  }))
+    :rvlimit => 500,
+    :rvprop => "ids|flags"    
+  }).select { |rev|  !rev.has_key?("minor")  }.map { |rev| rev["revid"] }.slice(0, limit)
 
-  pages = queryResult.fetch("query", {}).fetch("pages", []).values
-  revisions = pages.map { |page| page.fetch("revisions", []) }.flatten
-  return revisions.map { |rev| rev.fetch("*", "") }.select { |rev| rev != "" }
+  wikipediaQueryRevisions(lang, {
+    :revids => revision_ids.join("|"),
+    :prop => "revisions",
+    :rvprop => "content"    
+  }).map { |rev| rev.fetch("*", "") }.select { |rev| rev != "" }
 end
