@@ -24,9 +24,12 @@ class TestResourceInfo < Test::Unit::TestCase
 
   def teardown
      begin
-         # destroy witness set
-         status = @juxta.destroy_witness_set(  @src_ids, @wit_ids )
-         assert( status == true, "Failed to destroy witness set" )
+       # destroy sources and witnesses
+       status = false
+       @src_ids.each do |src_id|
+         status = @juxta.delete_source( src_id )
+         break unless status == true
+       end
          
          # delete the witness set
          status = @juxta.delete_set(  @set_id )
@@ -39,7 +42,7 @@ class TestResourceInfo < Test::Unit::TestCase
   def test_missing_get_source_info
     begin
       source_id = 99999999
-      @juxta.get_info(  "source/#{source_id}" )
+      @juxta.get_source(  source_id )
     rescue RestClient::ResourceNotFound
       # this is expected...
     else
@@ -54,7 +57,7 @@ class TestResourceInfo < Test::Unit::TestCase
       sources = @juxta.list_sources()
       assert( sources.size != 0, "Empty source list" )
       src_id = sources[ 0 ][ 'id' ]
-      resp = @juxta.get_info(  "source/#{src_id}" )
+      resp = @juxta.get_source(  src_id )
       assert( resp.length != 0, "Empty source info" )
    rescue Exception => e
       assert( false, "Unexpected exception (#{e})")
@@ -65,7 +68,7 @@ class TestResourceInfo < Test::Unit::TestCase
   def test_missing_get_set_info
     begin
       set_id = 99999999
-      @juxta.get_info(  "set/#{set_id}" )
+      @juxta.get_set(  set_id )
     rescue RestClient::ResourceNotFound
       # this is expected...
     else
@@ -78,7 +81,7 @@ class TestResourceInfo < Test::Unit::TestCase
       sets = @juxta.list_sets()
       assert( sets.size != 0, "Empty set list" )
       set_id = sets[ 0 ][ 'id' ]
-      resp = @juxta.get_info( "set/#{set_id}" )
+      resp = @juxta.get_set( set_id )
       assert( resp.length != 0, "Empty set info" )
     rescue Exception => e
       assert( false, "Unexpected exception (#{e})")
@@ -88,7 +91,7 @@ class TestResourceInfo < Test::Unit::TestCase
   def test_missing_get_witness_info
     begin
       wit_id = 99999999
-      @juxta.get_info( "witness/#{wit_id}" )
+      @juxta.get_witness( wit_id )
     rescue RestClient::ResourceNotFound
       # this is expected...
     else
@@ -101,7 +104,7 @@ class TestResourceInfo < Test::Unit::TestCase
       witnesses = @juxta.list_witnesses(   )
       assert( witnesses.size != 0, "Empty witness list" )
       wit_id = witnesses[ 0 ][ 'id' ]
-      resp = @juxta.get_info(  "witness/#{wit_id}" )
+      resp = @juxta.get_witness(  wit_id )
       assert( resp.length != 0, "Empty witness info" )
     rescue Exception => e
       assert( false, "Unexpected exception (#{e})")

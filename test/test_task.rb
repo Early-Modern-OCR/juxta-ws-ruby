@@ -69,7 +69,12 @@ class TestTask < Test::Unit::TestCase
 
         # cleanup the witness set
         @juxta.delete_set( set_id )
-        @juxta.destroy_witness_set( src_ids, wit_ids )
+        
+        # destroy sources and witnesses
+        src_ids.each do |src_id|
+          @juxta.delete_source( src_id )
+        end
+        
      rescue Exception => e
         assert( false, "Unexpected exception (#{e})")
      end

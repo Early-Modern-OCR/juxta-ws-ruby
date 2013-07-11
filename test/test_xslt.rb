@@ -16,7 +16,7 @@ class TestXSLT < Test::Unit::TestCase
       begin
          resp = @juxta.create_xslt( make_guid, @dummxslt )
          assert( resp.length != 0, "Blank response" )
-         @juxta.delete_asset( "xslt/#{resp}" )
+         @juxta.delete_xslt( resp )
       rescue Exception => e
          assert( false, "Unexpected exception")
       end
@@ -27,7 +27,7 @@ class TestXSLT < Test::Unit::TestCase
          resp = @juxta.create_xslt( nil, @dummxslt )
          assert(false, "accepted bad xslt post" )
 
-         @juxta.delete_asset( "xslt/#{resp}" )
+         @juxta.delete_xslt( resp )
       rescue RestClient::BadRequest
          # expected
       else
@@ -43,7 +43,7 @@ class TestXSLT < Test::Unit::TestCase
          xslts = @juxta.list_xslt(  )
          assert( xslts.size != 0, "Empty XSLT list" )
          
-         @juxta.delete_asset( "xslt/#{resp}" )
+         @juxta.delete_xslt( resp )
       rescue Exception => e
          assert( false, "Unexpected exception (#{e})")
       end

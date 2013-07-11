@@ -48,13 +48,16 @@ class TestTokenize < Test::Unit::TestCase
         status = @juxta.tokenize_set( set_id )
         assert( status == true, "Failed to tokenize witness set" )
 
-        # delete the witness set
-        status = @juxta.delete_set( set_id )
-        assert( status == true, "Failed to delete witness set" )
+        status = false
+        # destroy sources
+        src_ids.each do |src_id|
+           status = @juxta.delete_source( src_id )
+           assert( status == true, "Failed to destroy sources" )
+         end
 
-        # destroy witness set
-        status = @juxta.destroy_witness_set( src_ids, wit_ids )
-        assert( status == true, "Failed to destroy witness set" )
+         # delete the set
+         status = @juxta.delete_set( set_id )
+         assert( status == true, "Failed to destroy witness set" )
     rescue Exception => e
        assert( false, "Unexpected exception (#{e})")
     end

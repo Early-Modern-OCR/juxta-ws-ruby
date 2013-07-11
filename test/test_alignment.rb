@@ -21,12 +21,14 @@ class TestAlignment < Test::Unit::TestCase
       end
 
    end
-
+   
    def teardown
       begin
-         # destroy witness set
-         status = @juxta.destroy_witness_set( @src_ids, @wit_ids )
-         assert( status == true, "Failed to destroy witness set" )
+         # destroy sources and witnesses
+         @src_ids.each do |src_id|
+           status = @juxta.delete_source( src_id )
+           assert( status == true, "Failed to destroy source #{src_id}" )
+         end
          
          # delete the witness set
          status = @juxta.delete_set( @set_id )

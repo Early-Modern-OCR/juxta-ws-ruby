@@ -1,11 +1,9 @@
 require 'juxta/connection'
 require 'juxta/utilities'
 
-
 # Author::    Nick Laiacona  (mailto:nick@performantsoftware.com), Lou Foster, Dave Goldstein
 # Copyright:: Copyright (c) 2013
 # License::   Distributes under Apache License
-
 
 # This class provides the Ruby interface to the JuxtaWS REST web service. 
 class Juxta
@@ -71,7 +69,6 @@ class Juxta
     return workspace_id
   end
 
-
   # Delete a new workspace and everything in it.
   #
   # @param [String] Name of the workspace to delete. 
@@ -91,8 +88,7 @@ class Juxta
   # @return [Array] An array of hashes with summary information about each witness.
   def list_witnesses
     log_message( "Listing witnesses..." ) unless @logging == false
-    witness_list = @connection.get( "witness" )
-    return witness_list
+    @connection.get( "witness" )
   end
 
   # Get full information about a given witness.
@@ -101,10 +97,17 @@ class Juxta
   # @return [Hash] A hash with complete information about the witness, including full text.
   def get_witness( witness_id )
     log_message( "Getting witness #{witness_id}..." ) unless @logging == false
-    resp = @connection.get( "witness/#{witness_id}" )
-    return resp
+    @connection.get( "witness/#{witness_id}" )
   end
   
+  # Get full information about a given source.
+  #
+  # @param [String,Integer] source_id Identifier of the source to retrieve. 
+  # @return [Hash] A hash with complete information about the source, including full text.
+  def get_source( source_id )
+    log_message( "Getting source #{source_id}..." ) unless @logging == false
+    @connection.get( "source/#{source_id}" )
+  end
   
   # Retrieve a text fragment from a given witness.
   #
@@ -223,17 +226,6 @@ class Juxta
     @connection.get( "#{asset_id}" )
   end
 
-  def delete_asset( asset_id )
-
-    log_message( "Deleting asset #{asset_id} ..." ) unless @logging == false
-    resp = @connection.delete( asset_id )
-    if resp['status'] == 'FAILED'
-       error_message( "failed to delete asset: #{asset_id}")
-       return false
-    end
-    return true
-  end
-
   # Delete the specified witness.
   #
   # @param [String,Integer] witness_id Identifier of the witness.
@@ -250,6 +242,14 @@ class Juxta
     return delete_asset( "source/#{source_id}" )
   end
 
+  # Delete the specified XSLT.
+  #
+  # @param [String,Integer] xslt_id Identifier of the XSLT.
+  # @return [Object] True if successful, false otherwise.
+  def delete_xslt( xslt_id )
+    return delete_asset( "xslt/#{xslt_id}" )
+  end
+  
   # Delete the specified comparison set.
   #
   # @param [String,Integer] set_id Identifier of the comparison set.
@@ -439,6 +439,11 @@ class Juxta
     return resp['status']
   end
 
+  # Retrieve the HTML for a given asset. Returns immediately, use 
+  # get_status(task_id) to check status.
+  #
+  # @param [String, Integer] asset_id Identifier of a given asset.
+  # @return [String] Task_id for the checking status or nil if the asset can not be retrieved. 
   def async_get_as_html( asset_id )
     log_message( "Getting html #{asset_id}..." ) unless @logging == false
     resp = @connection.get_html( asset_id )
@@ -448,13 +453,34 @@ class Juxta
     return nil
   end
 
+  # Creates an asset identifier for the heatmap of a given base text in a comparison set. 
+  # Use get_as_html or get_as_json to retrieve the asset.
+  #
+  # @param [String, Integer] set_id Identifier of a comparison set.
+  # @param [String, Integer] base_id Identifier of a base text.
+  # @return [String] Asset identifier for the heatmap visualization of the given base text.
+  def get_heatmap_asset_id( set_id, base_id )
+    "set/#{set_id}/view?mode=heatmap&base=#{base_id}"    
+  end
+  
+  # Creates an asset identifier for a side-by-side comparison of two witnesses in a comparison set.
+  # Use get_as_html or get_as_json to retrieve the asset.
+  #
+  # @param [String, Integer] set_id Identifier of a comparison set.
+  # @param [String, Integer] witness_a Identifier of the first witness.
+  # @param [String, Integer] witness_b Identifier of the second witness.
+  # @return [String] Asset identifier for the side-by-side visualization.
+  def get_side_by_side_asset_id( set_id, witness_a, witness_b )
+    "set/#{set_id}/view?mode=sidebyside&docs=#{witness_a},#{witness_b}" 
+  end
+
   # Creates a URL for the heatmap of a given base text in a comparison set.
   #
   # @param [String, Integer] set_id Identifier of a comparison set.
   # @param [String, Integer] base_id Identifier of a base text.
   # @return [String] URL to the heatmap visualization of the given base text.
   def get_heatmap_url( set_id, base_id )
-    @connection.make_full_url( "set/#{set_id}/view?mode=heatmap&base=#{base_id}" )    
+    @connection.make_full_url( get_heatmap_asset_id(set_id,base_id) )    
   end
   
   # Creates a URL for a side-by-side comparison of two witnesses in a comparison set.
@@ -464,9 +490,13 @@ class Juxta
   # @param [String, Integer] witness_b Identifier of the second witness.
   # @return [String] URL to the side-by-side visualization.
   def get_side_by_side_url( set_id, witness_a, witness_b )
-    @connection.make_full_url( "set/#{set_id}/view?mode=sidebyside&docs=#{witness_a},#{witness_b}" )    
+    @connection.make_full_url( get_side_by_side_asset_id(set_id, witness_a, witness_b) )    
   end
 
+  # Retrieve the HTML for a given asset, waiting for server to prepare asset if necessary.
+  #
+  # @param [String, Integer] asset_id Identifier of a given asset.
+  # @return [Object] HTML for the asset or false if the asset could not be retrieved. 
   def get_as_html( asset_id )
      task_id = async_get_as_html( asset_id )
      if task_id.nil? == false
@@ -486,6 +516,11 @@ class Juxta
      return resp
   end
 
+  # Retrieve the JSON for a given asset. Returns immediately, use 
+  # get_status(task_id) to check status.
+  #
+  # @param [String, Integer] asset_id Identifier of a given asset.
+  # @return [String] Task_id for the checking status or nil if the asset can not be retrieved.
   def async_get_as_json( asset_id )
     log_message( "Getting json #{asset_id}..." ) unless @logging == false
     resp = @connection.get( asset_id )
@@ -495,6 +530,10 @@ class Juxta
     return nil
   end
 
+  # Retrieve the JSON for a given asset, waiting for server to prepare asset if necessary.
+  #
+  # @param [String, Integer] asset_id Identifier of a given asset.
+  # @return [Object] JSON for the asset or false if the asset could not be retrieved. 
   def get_as_json( asset_id )
      task_id = async_get_as_json( asset_id )
      if task_id.nil? == false
@@ -512,18 +551,6 @@ class Juxta
         end
      end
      return false
-  end
-
-  def get_info( asset_id )
-    log_message( "Getting info for #{asset_id}..." ) unless @logging == false
-    resp = @connection.get( "#{asset_id}/info", false )
-    return resp
-  end
-
-  def get_usage( asset_id )
-    log_message( "Getting usage for #{asset_id}..." ) unless @logging == false
-    resp = @connection.get( "#{asset_id}/usage" )
-    return resp
   end
 
   # Get the specified XSLT resource from server.
@@ -570,16 +597,19 @@ class Juxta
 
     return src_ids, wit_ids, set_id
   end
+  
+  protected
+  
+  # Helper method for deleting sets, sources, witnesses.
+  def delete_asset( asset_id )
 
-  def destroy_witness_set( source_list, witness_list )
-
-    source_list.each do |src_id|
-      status = delete_source( src_id )
-      return false unless status == true
+    log_message( "Deleting asset #{asset_id} ..." ) unless @logging == false
+    resp = @connection.delete( asset_id )
+    if resp['status'] == 'FAILED'
+       error_message( "failed to delete asset: #{asset_id}")
+       return false
     end
-
     return true
   end
-
 
 end

@@ -1,9 +1,10 @@
 Gem::Specification.new do |s|
   s.name        = 'juxta'
-  s.version     = '0.1.2'
-  s.date        = '2013-07-08'
-  s.summary     = "JuxtaWS Ruby bindings"
-  s.description = "JuxtaWS Ruby bindings"
+  s.version     = '0.2.0'
+  s.date        = '2013-07-10'
+  s.summary     = "Provides a Ruby interface to the JuxtaWS REST web service."
+  s.description = "JuxtaWS can collate two or more versions of the same textual work (“witnesses”) and generate a list of alignments as well as two different styles of visualization suitable for display on the web. This gem provides a Ruby interface to the JuxtaWS REST web service."
+  s.license     = 'Apache 2.0'
   s.authors     = ["Lou Foster", "Dave Goldstein", "Nick Laiacona"]
   s.email       = 'nick@performantsoftware.com'
   s.files       = ["lib/juxta.rb", "lib/juxta/connection.rb", "lib/juxta/utilities.rb"]
