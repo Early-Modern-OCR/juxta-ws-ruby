@@ -90,7 +90,6 @@ class Connection
    def delete( request, in_workspace=true )
       start_time = Time.now.to_f
       url = in_workspace ? make_url( request ) : request   
-      log_message(url);
       resp =  @rest_client[ url ].delete :authorization => @authtoken
       dump_time( "delete", start_time )
       return resp

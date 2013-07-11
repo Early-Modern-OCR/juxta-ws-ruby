@@ -168,7 +168,13 @@ class Juxta
     @connection.get( "set/#{set_id}" )
   end
 
-  def create_annotation( set_id, witness_id, json )
+  # Create new annotations, on a given witness in a comparison set. 
+  #
+  # @param [String,Integer] set_id Identifier of a comparison set. 
+  # @param [String,Integer] witness_id Identifier of a witness. 
+  # @param [Array] json An array of hashes defining annotations. See JuxtaWS API docs for hash format. 
+  # @return [String] A JSON array of annotation identifiers created. 
+  def create_annotations( set_id, witness_id, json )
      asset_id = "set/#{set_id}/witness/#{witness_id}/annotation"
      log_message( "Posting annotations to #{asset_id}..." ) unless @logging == false   
      resp = @connection.post(asset_id, json)
@@ -198,7 +204,12 @@ class Juxta
     @connection.get( "set/#{set_id}/witness/#{witness_id}/annotation/#{annotation_id}?content=YES" )
   end
 
-  def create_alignment( set_id, json )
+  # Create new alignments, which are associations of annotations in a comparison set.
+  #
+  # @param [String,Integer] set_id Identifier of a comparison set. 
+  # @param [Array] json An array of hashes defining alignments. See JuxtaWS API docs for hash format. 
+  # @return [String] A JSON array of alignment identifiers created. 
+  def create_alignments( set_id, json )
      asset_id = "set/#{set_id}/alignment"
      log_message( "Posting alignments to #{asset_id}..." ) unless @logging == false   
      resp = @connection.post(asset_id, json)
@@ -302,7 +313,7 @@ class Juxta
 
   # Command the server to create source files from the provided array of hashes.
   #
-  # @param [Arrray] source_array Array of hashes describing the sources to be created.
+  # @param [Array] source_array Array of hashes describing the sources to be created. See JuxtaWS API for format.
   # @return [Array] Identifiers of the sources if successful, otherwise nil.  
   def create_sources( source_array )
     log_message( "Creating sources from JSON data..." ) unless @logging == false
@@ -432,7 +443,7 @@ class Juxta
   # Retrieve the status of a server side task. 
   #
   # @param [String,Integer] task_id An identifier for a server side task.
-  # @return [String] A status code. Possible codes are: PENDING, PROCESSING, COMPLETE, CANCEL_REQUESTED, CANCELED, FAILED.
+  # @return [String] A status code. Possible codes are: PENDING, PROCESSING, COMPLETE, CANCEL_REQUESTED, CANCELLED, FAILED.
   def get_status( task_id )
     log_message( "Getting status for #{task_id}..." ) unless @logging == false
     resp = @connection.get("task/#{task_id}/status")

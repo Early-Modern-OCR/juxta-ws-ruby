@@ -78,10 +78,10 @@ class TestAlignment < Test::Unit::TestCase
       end
    end
    
-   def test_malformed_create_alignment
+   def test_malformed_create_alignments
       begin
          json = "broken"
-         resp = @juxta.create_alignment( @set_id, json )
+         resp = @juxta.create_alignments( @set_id, json )
          align_id = resp.gsub(/\[/, '').gsub(/\]/, '')
          assert( align_id.length != 0, "Invalid create alignment response" )
 
@@ -95,10 +95,10 @@ class TestAlignment < Test::Unit::TestCase
       end
    end
    
-   def test_incomplete_create_alignment
+   def test_incomplete_create_alignments
       begin
          json = [ { :editDistance => 5, :annotations=>[1,2]}]
-         resp = @juxta.create_alignment( @set_id, json )
+         resp = @juxta.create_alignments( @set_id, json )
          align_id = resp.gsub(/\[/, '').gsub(/\]/, '')
          assert( align_id.length != 0, "Invalid create alignment response" )
 
@@ -112,15 +112,15 @@ class TestAlignment < Test::Unit::TestCase
       end
    end
    
-   def test_incomplete_anno_create_alignment
+   def test_incomplete_anno_create_alignments
       begin
          json = [ { :name => { :namespace => "http://juxtasoftware.org/ns", :localName => "token"}, :range => {:start=>0,:end=>10}}]
-         resp = @juxta.create_annotation( @set_id, @wit_ids[0], json )
+         resp = @juxta.create_annotations( @set_id, @wit_ids[0], json )
          anno_1 = resp.gsub(/\[/, '').gsub(/\]/, '')
          assert( anno_1.length != 0, "Invalid create annotation response" )
          
          json = [ { :name => { :namespace => "http://juxtasoftware.org/ns", :localName => "change"}, :editDistance => 5, :annotations=>[anno_1]}]
-         resp = @juxta.create_alignment( @set_id, json )
+         resp = @juxta.create_alignments( @set_id, json )
          align_id = resp.gsub(/\[/, '').gsub(/\]/, '')
          assert( align_id.length != 0, "Invalid create alignment response" )
 
@@ -134,10 +134,10 @@ class TestAlignment < Test::Unit::TestCase
       end
    end
    
-   def test_missing_anno_create_alignment
+   def test_missing_anno_create_alignments
       begin
          json = [ { :name => { :namespace => "http://juxtasoftware.org/ns", :localName => "change"}, :editDistance => 5, :annotations=>[0,0]}]
-         resp = @juxta.create_alignment( @set_id, json )
+         resp = @juxta.create_alignments( @set_id, json )
          align_id = resp.gsub(/\[/, '').gsub(/\]/, '')
          assert( align_id.length != 0, "Invalid create alignment response" )
 
@@ -152,7 +152,7 @@ class TestAlignment < Test::Unit::TestCase
    end
 
 
-   def test_good_create_alignment
+   def test_good_create_alignments
       begin         
          # create alignment between new annotations
          json = [ { :name => { :namespace => "http://juxtasoftware.org/ns", :localName => "change"}, :editDistance => 5, 
@@ -160,7 +160,7 @@ class TestAlignment < Test::Unit::TestCase
                        { :witnessId=>@wit_ids[0], :name => { :namespace => "http://juxtasoftware.org/ns", :localName => "token"}, :range => {:start=>0,:end=>10}},
                        { :witnessId=>@wit_ids[1], :name => { :namespace => "http://juxtasoftware.org/ns", :localName => "token"}, :range => {:start=>0,:end=>9}}
                     ]}]
-         resp = @juxta.create_alignment( @set_id, json )
+         resp = @juxta.create_alignments( @set_id, json )
          assert( resp != 1, "Incorrect resonse to create alignment; wrong number of alignments created." )
 
          # get the alignment list
