@@ -14,10 +14,8 @@ class TestXSLT < Test::Unit::TestCase
 
    def test_post_xslt
       begin
-         json = {:name=>make_guid, :xslt=>@dummxslt }
-         resp = @juxta.create_xslt( json )
+         resp = @juxta.create_xslt( make_guid, @dummxslt )
          assert( resp.length != 0, "Blank response" )
-
          @juxta.delete_asset( "xslt/#{resp}" )
       rescue Exception => e
          assert( false, "Unexpected exception")
@@ -26,8 +24,7 @@ class TestXSLT < Test::Unit::TestCase
    
    def test_post_bad_xslt
       begin
-         json = {:xslt=>@dummxslt }
-         resp = @juxta.create_xslt( json )
+         resp = @juxta.create_xslt( nil, @dummxslt )
          assert(false, "accepted bad xslt post" )
 
          @juxta.delete_asset( "xslt/#{resp}" )
@@ -40,8 +37,7 @@ class TestXSLT < Test::Unit::TestCase
 
    def test_good_get_xslt_list
       begin
-         json = {:name=>make_guid, :xslt=>@dummxslt }
-         resp = @juxta.create_xslt( json )
+         resp = @juxta.create_xslt( make_guid, @dummxslt )
          assert( resp.length != 0, "Blank response" )
          
          xslts = @juxta.list_xslt(  )

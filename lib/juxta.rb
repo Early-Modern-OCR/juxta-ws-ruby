@@ -138,11 +138,13 @@ class Juxta
     return source_list
   end
 
-  # xslt behavior TODO
-  def create_xslt( json )
-     asset_id = "xslt"
-     resp = @connection.post(asset_id, json)
-     return resp
+  # Create a new XSLT on the server.
+  # 
+  # @param [String] name A display name for this XSLT.
+  # @param [String] xslt XML string for the XSLT.
+  # @return [String] An identifier for the newly created XSLT.
+  def create_xslt( name, xslt )
+    @connection.post("xslt", {:name=>name, :xslt=>xslt } )
   end
 
   # List the XSL stylesheets in this workspace.
@@ -324,7 +326,7 @@ class Juxta
     end
   end
 
-  # Tranform the specified source into a witness using the associated XSLT.
+  # Transform the specified source into a witness using the associated XSLT.
   #
   # @param [String,Integer] source_id Identifier of the source.
   # @return [String] Identifier of the resultant witness.
@@ -356,15 +358,20 @@ class Juxta
     return set_id
   end
 
+  # Tokenize the specified comparison set. Returns 
+  # immediately, use get_status(task_id) to check the status of tokenization. Tokens are 
+  # accessible as annotations of type 'token'. 
+  #
+  # @param [String,Integer] set_id Identifier of the comparison set.
+  # @return [String] An identifier for the server task.
   def async_tokenize_set( set_id )
      log_message( "Tokenizing witness set #{set_id}..." ) unless @logging == false
-     task_id = @connection.post( "set/#{set_id}/tokenize", nil)
-     return task_id
+     @connection.post( "set/#{set_id}/tokenize", nil)
   end
 
   # Tokenize the specified comparison set. Tokens are accessible as annotations of type 'token'.
   #
-  # @param [String,Integer] set_id Identifier of the source.
+  # @param [String,Integer] set_id Identifier of the comparison set.
   # @return [Object] True if successful, false otherwise.
   def tokenize_set( set_id )
     task_id = async_tokenize_set( set_id )
@@ -382,10 +389,14 @@ class Juxta
     end
   end
 
+  # Collate the specified comparison set. Returns immediately, use 
+  # get_status(task_id) to check the status of collation.
+  #
+  # @param [String,Integer] set_id Identifier of the comparison set.
+  # @return [String] An identifier for the server task.
   def async_collate_set( set_id )
      log_message( "Collating witness set #{set_id}..." ) unless @logging == false
-     task_id = @connection.post( "set/#{set_id}/collate", nil)
-     return task_id
+     @connection.post( "set/#{set_id}/collate", nil)
   end
 
   # Collate the specified comparison set and wait for the response from server.
@@ -418,7 +429,10 @@ class Juxta
     return resp
   end
 
-  # task status behavior
+  # Retrieve the status of a server side task. 
+  #
+  # @param [String,Integer] task_id An identifier for a server side task.
+  # @return [String] A status code. Possible codes are: PENDING, PROCESSING, COMPLETE, CANCEL_REQUESTED, CANCELED, FAILED.
   def get_status( task_id )
     log_message( "Getting status for #{task_id}..." ) unless @logging == false
     resp = @connection.get("task/#{task_id}/status")
