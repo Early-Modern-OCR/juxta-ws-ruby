@@ -233,6 +233,14 @@ class Juxta
     return delete_asset( "source/#{source_id}" )
   end
 
+  # Delete the specified XSLT transform.
+  #
+  # @param [String,Integer] xslt_id Identifier of the transform.
+  # @return [Boolean] True if successful, false otherwise.
+  def delete_xslt( xslt_id )
+    return delete_asset( "xslt/#{xslt_id}" )
+  end
+
   # Delete the specified comparison set.
   #
   # @param [String,Integer] set_id Identifier of the comparison set.
@@ -297,11 +305,13 @@ class Juxta
   # Tranform the specified source into a witness using the associated XSLT.
   #
   # @param [String,Integer] source_id Identifier of the source.
+  # @param [String,Integer] xslt_id Identifier of the XSLT transform.
   # @return [String] Identifier of the resultant witness.
-  def transform_source( source_id )
+  def transform_source( source_id, xslt_id=nil )
 
     log_message( "Transforming #{source_id} ..." ) unless @logging == false
     json = { 'source' => source_id, 'finalName' => make_guid() }
+    json["xslt"] = xslt_id if xslt_id
     wit_id = @connection.post( "transform", json )
     return wit_id
   end
