@@ -1,11 +1,9 @@
 require 'juxta/connection'
 require 'juxta/utilities'
 
-
 # Author::    Nick Laiacona  (mailto:nick@performantsoftware.com), Lou Foster, Dave Goldstein
 # Copyright:: Copyright (c) 2013
 # License::   Distributes under Apache License
-
 
 # This class provides the Ruby interface to the JuxtaWS REST web service. 
 class Juxta
@@ -27,7 +25,8 @@ class Juxta
     @connection = Connection.new( url, username, password ) 
   end
 
-  # The name of the currently selected workspace, defaults to "public".
+  # The name of the currently selected workspace. Default is "public".
+  # @return [String] The name of the current workspace. 
   def workspace()
     @connection.workspace
   end
@@ -35,7 +34,7 @@ class Juxta
   # Select a workspace to operate in.
   #
   # @param [String] workspace_name this is the name of the workspace.
-  # @return [Boolean] true if selection suceeded, false otherwise.
+  # @return [Object] true if selection suceeded, false otherwise.
   def select_workspace(workspace_name)
     workspaces = list_workspaces()
     workspace_names = workspaces.map { |workspace|
@@ -70,11 +69,10 @@ class Juxta
     return workspace_id
   end
 
-
   # Delete a new workspace and everything in it.
   #
   # @param [String] Name of the workspace to delete. 
-  # @return [Boolean] True if successful, false otherwise.
+  # @return [Object] True if successful, false otherwise.
   def delete_workspace( workspace_id )
     log_message( "Deleting workspace #{workspace_id} ..." ) unless @logging == false
     resp = @connection.delete( "workspace/#{workspace_id}", false )
@@ -90,20 +88,26 @@ class Juxta
   # @return [Array] An array of hashes with summary information about each witness.
   def list_witnesses
     log_message( "Listing witnesses..." ) unless @logging == false
-    witness_list = @connection.get( "witness" )
-    return witness_list
+    @connection.get( "witness" )
   end
 
   # Get full information about a given witness.
   #
-  # @param [String,Integer] ID Identifier of the witness to retrieve. 
+  # @param [String,Integer] witness_id Identifier of the witness to retrieve. 
   # @return [Hash] A hash with complete information about the witness, including full text.
   def get_witness( witness_id )
     log_message( "Getting witness #{witness_id}..." ) unless @logging == false
-    resp = @connection.get( "witness/#{witness_id}" )
-    return resp
+    @connection.get( "witness/#{witness_id}" )
   end
   
+  # Get full information about a given source.
+  #
+  # @param [String,Integer] source_id Identifier of the source to retrieve. 
+  # @return [Hash] A hash with complete information about the source, including full text.
+  def get_source( source_id )
+    log_message( "Getting source #{source_id}..." ) unless @logging == false
+    @connection.get( "source/#{source_id}" )
+  end
   
   # Retrieve a text fragment from a given witness.
   #
@@ -137,11 +141,13 @@ class Juxta
     return source_list
   end
 
-  # xslt behavior TODO
-  def create_xslt( json )
-     asset_id = "xslt"
-     resp = @connection.post(asset_id, json)
-     return resp
+  # Create a new XSLT on the server.
+  # 
+  # @param [String] name A display name for this XSLT.
+  # @param [String] xslt XML string for the XSLT.
+  # @return [String] An identifier for the newly created XSLT.
+  def create_xslt( name, xslt )
+    @connection.post("xslt", {:name=>name, :xslt=>xslt } )
   end
 
   # List the XSL stylesheets in this workspace.
@@ -152,18 +158,34 @@ class Juxta
     xslt_list = @connection.get( "xslt" )
     return xslt_list
   end
-
+  
+  # Get full information about a given comparison set.
   #
-  # annotation behavior
-  #
+  # @param [String,Integer] set_id Identifier of a comparison set. 
+  # @return [Hash] A hash with complete information about the comparison set, including a list of witnesses.
+  def get_set( set_id )
+    log_message( "Getting set #{set_id}..." ) unless @logging == false
+    @connection.get( "set/#{set_id}" )
+  end
 
-  def create_annotation( set_id, witness_id, json )
+  # Create new annotations, on a given witness in a comparison set. 
+  #
+  # @param [String,Integer] set_id Identifier of a comparison set. 
+  # @param [String,Integer] witness_id Identifier of a witness. 
+  # @param [Array] json An array of hashes defining annotations. See JuxtaWS API docs for hash format. 
+  # @return [String] A JSON array of annotation identifiers created. 
+  def create_annotations( set_id, witness_id, json )
      asset_id = "set/#{set_id}/witness/#{witness_id}/annotation"
      log_message( "Posting annotations to #{asset_id}..." ) unless @logging == false   
      resp = @connection.post(asset_id, json)
      return resp
   end
 
+  # List the annotations applied to a given witness in a comparison set.
+  #
+  # @param [String,Integer] set_id Identifier of a comparison set. 
+  # @param [String,Integer] witness_id Identifier of a witness. 
+  # @return [Array] An array of hashes containing annotation data.
   def list_annotations( set_id, witness_id )
     asset_id = "set/#{set_id}/witness/#{witness_id}"
     log_message( "Listing annotations for #{asset_id}..." ) unless @logging == false
@@ -171,56 +193,54 @@ class Juxta
     return annotation_list
   end
 
-  def get_annotation( annotation_id )
+  # Retrieve information about a specific annotation.
+  #
+  # @param [String,Integer] set_id Identifier of a comparison set. 
+  # @param [String,Integer] witness_id Identifier of a witness. 
+  # @param [String,Integer] annotation_id Identifier of the specified annotation. 
+  # @return [Hash] A hash containing the annotation data.  
+  def get_annotation( set_id, witness_id, annotation_id )
     log_message( "Getting annotation #{annotation_id}..." ) unless @logging == false
-    resp = @connection.get( "#{annotation_id}?content=YES" )
-    return resp
+    @connection.get( "set/#{set_id}/witness/#{witness_id}/annotation/#{annotation_id}?content=YES" )
   end
 
+  # Create new alignments, which are associations of annotations in a comparison set.
   #
-  # alignment behavior
-  #
-
-  def create_alignment( set_id, json )
+  # @param [String,Integer] set_id Identifier of a comparison set. 
+  # @param [Array] json An array of hashes defining alignments. See JuxtaWS API docs for hash format. 
+  # @return [String] A JSON array of alignment identifiers created. 
+  def create_alignments( set_id, json )
      asset_id = "set/#{set_id}/alignment"
      log_message( "Posting alignments to #{asset_id}..." ) unless @logging == false   
      resp = @connection.post(asset_id, json)
      return resp
   end
 
+  # List the alignments for a given comparison set.
+  #
+  # @param [String,Integer] set_id Identifier of a comparison set. 
+  # @return [Array] An array of hashes containing alignment data.  
   def list_alignments( set_id )
     asset_id = "set/#{set_id}"
     log_message( "Listing alignments for #{asset_id}..." ) unless @logging == false
-    annotation_list = @connection.get( "#{asset_id}/alignment" )
-    return annotation_list
+    @connection.get( "#{asset_id}/alignment" )
   end
 
+  # Get full information about a given alignment.
+  #
+  # @param [String,Integer] set_id Identifier of a comparison set. 
+  # @param [String,Integer] alignment_id Identifier of an alignment. 
+  # @return [Hash] A hash with complete information about the alignment, including text fragments.  
   def get_alignment( set_id, alignment_id )
     asset_id = "set/#{set_id}/alignment/#{alignment_id}"
     log_message( "Getting alignment #{asser_id}..." ) unless @logging == false
-    resp = @connection.get( "#{asset_id}" )
-    return resp
-  end
-
-  #
-  # delete behavior
-  #
-
-  def delete_asset( asset_id )
-
-    log_message( "Deleting asset #{asset_id} ..." ) unless @logging == false
-    resp = @connection.delete( asset_id )
-    if resp['status'] == 'FAILED'
-       error_message( "failed to delete asset: #{asset_id}")
-       return false
-    end
-    return true
+    @connection.get( "#{asset_id}" )
   end
 
   # Delete the specified witness.
   #
   # @param [String,Integer] witness_id Identifier of the witness.
-  # @return [Boolean] True if successful, false otherwise.
+  # @return [Object] True if successful, false otherwise.
   def delete_witness( witness_id )
      return delete_asset( "witness/#{witness_id}" )
   end
@@ -228,31 +248,42 @@ class Juxta
   # Delete the specified source.
   #
   # @param [String,Integer] source_id Identifier of the source.
-  # @return [Boolean] True if successful, false otherwise.
+  # @return [Object] True if successful, false otherwise.
   def delete_source( source_id )
     return delete_asset( "source/#{source_id}" )
   end
 
-  # Delete the specified XSLT transform.
+  # Delete the specified XSLT.
   #
-  # @param [String,Integer] xslt_id Identifier of the transform.
-  # @return [Boolean] True if successful, false otherwise.
+  # @param [String,Integer] xslt_id Identifier of the XSLT.
+  # @return [Object] True if successful, false otherwise.
   def delete_xslt( xslt_id )
     return delete_asset( "xslt/#{xslt_id}" )
   end
-
+  
   # Delete the specified comparison set.
   #
   # @param [String,Integer] set_id Identifier of the comparison set.
-  # @return [Boolean] True if successful, false otherwise.
+  # @return [Object] True if successful, false otherwise.
   def delete_set( set_id )
     return delete_asset( "set/#{set_id}" )
   end
 
+  # Delete the specified annotation from a given comparison set witness.
+  #
+  # @param [String,Integer] set_id Identifier of the comparison set.
+  # @param [String,Integer] witness_id Identifier of the witness.
+  # @param [String,Integer] annotation_id Identifier of the annotation.
+  # @return [Object] True if successful, false otherwise.
   def delete_annotation( set_id, witness_id, annotation_id )
     return delete_asset( "set/#{set_id}/witness/#{witness_id}/annotation/#{annotation_id}" )
   end
 
+  # Delete the specified alignment from a given comparison set.
+  #
+  # @param [String,Integer] set_id Identifier of the comparison set.
+  # @param [String,Integer] alignment_id Identifier of a given alignment.
+  # @return [Object] True if successful, false otherwise.
   def delete_alignment( set_id, alignment_id )
     return delete_asset( "set/#{set_id}/alignment/#{alignment_id}" )
   end
@@ -280,6 +311,10 @@ class Juxta
      return nil
   end
 
+  # Command the server to create source files from the provided array of hashes.
+  #
+  # @param [Array] source_array Array of hashes describing the sources to be created. See JuxtaWS API for format.
+  # @return [Array] Identifiers of the sources if successful, otherwise nil.  
   def create_sources( source_array )
     log_message( "Creating sources from JSON data..." ) unless @logging == false
     resp = @connection.post( "source", source_array )
@@ -302,7 +337,7 @@ class Juxta
     end
   end
 
-  # Tranform the specified source into a witness using the associated XSLT.
+  # Transform the specified source into a witness using the associated XSLT.
   #
   # @param [String,Integer] source_id Identifier of the source.
   # @param [String,Integer] xslt_id Identifier of the XSLT transform.
@@ -336,12 +371,21 @@ class Juxta
     return set_id
   end
 
+  # Tokenize the specified comparison set. Returns 
+  # immediately, use get_status(task_id) to check the status of tokenization. Tokens are 
+  # accessible as annotations of type 'token'. 
+  #
+  # @param [String,Integer] set_id Identifier of the comparison set.
+  # @return [String] An identifier for the server task.
   def async_tokenize_set( set_id )
      log_message( "Tokenizing witness set #{set_id}..." ) unless @logging == false
-     task_id = @connection.post( "set/#{set_id}/tokenize", nil)
-     return task_id
+     @connection.post( "set/#{set_id}/tokenize", nil)
   end
 
+  # Tokenize the specified comparison set. Tokens are accessible as annotations of type 'token'.
+  #
+  # @param [String,Integer] set_id Identifier of the comparison set.
+  # @return [Object] True if successful, false otherwise.
   def tokenize_set( set_id )
     task_id = async_tokenize_set( set_id )
     while true do
@@ -358,12 +402,20 @@ class Juxta
     end
   end
 
+  # Collate the specified comparison set. Returns immediately, use 
+  # get_status(task_id) to check the status of collation.
+  #
+  # @param [String,Integer] set_id Identifier of the comparison set.
+  # @return [String] An identifier for the server task.
   def async_collate_set( set_id )
      log_message( "Collating witness set #{set_id}..." ) unless @logging == false
-     task_id = @connection.post( "set/#{set_id}/collate", nil)
-     return task_id
+     @connection.post( "set/#{set_id}/collate", nil)
   end
 
+  # Collate the specified comparison set and wait for the response from server.
+  #
+  # @param [String,Integer] set_id Identifier of the target comparison set.
+  # @return [Object] True if successful, false otherwise.
   def collate_set( set_id )
     task_id = async_collate_set( set_id )
     while true do
@@ -380,29 +432,31 @@ class Juxta
     end
   end
 
+  # Search the current workspace for the specified phrase. Server must have search indexing enabled.
   #
-  # Search behavior
-  #
+  # @param [String] query The phrase to search for within the workspace.
+  # @return [Array] An array of objects that detail the search results.
   def search( query )
     log_message( "Searching for #{query}..." ) unless @logging == false
     resp = @connection.get("search?q=#{query}")
     return resp
   end
 
+  # Retrieve the status of a server side task. 
   #
-  # task status behavior
-  #
-
+  # @param [String,Integer] task_id An identifier for a server side task.
+  # @return [String] A status code. Possible codes are: PENDING, PROCESSING, COMPLETE, CANCEL_REQUESTED, CANCELLED, FAILED.
   def get_status( task_id )
     log_message( "Getting status for #{task_id}..." ) unless @logging == false
     resp = @connection.get("task/#{task_id}/status")
     return resp['status']
   end
 
+  # Retrieve the HTML for a given asset. Returns immediately, use 
+  # get_status(task_id) to check status.
   #
-  # get asset behavior
-  #
-
+  # @param [String, Integer] asset_id Identifier of a given asset.
+  # @return [String] Task_id for the checking status or nil if the asset can not be retrieved. 
   def async_get_as_html( asset_id )
     log_message( "Getting html #{asset_id}..." ) unless @logging == false
     resp = @connection.get_html( asset_id )
@@ -412,14 +466,50 @@ class Juxta
     return nil
   end
 
-  def get_heatmap_url( set_id, base_id )
-    @connection.make_full_url( "set/#{set_id}/view?mode=heatmap&base=#{base_id}" )    
+  # Creates an asset identifier for the heatmap of a given base text in a comparison set. 
+  # Use get_as_html or get_as_json to retrieve the asset.
+  #
+  # @param [String, Integer] set_id Identifier of a comparison set.
+  # @param [String, Integer] base_id Identifier of a base text.
+  # @return [String] Asset identifier for the heatmap visualization of the given base text.
+  def get_heatmap_asset_id( set_id, base_id )
+    "set/#{set_id}/view?mode=heatmap&base=#{base_id}"    
   end
   
-  def get_side_by_side_url( set_id, witness_a, witness_b )
-    @connection.make_full_url( "set/#{set_id}/view?mode=sidebyside&docs=#{witness_a},#{witness_b}" )    
+  # Creates an asset identifier for a side-by-side comparison of two witnesses in a comparison set.
+  # Use get_as_html or get_as_json to retrieve the asset.
+  #
+  # @param [String, Integer] set_id Identifier of a comparison set.
+  # @param [String, Integer] witness_a Identifier of the first witness.
+  # @param [String, Integer] witness_b Identifier of the second witness.
+  # @return [String] Asset identifier for the side-by-side visualization.
+  def get_side_by_side_asset_id( set_id, witness_a, witness_b )
+    "set/#{set_id}/view?mode=sidebyside&docs=#{witness_a},#{witness_b}" 
   end
 
+  # Creates a URL for the heatmap of a given base text in a comparison set.
+  #
+  # @param [String, Integer] set_id Identifier of a comparison set.
+  # @param [String, Integer] base_id Identifier of a base text.
+  # @return [String] URL to the heatmap visualization of the given base text.
+  def get_heatmap_url( set_id, base_id )
+    @connection.make_full_url( get_heatmap_asset_id(set_id,base_id) )    
+  end
+  
+  # Creates a URL for a side-by-side comparison of two witnesses in a comparison set.
+  #
+  # @param [String, Integer] set_id Identifier of a comparison set.
+  # @param [String, Integer] witness_a Identifier of the first witness.
+  # @param [String, Integer] witness_b Identifier of the second witness.
+  # @return [String] URL to the side-by-side visualization.
+  def get_side_by_side_url( set_id, witness_a, witness_b )
+    @connection.make_full_url( get_side_by_side_asset_id(set_id, witness_a, witness_b) )    
+  end
+
+  # Retrieve the HTML for a given asset, waiting for server to prepare asset if necessary.
+  #
+  # @param [String, Integer] asset_id Identifier of a given asset.
+  # @return [Object] HTML for the asset or false if the asset could not be retrieved. 
   def get_as_html( asset_id )
      task_id = async_get_as_html( asset_id )
      if task_id.nil? == false
@@ -439,6 +529,11 @@ class Juxta
      return resp
   end
 
+  # Retrieve the JSON for a given asset. Returns immediately, use 
+  # get_status(task_id) to check status.
+  #
+  # @param [String, Integer] asset_id Identifier of a given asset.
+  # @return [String] Task_id for the checking status or nil if the asset can not be retrieved.
   def async_get_as_json( asset_id )
     log_message( "Getting json #{asset_id}..." ) unless @logging == false
     resp = @connection.get( asset_id )
@@ -448,6 +543,10 @@ class Juxta
     return nil
   end
 
+  # Retrieve the JSON for a given asset, waiting for server to prepare asset if necessary.
+  #
+  # @param [String, Integer] asset_id Identifier of a given asset.
+  # @return [Object] JSON for the asset or false if the asset could not be retrieved. 
   def get_as_json( asset_id )
      task_id = async_get_as_json( asset_id )
      if task_id.nil? == false
@@ -467,82 +566,28 @@ class Juxta
      return false
   end
 
-  def get_info( asset_id )
-    log_message( "Getting info for #{asset_id}..." ) unless @logging == false
-    resp = @connection.get( "#{asset_id}/info", false )
-    return resp
-  end
-
-  def get_usage( asset_id )
-    log_message( "Getting usage for #{asset_id}..." ) unless @logging == false
-    resp = @connection.get( "#{asset_id}/usage" )
-    return resp
-  end
-
+  # Get the specified XSLT resource from server.
+  #
+  # @param [String,Integer] asset_id The identifier of the specified XSLT.
+  # @return [String] XML for the specified XSLT.
   def get_xslt( asset_id )
     log_message( "Getting xslt #{asset_id}..." ) unless @logging == false
-    resp = @connection.get_html( "xslt/#{asset_id}" )
-    return resp
+    @connection.get_html( "xslt/#{asset_id}" )
   end
 
-  #
   # TEI Parallel segmentation export
-  #
-
   def export( set_id, base_id )
     log_message( "Exporting set #{set_id}..." ) unless @logging == false
     resp = @connection.get_xml( "set/#{set_id}/export?mode=teips&base=#{base_id}&sync" )
     return resp
   end
 
+  # Create an uncollated comparison set from an array of local files.
   # 
-  # Edition starter
-  # 
-
-  def edition( set_id, title, line_freq, base_id, wit_siglum_map )
-     data = {}
-     data['title'] = title
-     data['lineFrequency'] = line_freq
-     data['numberBlankLines'] = false
-     witnesses = []
-     wit_siglum_map.each do |id, siglum|
-        wit = {"id"=> id, "include"=>true, "base"=>(id == base_id), "siglum"=>siglum}
-        witnesses << wit
-     end
-     data['witnesses'] = witnesses
-
-     log_message( "Exporting edition for set #{set_id}..." ) unless @logging == false   
-     resp = @connection.post("set/#{set_id}/edition", data)
-
-     # wait for task to complete
-     parsed = JSON.parse(resp)
-     token = parsed['token']
-     task = parsed['taskId']
-
-     while true do
-      sleep(2.0)
-      resp = get_status( task )
-      puts resp
-      case resp
-        when 'COMPLETE'
-          break
-
-        when 'FAILED'
-          error_message( "failed to tokenize set: #{set_id}")
-          return false
-      end
-    end
-
-    # now request the HTML edition and pass along the token
-    html = @connection.get_html("set/#{set_id}/edition?token=#{token}&format=html")
-    return html
-
-  end
-
-  #
-  # convience methods
-  #
-
+  # @param [Array] file_list An array of paths to local files to upload. 
+  # @return [Array] Array of resultant source identifiers. 
+  # @return [Array] Array of resultant witness identifiers. 
+  # @return [String] The identifier for the resultant comparison set. 
   def create_witness_set( file_list )
 
     src_ids = []
@@ -565,16 +610,19 @@ class Juxta
 
     return src_ids, wit_ids, set_id
   end
+  
+  protected
+  
+  # Helper method for deleting sets, sources, witnesses.
+  def delete_asset( asset_id )
 
-  def destroy_witness_set( source_list, witness_list )
-
-    source_list.each do |src_id|
-      status = delete_source( src_id )
-      return false unless status == true
+    log_message( "Deleting asset #{asset_id} ..." ) unless @logging == false
+    resp = @connection.delete( asset_id )
+    if resp['status'] == 'FAILED'
+       error_message( "failed to delete asset: #{asset_id}")
+       return false
     end
-
     return true
   end
-
 
 end

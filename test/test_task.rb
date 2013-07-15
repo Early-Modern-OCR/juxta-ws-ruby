@@ -66,10 +66,15 @@ class TestTask < Test::Unit::TestCase
         task_id = @juxta.async_get_as_html( "set/#{set_id}/view?mode=heatmap" )
         status = wait_until_complete( task_id )
         assert( status == true, "Get html status failed")
+        
+        # destroy sources and witnesses
+        src_ids.each do |src_id|
+          @juxta.delete_source( src_id )
+        end
 
         # cleanup the witness set
         @juxta.delete_set( set_id )
-        @juxta.destroy_witness_set( src_ids, wit_ids )
+        
      rescue Exception => e
         assert( false, "Unexpected exception (#{e})")
      end

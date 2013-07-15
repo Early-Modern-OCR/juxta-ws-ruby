@@ -27,11 +27,7 @@ class TestAnnotation < Test::Unit::TestCase
          # delete the witness set
          status = @juxta.delete_set(  @set_id )
          assert( status == true, "Failed to delete witness set" )
-         
-         # destroy witness set
-         # status = @juxta.destroy_witness_set(  @src_ids, @wit_ids )
-         # assert( status == true, "Failed to destroy witness set" )
-         
+                  
       rescue Exception => e
          assert( false, "Unexpected exception (#{e})")
       end
@@ -97,10 +93,10 @@ class TestAnnotation < Test::Unit::TestCase
       end
    end
 
-   def test_good_create_annotation
+   def test_good_create_annotations
       begin
          json = [ { :name => { :namespace => "http://juxtasoftware.org/ns", :localName => "token"}, :range => {:start=>0,:end=>10}}]
-         resp = @juxta.create_annotation( @set_id, @wit_ids[0], json )
+         resp = @juxta.create_annotations( @set_id, @wit_ids[0], json )
          assert( resp != 1, "Invalid create annotation response" )
 
          # get the annotation list
@@ -111,14 +107,14 @@ class TestAnnotation < Test::Unit::TestCase
       end
    end
 
-   def test_bad_create_annotation
+   def test_bad_create_annotations
       begin
          json = [ { :name => { :namespace => "http://juxtasoftware.org/ns", :localName => "token"} }]
-         resp = @juxta.create_annotation( @set_id, @wit_ids[0], json)
+         resp = @juxta.create_annotations( @set_id, @wit_ids[0], json)
          assert( false, "Bad annotation accepted")
 
          json = "WRONG"
-         resp = @juxta.create_annotation( @set_id, @wit_ids[0], json )
+         resp = @juxta.create_annotations( @set_id, @wit_ids[0], json )
          assert( false, "Bad annotation accepted")
       rescue RestClient::BadRequest
          # expected

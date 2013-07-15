@@ -30,8 +30,13 @@ class TestVisualize < Test::Unit::TestCase
   def teardown
     begin
       # destroy witness set
-      status = @juxta.destroy_witness_set( @src_ids, @wit_ids )
-      assert( status == true, "Failed to destroy witness set" )
+      status = false
+       @src_ids.each do |src_id|
+         status = @juxta.delete_source( src_id )
+         break unless status == true
+       end
+       
+       assert( status == true, "Failed to destroy witness set" )
       
       # delete the witness set
       status = @juxta.delete_set( @set_id )
@@ -62,19 +67,9 @@ class TestVisualize < Test::Unit::TestCase
     end
   end
 
-  def test_bad_witness_id
-    begin
-       @juxta.get_as_json( "set/#{@set_id}/view?mode=heatmap?base=bad-witness-id" )
-    rescue RestClient::BadRequest
-       # this is expected...
-    else
-       assert( false, "Unexpected exception")
-    end
-  end
-
   def test_missing_witness_id
     begin
-      @juxta.get_as_json( "set/#{@set_id}/view?mode=heatmap&base=0000" )
+      @juxta.get_as_json( @juxta.get_heatmap_asset_id( @set_id, "0000" ) )
     rescue RestClient::ResourceNotFound
       # this is expected...
     else
@@ -84,7 +79,7 @@ class TestVisualize < Test::Unit::TestCase
 
   def test_bad_witness_set
     begin
-       @juxta.get_as_html( "set/#{@set_id}/view?mode=sidebyside&docs=bad-witness-id,bad-witness-id" )
+       @juxta.get_as_html( @juxta.get_side_by_side_asset_id( @set_id, "bad-witness-id", "bad-witness-id" ) )
     rescue RestClient::BadRequest
        # this is expected...
     else
@@ -94,7 +89,7 @@ class TestVisualize < Test::Unit::TestCase
 
   def test_missing_witness_set
     begin
-       @juxta.get_as_html( "set/#{@set_id}/view?mode=sidebyside&docs=0000,0000" )
+      @juxta.get_as_html( @juxta.get_side_by_side_asset_id( @set_id, "0000", "0000" ) )
     rescue RestClient::ResourceNotFound
        # this is expected...
     else
@@ -104,13 +99,12 @@ class TestVisualize < Test::Unit::TestCase
   
   def test_happy_day
     begin
-
         # get visualizations: heatmap
-        html = @juxta.get_as_html( "set/#{@set_id}/view?mode=heatmap" )
+        html = @juxta.get_as_html( @juxta.get_heatmap_asset_id( @set_id, @wit_ids[0] ) )
         assert( ( html != nil && html.length != 0 ), "Failed to get heatmap visualization" )
 
         # get visualizations: sidebyside
-        html = @juxta.get_as_html( "set/#{@set_id}/view?mode=sidebyside&docs=#{@wit_ids[0]},#{@wit_ids[1]}" )
+        html = @juxta.get_as_html( @juxta.get_side_by_side_asset_id( @set_id, @wit_ids[0], @wit_ids[1] ) )
         assert( ( html != nil && html.length != 0 ), "Failed to get side by side visualization" )
 
      rescue Exception => e
